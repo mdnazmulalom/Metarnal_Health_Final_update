@@ -25,17 +25,17 @@ public interface ApiInterface {
 //            @Field(Constant.KEY_NAME) String name,
 //            @Field(Constant.KEY_CELL) String cell,
 //            @Field(Constant.KEY_PASSWORD) String password);
-//
-////    @FormUrlEncoded
-////    @POST("retrofit/POST/go.php")
-////    Call<Contacts> signup(
-////        @Field(Constant.KEY_NAME) String name,
-////        @Field(Constant.KEY_CELL) String cell,
-////        @Field(Constant.KEY_PASSWORD) String password
-////    );
-//
-//
-//    //for login
+
+//    @FormUrlEncoded
+//    @POST("retrofit/POST/go.php")
+//    Call<Contacts> signup(
+//        @Field(Constant.KEY_NAME) String name,
+//        @Field(Constant.KEY_CELL) String cell,
+//        @Field(Constant.KEY_PASSWORD) String password
+//    );
+
+
+    //for login
 //    @FormUrlEncoded
 //    @POST("retrofit/POST/login.php")
 //    Call<Contacts> login(
