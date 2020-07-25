@@ -27,22 +27,21 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:srcCompat="@drawable/icon_login" />
-            </LinearLayout>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/img_layout"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:background="@color/background"
-                android:fontFamily="casual"
-                android:text="SIGN UP"
-                android:textColor="@color/textcolor"
-                android:textStyle="bold" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/background"
+                    android:fontFamily="casual"
+                    android:text="SIGN UP"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
 
             <LinearLayout
+                android:id="@+id/layout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
@@ -74,7 +73,9 @@
                     android:inputType="text"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16sp"></EditText>
+                    android:textSize="16sp">
+
+                </EditText>
 
 
                 <EditText
@@ -147,16 +148,22 @@
                     android:textSize="16dp" />
 
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layout1"
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/signup"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
 
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="120dp"
-
                     android:layout_marginTop="32dp"
-                    android:layout_marginRight="40dp"
                     android:layout_marginBottom="18dp"
 
                     android:background="@drawable/button_background"
@@ -167,7 +174,6 @@
                     android:textColor="@color/background"
                     android:textSize="16dp"
                     android:textStyle="bold" />
-
             </LinearLayout>
         </RelativeLayout>
     </FrameLayout>
