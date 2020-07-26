@@ -1,8 +1,11 @@
 package com.nazmul.metarnalhealth;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -37,9 +40,82 @@ public class SignupActivity extends AppCompatActivity {
         txtSignup=findViewById(R.id.signup);
 
 
+        //for dropdown gender.....
+        etxtGender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String[] genderList={"Male","Female"};
+                AlertDialog.Builder builder=new AlertDialog.Builder(SignupActivity.this);
+                builder.setTitle("SELECT GENDER");
+                builder.setCancelable(false);
+                builder.setItems(genderList, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int position) {
+                        switch (position){
+                            case 0:
+                                etxtGender.setText(genderList[position]);
+                                break;
+                            case 1:
+                                etxtGender.setText(genderList[position]);
+                                break;
+                        }
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int position) {
+                        dialog.dismiss();
+                    }
+                });
+                AlertDialog accountTypeDialog=builder.create();
+                accountTypeDialog.show();
+            }
+        });
 
 
+    //For dropdown AccountType....
+    etxtAccountType.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            final String[] typeList={"Mother","Doctor"};
+            AlertDialog.Builder builder=new AlertDialog.Builder(SignupActivity.this);
+            builder.setTitle("SELECT ACCOUNT TYPE");
+            builder.setCancelable(false);
+            builder.setItems(typeList, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int position) {
+                    switch (position) {
+                        case 0:
+                            etxtAccountType.setText(typeList[position]);
+                            break;
 
+                        case 1:
+                            etxtAccountType.setText(typeList[position]);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            });
+            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            AlertDialog accountype=builder.create();
+            accountype.show();
+        }
+    });
+
+    //For dropdown Location....
+
+        etxtLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String[] locationList={"Dhaka","Chittagong","Comilla"};
+            }
+        });
 
 
 
