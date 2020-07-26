@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/border"
                     android:ems="10"
-                    android:hint="01900000000"
+                    android:hint="01XXXXXXXXX"
                     android:includeFontPadding="true"
                     android:inputType="number|textPersonName"
                     android:padding="16dp"
