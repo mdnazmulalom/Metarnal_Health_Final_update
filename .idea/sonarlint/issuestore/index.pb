@@ -1,25 +1,3 @@
 
-o
-?app/src/main/java/com/nazmul/metarnalhealth/SplashActivity.java,1/4/144010aae89f5d006ed596f21559b8e22cd9f2b5
-n
->app/src/main/java/com/nazmul/metarnalhealth/LoginActivity.java,c/b/cbf4cbf0d74bb86a552229c1e762ea24c62d3d3f
-o
-?app/src/main/java/com/nazmul/metarnalhealth/SignupActivity.java,0/c/0ce62efb9a4f1934c42ae3905d2c447eea044a94
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
-P
- app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
-@
-app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
-q
-Aapp/src/main/java/com/nazmul/metarnalhealth/remote/ApiClient.java,6/e/6ebb593ad53b09877f9eccb6edbc6d30d3269129
-t
-Dapp/src/main/java/com/nazmul/metarnalhealth/remote/ApiInterface.java,d/6/d6e2c16c8b3dc2453180819757388090a9b86b52
-i
-9app/src/main/java/com/nazmul/metarnalhealth/Constant.java,5/f/5f69b5785cf1e9e81b2516558e5cbe98c0df970f
-{
-Kapp/src/main/java/com/nazmul/metarnalhealth/doctors/DoctorHomeActivity.java,1/6/165841f4d150666640faa4d92e07ae15e801c3ce
-{
-Kapp/src/main/java/com/nazmul/metarnalhealth/mothers/MotherHomeActivity.java,c/d/cd19ebcd61578b2226375fd9edeb0f9ca7fc17b9
-R
-"app/src/main/res/values/colors.xml,9/6/969faa2a5d9f5e8390e958d2c07f2cfd54676e6b

@@ -58,6 +58,8 @@ public class SignupActivity extends AppCompatActivity {
                             case 1:
                                 etxtGender.setText(genderList[position]);
                                 break;
+                            default:
+                                break;
                         }
                     }
                 });
@@ -77,7 +79,7 @@ public class SignupActivity extends AppCompatActivity {
     etxtAccountType.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            final String[] typeList={"Mother","Doctor"};
+            final String[] typeList={"Mothers","Doctors"};
             AlertDialog.Builder builder=new AlertDialog.Builder(SignupActivity.this);
             builder.setTitle("SELECT ACCOUNT TYPE");
             builder.setCancelable(false);
