@@ -115,7 +115,65 @@ public class SignupActivity extends AppCompatActivity {
         etxtLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String[] locationList={"Dhaka","Chittagong","Comilla"};
+                final String[] locationList={"Dhaka","Chittagong","Sylhet","Rajshahi","Barishal","Khulna","Rangpur","Mymensingh"};
+                AlertDialog.Builder builder=new AlertDialog.Builder(SignupActivity.this);
+                builder.setTitle("SELECT DIVISION");
+                builder.setCancelable(false);
+                builder.setItems(locationList, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int position) {
+                        switch (position) {
+                            case 0:
+
+                                etxtLocation.setText("Dhaka");
+                                break;
+
+                            case 1:
+
+                                etxtLocation.setText("Chittagong");
+                                break;
+
+                            case 2:
+
+                                etxtLocation.setText("Sylhet");
+                                break;
+
+                            case 3:
+
+                                etxtLocation.setText("Rajshahi");
+                                break;
+
+                            case 4:
+
+                                etxtLocation.setText("Barishal");
+                                break;
+
+                            case 5:
+
+                                etxtLocation.setText("Khulna");
+                                break;
+
+                            case 6:
+
+                                etxtLocation.setText("Rangpur");
+                                break;
+
+                            case 7:
+
+                                etxtLocation.setText("Mymensingh");
+                                break;
+                        }
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                AlertDialog locationTypeDialog = builder.create();
+                locationTypeDialog.show();
             }
         });
 
