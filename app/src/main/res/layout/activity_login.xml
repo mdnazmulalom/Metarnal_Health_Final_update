@@ -101,7 +101,8 @@
                     android:hint="Mothers"
                     android:maxLength="12"
                     android:padding="16dp"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:focusable="false"/>
             </LinearLayout>
 
             <LinearLayout
