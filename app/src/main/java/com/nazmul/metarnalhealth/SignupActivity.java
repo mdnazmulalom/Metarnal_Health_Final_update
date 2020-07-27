@@ -3,15 +3,30 @@ package com.nazmul.metarnalhealth;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -177,9 +192,113 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
+        txtSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                name=etxtName.getText().toString().trim();
+                cell=etxtCell.getText().toString().trim();
+                accounttype=etxtAccountType.getText().toString().trim();
+                location=etxtLocation.getText().toString().trim();
+                gender=etxtGender.getText().toString().trim();
+                password=etxtPassword.getText().toString().trim();
 
+
+                if (name.isEmpty()){
+                    etxtName.setError("Please Enter name");
+                    requestfocus(etxtName);
+                }
+
+                else if (cell.length()!=11 || cell.contains(" ") || cell.charAt(0)!='0' || cell.charAt(1)!='1')
+                {
+                    etxtCell.setError("Please enter correct cell");
+                    requestfocus(etxtCell);
+                }
+                else if (accounttype.isEmpty()){
+                    etxtAccountType.setError("Please select Account type!");
+                    requestfocus(etxtAccountType);
+                }
+
+                else if (location.isEmpty()){
+                    etxtLocation.setError("Please select location");
+                    requestfocus(etxtLocation);
+                }
+                else if (gender.isEmpty()){
+                    etxtGender.setError("Please select gender");
+                    requestfocus(etxtGender);
+                }
+                else if (password.length()<4){
+                    etxtPassword.setError("Please at lease 4 character long !");
+                    requestfocus(etxtPassword);
+                }
+
+                else {
+                    signup();
+                }
+            }
+        });
+    }
+
+    private void signup(){
+        loading = new ProgressDialog(SignupActivity.this);
+        loading.setMessage("Please wait....");
+        loading.show();
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, Constant.SIGNUP_URL,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("RESPONSE", response);
+
+                        if (response.equals("success")) {
+                            loading.dismiss();
+                            Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                            Toast.makeText(SignupActivity.this, "Sign up Sucessfull", Toast.LENGTH_SHORT).show();
+                            startActivity(intent);
+
+                        } else if (response.equals("exists")) {
+                            Toast.makeText(SignupActivity.this, "User already Exist", Toast.LENGTH_SHORT).show();
+                            loading.dismiss();
+
+                        } else if (response.equals("failure")) {
+                            Toast.makeText(SignupActivity.this, "Registation Failed", Toast.LENGTH_SHORT).show();
+                            loading.dismiss();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(SignupActivity.this, "No Internet Connection or \nThere is an error !!!", Toast.LENGTH_LONG).show();
+                loading.dismiss();
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError{
+//              Map<String, String> params = new HashMap<>();
+                Map<String, String> params = new HashMap<>();
+                params.put(Constant.KEY_NAME, name);
+                params.put(Constant.KEY_CELL, cell);
+                params.put(Constant.KEY_USER_TYPE, accounttype);
+                params.put(Constant.KEY_LOCATION, location);
+                params.put(Constant.KEY_GENDER,gender);
+                params.put(Constant.KEY_PASSWORD, password);
+
+                return params;
+            }
+        };
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
 
     }
+
+
+
+    //FOR REQUEST FOCUS
+    private void requestfocus(View view){
+        if (view.requestFocus()){
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+        }
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
