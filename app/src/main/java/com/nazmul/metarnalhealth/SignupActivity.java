@@ -272,7 +272,6 @@ public class SignupActivity extends AppCompatActivity {
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError{
-//              Map<String, String> params = new HashMap<>();
                 Map<String, String> params = new HashMap<>();
                 params.put(Constant.KEY_NAME, name);
                 params.put(Constant.KEY_CELL, cell);
@@ -282,8 +281,6 @@ public class SignupActivity extends AppCompatActivity {
                 params.put(Constant.KEY_PASSWORD, password);
 
                 Log.d("Signup",name +" "+ cell +" "+accounttype+" "+location+" "+gender+" "+password);
-
-
                 return params;
             }
         };
