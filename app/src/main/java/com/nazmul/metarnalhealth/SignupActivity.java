@@ -281,6 +281,9 @@ public class SignupActivity extends AppCompatActivity {
                 params.put(Constant.KEY_GENDER,gender);
                 params.put(Constant.KEY_PASSWORD, password);
 
+                Log.d("Signup",name +" "+ cell +" "+accounttype+" "+location+" "+gender+" "+password);
+
+
                 return params;
             }
         };
