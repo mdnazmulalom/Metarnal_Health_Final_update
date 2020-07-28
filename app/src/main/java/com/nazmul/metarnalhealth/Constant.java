@@ -15,6 +15,13 @@ public class Constant {
     public static final String KEY_PASSWORD="password";
 
 
+    public static final String SHARED_PREF_NAME = "com.nazmul.metarnalhealth";
+
+    public static final String CELL_SHARED_PREF = "cell";
+    public static final String PASSWORD_SHARED_PREF = "password";
+    public static final String AC_TYPE_SHARED_PREF = "ac_type";
+
+
 
 }
 
