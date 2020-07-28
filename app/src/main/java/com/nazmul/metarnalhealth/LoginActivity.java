@@ -7,12 +7,27 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.nazmul.metarnalhealth.doctors.DoctorHomeActivity;
+import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -108,6 +123,8 @@ public class LoginActivity extends AppCompatActivity {
         final String userPassword=etxtPassword.getText().toString().trim();
         final String account_type=etxtAccountType.getText().toString().trim();
 
+
+
         if ( userCell.length() != 11 || userCell.contains(" ") || userCell.charAt(0) != '0' || userCell.charAt(1) != '1') {
 
             etxtCell.setError("Please enter cell !");
@@ -130,10 +147,87 @@ public class LoginActivity extends AppCompatActivity {
             loading.setMessage("Please wait....");
             loading.show();
 
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, Constant.LOGIN_URL,
+                    new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            String myResponse = response.trim();
+                            Log.d("Response", response);
+
+                            if (myResponse.equals("mothers")) {
+                                sharedPreferences = LoginActivity.this.getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                                editor.putString(Constant.AC_TYPE_SHARED_PREF, account_type);
+                                editor.putString(Constant.CELL_SHARED_PREF, userCell);
+                                editor.putString(Constant.PASSWORD_SHARED_PREF, userPassword);
+
+                                editor.apply();
+
+                                loading.dismiss();
+                                Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(LoginActivity.this, MotherHomeActivity.class);
+                                startActivity(intent);
 
 
+                            } else if (myResponse.equals("doctors")) {
+
+                                sharedPreferences = LoginActivity.this.getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                                editor.putString(Constant.AC_TYPE_SHARED_PREF, account_type);
+                                editor.putString(Constant.CELL_SHARED_PREF, userCell);
+                                editor.putString(Constant.PASSWORD_SHARED_PREF, userPassword);
+
+                                editor.apply();
+
+                                loading.dismiss();
+
+                                Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(LoginActivity.this, DoctorHomeActivity.class);
+                                startActivity(intent);
+
+
+                            } else {
+                                Toast.makeText(LoginActivity.this, "Invalid Cell or password", Toast.LENGTH_SHORT).show();
+                                loading.dismiss();
+                            }
+
+                        }
+
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(LoginActivity.this,"Error in Connection!!",Toast.LENGTH_LONG).show();
+                            loading.dismiss();
+
+
+
+                        }
+                    }){
+                @Override
+                protected Map<String,String>getParams() throws AuthFailureError{
+                    Map<String, String> params = new HashMap<>();
+                    params.put(Constant.KEY_USER_TYPE,account_type);
+                    params.put(Constant.KEY_CELL,userCell);
+                    params.put(Constant.KEY_PASSWORD,userPassword);
+                    Log.d("Values",account_type+" "+ userCell+" "+userPassword);
+                    return params;
+
+                }
+
+            };
+
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            requestQueue.add(stringRequest);
 
         }
     }
+
+
+
+
+
 }
 
