@@ -232,7 +232,7 @@ public class SignupActivity extends AppCompatActivity {
                 }
 
                 else {
-                    signup();
+//                    signup();
                 }
             }
         });
