@@ -114,7 +114,7 @@ public class LoginActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                login();
+                login();
             }
         });
     }
@@ -170,7 +170,8 @@ public class LoginActivity extends AppCompatActivity {
                                 startActivity(intent);
 
 
-                            } else if (myResponse.equals("doctors")) {
+                            }
+                            else if (myResponse.equals("doctors")) {
 
                                 sharedPreferences = LoginActivity.this.getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
                                 SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -224,10 +225,5 @@ public class LoginActivity extends AppCompatActivity {
 
         }
     }
-
-
-
-
-
 }
 
