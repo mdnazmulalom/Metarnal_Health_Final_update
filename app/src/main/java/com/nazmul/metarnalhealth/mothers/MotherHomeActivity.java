@@ -2,7 +2,9 @@ package com.nazmul.metarnalhealth.mothers;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Layout;
@@ -16,16 +18,21 @@ import com.nazmul.metarnalhealth.R;
 
 public class MotherHomeActivity extends AppCompatActivity {
 
+    CardView card_mother;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mother_home);
 
-        findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
+        card_mother = findViewById(R.id.card_mother);
+
+
+        card_mother.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MotherHomeActivity.this,MotherProfile.class);
-                startActivity(intent);
+                Intent i = new Intent(MotherHomeActivity.this,MotherProfile.class);
+                startActivity(i);
             }
         });
 

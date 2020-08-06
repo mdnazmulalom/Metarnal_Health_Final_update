@@ -1,8 +1,12 @@
 package com.nazmul.metarnalhealth.mothers;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.nazmul.metarnalhealth.R;
 
@@ -12,6 +16,8 @@ public class MotherProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mother_profile);
+
+
 
     }
 }
