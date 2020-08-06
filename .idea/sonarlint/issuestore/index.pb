@@ -9,8 +9,6 @@ o
 ?app/src/main/java/com/nazmul/metarnalhealth/SignupActivity.java,0/c/0ce62efb9a4f1934c42ae3905d2c447eea044a94
 P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
-[
-+app/src/main/res/layout/activity_signup.xml,8/c/8cef76296ca4ccac50a757962e9155057bf545c3
 i
 9app/src/main/java/com/nazmul/metarnalhealth/Constant.java,5/f/5f69b5785cf1e9e81b2516558e5cbe98c0df970f
 q
