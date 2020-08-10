@@ -20,13 +20,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/white_rectangle_background"
+            android:background="@drawable/button_background"
+            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutheader">
+            app:layout_constraintTop_toBottomOf="@id/layoutheader"
+            tools:layout_editor_absoluteX="30dp">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -35,6 +35,16 @@
                 android:layout_weight="1"
                 android:background="@color/button"
                 app:srcCompat="@drawable/logo11" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HELLO! WELCOME"
+                android:textColor="@color/background"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 
