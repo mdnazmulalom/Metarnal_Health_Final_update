@@ -27,15 +27,32 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/icon_login" />
+                    app:srcCompat="@drawable/logo11" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Jon Doe"
+                    android:textColor="@color/button"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:hint="Mother"
+                    android:textColor="@color/button" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:paddingTop="5dp"
-                    android:text="MOTHER PROFILE"
+                    android:text="Information"
                     android:textColor="@color/button"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -48,7 +65,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="10dp">
 
                 <EditText
                     android:id="@+id/fullname"
@@ -57,6 +75,7 @@
                     android:layout_marginLeft="22dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
+                    android:gravity="center"
                     android:hint="Full Name"
                     android:inputType="text"
                     android:padding="16dp"
@@ -72,6 +91,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
+                    android:gravity="center"
                     android:hint="Cell"
                     android:inputType="number"
                     android:padding="16dp"
@@ -89,6 +109,7 @@
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
                     android:focusable="false"
+                    android:gravity="center"
                     android:hint="Location"
                     android:inputType="text"
                     android:padding="16dp"
@@ -104,6 +125,7 @@
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
                     android:focusable="false"
+                    android:gravity="center"
                     android:hint="Gender"
                     android:inputType="text"
                     android:padding="16dp"
@@ -119,11 +141,12 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
-                    android:hint="Password"
+                    android:gravity="center"
+                    android:hint="******"
                     android:inputType="textPassword"
                     android:maxLength="12"
-                    android:padding="16dp"
 
+                    android:padding="16dp"
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
@@ -150,7 +173,7 @@
                     android:fontFamily="casual"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="PROFILE UPDATE"
+                    android:text="Edit Profile"
                     android:textColor="@color/background"
                     android:textSize="16dp"
                     android:textStyle="bold" />

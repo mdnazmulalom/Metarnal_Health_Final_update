@@ -32,7 +32,7 @@ import java.util.jar.JarException;
 public class MotherProfile extends AppCompatActivity {
 
     EditText etxtFulname,etxtCell,etxtLocation,etxtGender,etxtpassword;
-    TextView txtUpdate_profile;
+    TextView txtUpdate_profile,txtname;
     String Usercell;
     private ProgressDialog loading;
     SharedPreferences sharedPreferences;
@@ -48,20 +48,22 @@ public class MotherProfile extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
         getSupportActionBar().setTitle("Mother Profile");
 
-
+        txtname = findViewById(R.id.txt_name);
         etxtFulname=findViewById(R.id.fullname);
         etxtCell=findViewById(R.id.cell);
         etxtLocation=findViewById(R.id.location);
-        etxtGender=findViewById(R.id.location);
-        etxtpassword=findViewById(R.id.password);
+        etxtGender=findViewById(R.id.gender);
+
         txtUpdate_profile=findViewById(R.id.update_profile);
 
         txtUpdate_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getdata();
+
             }
         });
+
+        getdata();
 
     }
 
@@ -76,6 +78,7 @@ public class MotherProfile extends AppCompatActivity {
         StringRequest stringRequest=new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                loading.dismiss();
                 showJSON(response);
             }
         }, new Response.ErrorListener() {
@@ -92,22 +95,29 @@ public class MotherProfile extends AppCompatActivity {
 
     private void showJSON(String response){
 
-        String name="";
-        String cell="";
-        String location="";
-        String gender="";
-        String password="";
+        String name ="";
+        String cell ="";
+        String location ="";
+        String gender ="";
+
+//        String password="";
 
         try {
             JSONObject jsonObject=new JSONObject(response);
             JSONArray result=jsonObject.getJSONArray(Constant.JSON_ARRAY);
             JSONObject ProfileData = result.getJSONObject(0);
 
-            name=ProfileData.getString(Constant.KEY_NAME);
-            cell=ProfileData.getString(Constant.KEY_CELL);
-            location=ProfileData.getString(Constant.KEY_LOCATION);
-            gender=ProfileData.getString(Constant.KEY_GENDER);
-            password=ProfileData.getString(Constant.KEY_PASSWORD);
+
+
+            name = ProfileData.getString(Constant.KEY_NAME);
+            cell = ProfileData.getString(Constant.KEY_CELL);
+            location = ProfileData.getString(Constant.KEY_LOCATION);
+            gender = ProfileData.getString(Constant.KEY_GENDER);
+//            password=ProfileData.getString(Constant.KEY_PASSWORD);
+
+
+
+            Log.d("Name",name+" "+cell+" "+location+" "+gender);
 
         }
         catch (JSONException e) {
@@ -116,7 +126,18 @@ public class MotherProfile extends AppCompatActivity {
 
 
 
+        txtname.setText(name);
+        etxtFulname.setText(name);
+        etxtCell.setText(cell);
+        etxtLocation.setText(location);
+        etxtGender.setText(gender);
+
+
+
+
 
 
     }
+
+
 }
