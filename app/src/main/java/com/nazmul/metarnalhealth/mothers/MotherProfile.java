@@ -31,8 +31,7 @@ import java.util.jar.JarException;
 
 public class MotherProfile extends AppCompatActivity {
 
-    EditText etxtFulname,etxtCell,etxtLocation,etxtGender,etxtpassword;
-    TextView txtUpdate_profile,txtname;
+    TextView txtUpdate_profile,txtname,etxtFulname,etxtCell,etxtLocation,etxtGender;
     String Usercell;
     private ProgressDialog loading;
     SharedPreferences sharedPreferences;

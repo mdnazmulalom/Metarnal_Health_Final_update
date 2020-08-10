@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:visibility="visible"
     tools:context=".mothers.MotherProfile">
 
     <FrameLayout
@@ -20,8 +21,8 @@
                 android:id="@+id/img_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
                 android:layout_marginTop="10dp"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
@@ -51,10 +52,10 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:gravity="center"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
                     android:text="Information"
                     android:textColor="@color/button"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -68,7 +69,7 @@
                 android:orientation="vertical"
                 android:paddingTop="10dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/fullname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -82,7 +83,7 @@
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
-                <EditText
+                <TextView
                     android:id="@+id/cell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,11 +97,12 @@
                     android:inputType="number"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16sp">
+                    android:textSize="16sp"
+                    android:visibility="visible">
 
-                </EditText>
+                </TextView>
 
-                <EditText
+                <TextView
                     android:id="@+id/location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -114,9 +116,10 @@
                     android:inputType="text"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:visibility="visible" />
 
-                <EditText
+                <TextView
                     android:id="@+id/gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -130,10 +133,11 @@
                     android:inputType="text"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:visibility="visible" />
 
 
-                <EditText
+                <TextView
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -148,7 +152,8 @@
 
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:visibility="visible" />
 
 
             </LinearLayout>
