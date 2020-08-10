@@ -35,9 +35,6 @@ public class MotherHomeActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -14,11 +14,10 @@ public class Constant {
 
     public static final String SIGNUP_URL = MAIN_URL+"/signup.php";
     public static final String LOGIN_URL = MAIN_URL+"/login.php";
+    public static final String PROFILE_URL= MAIN_URL+"/profile.php?cell=";
 
-
+    public static final String JSON_ARRAY = "result";
     public static final String KEY_NAME="name";
-
-
     public static final String KEY_CELL="cell";
     public static final String KEY_USER_TYPE="accounttype";
     public static final String KEY_PASSWORD="password";
