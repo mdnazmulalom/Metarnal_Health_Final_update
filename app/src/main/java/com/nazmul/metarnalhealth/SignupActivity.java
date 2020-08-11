@@ -26,6 +26,8 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
+import es.dmoral.toasty.Toasty;
+
 public class SignupActivity extends AppCompatActivity {
 
     private ProgressDialog loading;
@@ -249,7 +251,8 @@ public class SignupActivity extends AppCompatActivity {
                         if (response.equals("success")) {
                             loading.dismiss();
                             Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
-                            Toast.makeText(SignupActivity.this, "Sign up Sucessfull", Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(SignupActivity.this, "Sign up Sucessfull", Toast.LENGTH_SHORT).show();
+                            Toasty.warning(SignupActivity.this,"SignUp success",Toasty.LENGTH_SHORT).show();
                             startActivity(intent);
 
                         } else if (response.equals("exists")) {
