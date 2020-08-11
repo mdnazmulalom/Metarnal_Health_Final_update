@@ -51,7 +51,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/fullname"
+                    android:id="@+id/etxtfullname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="22dp"
@@ -64,7 +64,7 @@
                     android:textSize="16dp" />
 
                 <EditText
-                    android:id="@+id/cell"
+                    android:id="@+id/etxtcell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="22dp"

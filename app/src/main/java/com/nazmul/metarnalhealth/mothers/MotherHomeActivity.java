@@ -36,6 +36,10 @@ public class MotherHomeActivity extends AppCompatActivity {
 
         card_mother = findViewById(R.id.card_mother);
 
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("Mother Panel");
+
 
         card_mother.setOnClickListener(new View.OnClickListener() {
             @Override

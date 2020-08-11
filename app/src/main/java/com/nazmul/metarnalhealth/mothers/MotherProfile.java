@@ -1,9 +1,7 @@
 package com.nazmul.metarnalhealth.mothers;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
-import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +10,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,8 +24,6 @@ import com.nazmul.metarnalhealth.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.jar.JarException;
 
 public class MotherProfile extends AppCompatActivity {
 
@@ -49,8 +44,8 @@ public class MotherProfile extends AppCompatActivity {
         getSupportActionBar().setTitle("Mother Profile");
 
         txtname = findViewById(R.id.txt_name);
-        etxtFulname=findViewById(R.id.fullname);
-        etxtCell=findViewById(R.id.cell);
+        etxtFulname=findViewById(R.id.etxtfullname);
+        etxtCell=findViewById(R.id.etxtcell);
         etxtLocation=findViewById(R.id.location);
         etxtGender=findViewById(R.id.gender);
 
@@ -59,11 +54,17 @@ public class MotherProfile extends AppCompatActivity {
         txtUpdate_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MotherProfile.this,EditProfileActivity.class);
+                Intent intent = new Intent(MotherProfile.this,EditProfileActivity.class);
+                intent.putExtra("name",etxtFulname.getText());
+                intent.putExtra("cell",etxtCell.getText());
+                intent.putExtra("location",etxtLocation.getText());
+                intent.putExtra("gender",etxtGender.getText());
                 startActivity(intent);
 
             }
         });
+
+
 
         getdata();
 
@@ -129,18 +130,8 @@ public class MotherProfile extends AppCompatActivity {
         etxtGender.setText(gender);
     }
 
-    //for back button
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // app icon in action bar clicked; goto parent activity.
-                this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+
+
 
     //for back button
     @Override
@@ -154,6 +145,8 @@ public class MotherProfile extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
 
 
 

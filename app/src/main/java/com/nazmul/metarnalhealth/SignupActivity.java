@@ -10,11 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
@@ -46,8 +44,8 @@ public class SignupActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
 
 
-        etxtName=findViewById(R.id.fullname);
-        etxtCell=findViewById(R.id.cell);
+        etxtName=findViewById(R.id.etxtfullname);
+        etxtCell=findViewById(R.id.etxtcell);
         etxtAccountType=findViewById(R.id.ac_type);
         etxtLocation=findViewById(R.id.location);
         etxtGender=findViewById(R.id.gender);

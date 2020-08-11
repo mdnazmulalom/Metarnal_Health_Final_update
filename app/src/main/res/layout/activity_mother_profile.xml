@@ -70,7 +70,7 @@
                 android:paddingTop="10dp">
 
                 <TextView
-                    android:id="@+id/fullname"
+                    android:id="@+id/etxtfullname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="22dp"
@@ -84,7 +84,7 @@
                     android:textSize="16dp" />
 
                 <TextView
-                    android:id="@+id/cell"
+                    android:id="@+id/etxtcell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="22dp"
@@ -178,7 +178,7 @@
                     android:fontFamily="casual"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="Save"
+                    android:text="Edit Profile"
                     android:textColor="@color/background"
                     android:textSize="16dp"
                     android:textStyle="bold" />

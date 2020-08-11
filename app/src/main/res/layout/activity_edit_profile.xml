@@ -68,7 +68,7 @@
                 android:paddingTop="10dp">
 
                 <EditText
-                    android:id="@+id/fullname"
+                    android:id="@+id/etxtfullname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="22dp"
@@ -82,7 +82,7 @@
                     android:textSize="16dp" />
 
                 <EditText
-                    android:id="@+id/cell"
+                    android:id="@+id/etxtcell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="22dp"
@@ -95,10 +95,7 @@
                     android:inputType="number"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16sp"
-                    android:visibility="visible">
-
-                </EditText>
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/location"
@@ -114,8 +111,7 @@
                     android:inputType="text"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp"
-                    android:visibility="visible" />
+                    android:textSize="16dp"/>
 
                 <EditText
                     android:id="@+id/gender"
@@ -131,8 +127,7 @@
                     android:inputType="text"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp"
-                    android:visibility="visible" />
+                    android:textSize="16dp"/>
 
 
                 <EditText
@@ -150,8 +145,7 @@
 
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp"
-                    android:visibility="visible" />
+                    android:textSize="16dp"/>
 
 
             </LinearLayout>
@@ -167,16 +161,14 @@
                     android:id="@+id/update_profile"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="32dp"
                     android:layout_marginBottom="18dp"
-
                     android:background="@drawable/button_background"
                     android:fontFamily="casual"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="Edit Profile"
+                    android:text="Update Profile"
                     android:textColor="@color/background"
                     android:textSize="16dp"
                     android:textStyle="bold" />
