@@ -39,12 +39,12 @@ public class EditProfileActivity extends AppCompatActivity {
         String getLocation=getIntent().getExtras().getString("location");
         String getGender=getIntent().getExtras().getString("gender");
 
-
-           txt_Name.setText(getName);
-           etxt_Fullame.setText(getName);
-           etxt_Cell.setText(getCell);
-           etxt_Location.setText(getLocation);
-           etxt_Gender.setText(getGender);
+//
+//           txt_Name.setText(getName);
+//           etxt_Fullame.setText(getName);
+//           etxt_Cell.setText(getCell);
+//           etxt_Location.setText(getLocation);
+//           etxt_Gender.setText(getGender);
 
 
 
