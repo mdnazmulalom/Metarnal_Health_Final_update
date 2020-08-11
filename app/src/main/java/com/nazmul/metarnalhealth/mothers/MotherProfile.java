@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -58,6 +59,8 @@ public class MotherProfile extends AppCompatActivity {
         txtUpdate_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent=new Intent(MotherProfile.this,EditProfileActivity.class);
+                startActivity(intent);
 
             }
         });
@@ -114,29 +117,29 @@ public class MotherProfile extends AppCompatActivity {
             gender = ProfileData.getString(Constant.KEY_GENDER);
 //            password=ProfileData.getString(Constant.KEY_PASSWORD);
 
-
-
             Log.d("Name",name+" "+cell+" "+location+" "+gender);
-
         }
         catch (JSONException e) {
             e.printStackTrace();
         }
-
-
-
         txtname.setText(name);
         etxtFulname.setText(name);
         etxtCell.setText(cell);
         etxtLocation.setText(location);
         etxtGender.setText(gender);
-
-
-
-
-
-
     }
 
+    //for back button
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 }
