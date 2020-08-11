@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
@@ -28,6 +27,8 @@ import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import es.dmoral.toasty.Toasty;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -165,7 +166,7 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.apply();
 
                                 loading.dismiss();
-                                Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                                Toasty.warning(LoginActivity.this, "Login Success", Toasty.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, MotherHomeActivity.class);
                                 startActivity(intent);
 
@@ -184,7 +185,7 @@ public class LoginActivity extends AppCompatActivity {
 
                                 loading.dismiss();
 
-                                Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                                Toasty.warning(LoginActivity.this, "Login Success", Toasty.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, DoctorHomeActivity.class);
                                 startActivity(intent);
 

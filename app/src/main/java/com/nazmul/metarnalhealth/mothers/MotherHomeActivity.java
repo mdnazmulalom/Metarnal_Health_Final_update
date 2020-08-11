@@ -1,20 +1,14 @@
 package com.nazmul.metarnalhealth.mothers;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.R;
 
@@ -33,6 +27,10 @@ public class MotherHomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mother_home);
+
+        getSupportActionBar().setHomeButtonEnabled(false); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
+        getSupportActionBar().setTitle("Mother Home");
 
         card_mother = findViewById(R.id.card_mother);
 
@@ -67,8 +65,6 @@ public class MotherHomeActivity extends AppCompatActivity {
 
         } else {
             Toasty.warning(MotherHomeActivity.this,"Press once again to exit!", Toast.LENGTH_SHORT).show();
-
-
         }
         back_pressed = System.currentTimeMillis();
     }

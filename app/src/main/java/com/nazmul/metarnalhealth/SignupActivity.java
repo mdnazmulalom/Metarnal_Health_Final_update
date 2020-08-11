@@ -10,11 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
@@ -27,6 +25,8 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import es.dmoral.toasty.Toasty;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -251,7 +251,8 @@ public class SignupActivity extends AppCompatActivity {
                         if (response.equals("success")) {
                             loading.dismiss();
                             Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
-                            Toast.makeText(SignupActivity.this, "Sign up Sucessfull", Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(SignupActivity.this, "Sign up Sucessfull", Toast.LENGTH_SHORT).show();
+                            Toasty.warning(SignupActivity.this,"SignUp success",Toasty.LENGTH_SHORT).show();
                             startActivity(intent);
 
                         } else if (response.equals("exists")) {
