@@ -10,15 +10,24 @@ import android.os.Bundle;
 import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.nazmul.metarnalhealth.R;
+
+import es.dmoral.toasty.Toasty;
 
 public class MotherHomeActivity extends AppCompatActivity {
 
     CardView card_mother;
+
+    //for double back press to exit
+    private static final int TIME_DELAY = 2000;
+    private static long back_pressed;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,4 +51,26 @@ public class MotherHomeActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
+
+
+    //double backpress to exit
+    @Override
+    public void onBackPressed() {
+        if (back_pressed + TIME_DELAY > System.currentTimeMillis()) {
+
+            Intent intent=new Intent();
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+            finish();
+
+        } else {
+            Toasty.warning(MotherHomeActivity.this,"Press once again to exit!", Toast.LENGTH_SHORT).show();
+
+
+        }
+        back_pressed = System.currentTimeMillis();
+    }
+
 }
