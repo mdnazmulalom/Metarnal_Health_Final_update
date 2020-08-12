@@ -51,20 +51,22 @@ public class MotherProfile extends AppCompatActivity {
 
         txtUpdate_profile=findViewById(R.id.update_profile);
 
+
+
         txtUpdate_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MotherProfile.this,EditProfileActivity.class);
+                //for testing
+//                String user_name = "Jhon Doe";
+//                intent.putExtra("Name",user_name);
                 intent.putExtra("name",etxtFulname.getText());
                 intent.putExtra("cell",etxtCell.getText());
                 intent.putExtra("location",etxtLocation.getText());
                 intent.putExtra("gender",etxtGender.getText());
                 startActivity(intent);
-
             }
         });
-
-
 
         getdata();
 
