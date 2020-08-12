@@ -1,6 +1,8 @@
 package com.nazmul.metarnalhealth.mothers;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -10,17 +12,21 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.R;
 
 import es.dmoral.toasty.Toasty;
 
 public class MotherHomeActivity extends AppCompatActivity {
 
-    CardView card_mother;
+    CardView card_mother,cardlogout;
 
     //for double back press to exit
     private static final int TIME_DELAY = 2000;
     private static long back_pressed;
+
+    SharedPreferences sp;
+    SharedPreferences.Editor editor;
 
 
     @Override
@@ -32,7 +38,12 @@ public class MotherHomeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
         getSupportActionBar().setTitle("Mother Home");
 
+
+        sp = getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        editor = sp.edit();
+
         card_mother = findViewById(R.id.card_mother);
+        cardlogout = findViewById(R.id.card_logout);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
@@ -46,6 +57,19 @@ public class MotherHomeActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        cardlogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.clear();
+                editor.apply();
+                finishAffinity();
+            }
+        });
+
+
+
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

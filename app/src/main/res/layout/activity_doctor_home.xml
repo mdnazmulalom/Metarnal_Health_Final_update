@@ -100,6 +100,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Doctor Profile"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -134,6 +135,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="My Appionment"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -178,6 +180,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="View Help Post"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -212,6 +215,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Logout"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>

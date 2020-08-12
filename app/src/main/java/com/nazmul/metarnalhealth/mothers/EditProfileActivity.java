@@ -22,8 +22,6 @@ public class EditProfileActivity extends AppCompatActivity {
 
 
         txt_Name = findViewById(R.id.txt_name);
-
-
         etxt_Fullame = findViewById(R.id.etxtfullname);
         etxt_Cell = findViewById(R.id.etxtcell);
         etxt_Location= findViewById(R.id.location);
@@ -35,22 +33,23 @@ public class EditProfileActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
         getSupportActionBar().setTitle("Profile");
 
-        String getName=getIntent().getExtras().getString("name");
+        String getName=getIntent().getExtras().getString("Name");
         String getCell=getIntent().getExtras().getString("cell");
         String getLocation=getIntent().getExtras().getString("location");
         String getGender=getIntent().getExtras().getString("gender");
+////        String getName=getIntent().getExtras().getString("name");
+
 
 
            txt_Name.setText(getName);
            etxt_Fullame.setText(getName);
            etxt_Cell.setText(getCell);
+           etxt_Cell.setEnabled(false);
            etxt_Location.setText(getLocation);
            etxt_Gender.setText(getGender);
 
-
-
-
     }
+
 
 
     //for back button

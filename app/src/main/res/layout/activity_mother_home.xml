@@ -100,6 +100,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Mother Profile"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -134,6 +135,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Doctor Info"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -178,6 +180,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Help Post"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -213,6 +216,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Appoinment"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -258,6 +262,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="First Aid"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -271,6 +276,7 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_logout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -293,6 +299,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:text="Logout"
+                                android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>

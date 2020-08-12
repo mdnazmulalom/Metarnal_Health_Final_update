@@ -25,6 +25,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.jar.Attributes;
+
 public class MotherProfile extends AppCompatActivity {
 
     TextView txtUpdate_profile,txtname,etxtFulname,etxtCell,etxtLocation,etxtGender;
@@ -56,14 +58,30 @@ public class MotherProfile extends AppCompatActivity {
         txtUpdate_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MotherProfile.this,EditProfileActivity.class);
-                //for testing
+
+////                //for testing
 //                String user_name = "Jhon Doe";
 //                intent.putExtra("Name",user_name);
-                intent.putExtra("name",etxtFulname.getText());
-                intent.putExtra("cell",etxtCell.getText());
-                intent.putExtra("location",etxtLocation.getText());
-                intent.putExtra("gender",etxtGender.getText());
+
+                String s= etxtFulname.getText().toString();
+                String cell = etxtCell.getText().toString();
+                String location = etxtLocation.getText().toString();
+                String gender = etxtGender.getText().toString();
+
+
+                Intent intent = new Intent(MotherProfile.this,EditProfileActivity.class);
+
+                intent.putExtra("Name",s);
+                intent.putExtra("cell",cell);
+                intent.putExtra("location",location);
+                intent.putExtra("gender",gender);
+                Log.d("Full data", s);
+
+//                intent.putExtra("name",etxtFulname.getText());
+//                intent.putExtra("cell",etxtCell.getText());
+//                intent.putExtra("location",etxtLocation.getText());
+//                intent.putExtra("gender",etxtGender.getText());
+
                 startActivity(intent);
             }
         });

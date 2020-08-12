@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".mothers.EditProfileActivity">
 
     <FrameLayout
@@ -19,8 +20,8 @@
                 android:id="@+id/img_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
                 android:gravity="center"
+                android:layout_marginTop="10dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -32,29 +33,21 @@
                     android:id="@+id/txt_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:gravity="center"
-                    android:text="Jon Doe"
+                    android:paddingTop="5dp"
+                    android:text="Jhon Doe"
                     android:textColor="@color/button"
-                    android:textSize="30sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:hint="Mother"
-                    android:textColor="@color/button" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:paddingBottom="10dp"
                     android:text="Information"
-                    android:textColor="@color/button"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/button" />
 
             </LinearLayout>
 
@@ -64,8 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
-                android:orientation="vertical"
-                android:paddingTop="10dp">
+                android:orientation="vertical">
 
                 <EditText
                     android:id="@+id/etxtfullname"
@@ -74,7 +66,6 @@
                     android:layout_marginLeft="22dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
-                    android:gravity="center"
                     android:hint="Full Name"
                     android:inputType="text"
                     android:padding="16dp"
@@ -90,12 +81,14 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
-                    android:gravity="center"
                     android:hint="Cell"
                     android:inputType="number"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16sp" />
+                    android:textSize="16sp">
+
+                </EditText>
+
 
                 <EditText
                     android:id="@+id/location"
@@ -105,13 +98,13 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
+                    android:drawableRight="@drawable/ic_arrow_down"
                     android:focusable="false"
-                    android:gravity="center"
                     android:hint="Location"
                     android:inputType="text"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <EditText
                     android:id="@+id/gender"
@@ -121,13 +114,13 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
+                    android:drawableRight="@drawable/ic_arrow_down"
                     android:focusable="false"
-                    android:gravity="center"
                     android:hint="Gender"
                     android:inputType="text"
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
 
                 <EditText
@@ -138,14 +131,13 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
-                    android:gravity="center"
-                    android:hint="******"
+                    android:hint="Password"
                     android:inputType="textPassword"
                     android:maxLength="12"
-
                     android:padding="16dp"
+
                     android:textColor="@color/textcolor"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
 
             </LinearLayout>
@@ -158,17 +150,19 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/update_profile"
+                    android:id="@+id/signup"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
+
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="32dp"
                     android:layout_marginBottom="18dp"
+
                     android:background="@drawable/button_background"
                     android:fontFamily="casual"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="Update Profile"
+                    android:text="Update profile"
                     android:textColor="@color/background"
                     android:textSize="16dp"
                     android:textStyle="bold" />
@@ -176,5 +170,3 @@
         </RelativeLayout>
     </FrameLayout>
 </ScrollView>
-
-
