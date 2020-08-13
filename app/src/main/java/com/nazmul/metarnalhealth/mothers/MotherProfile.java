@@ -1,7 +1,5 @@
 package com.nazmul.metarnalhealth.mothers;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -24,8 +24,6 @@ import com.nazmul.metarnalhealth.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.jar.Attributes;
 
 public class MotherProfile extends AppCompatActivity {
 
@@ -70,7 +68,6 @@ public class MotherProfile extends AppCompatActivity {
 
 
                 Intent intent = new Intent(MotherProfile.this,EditProfileActivity.class);
-
                 intent.putExtra("Name",s);
                 intent.putExtra("cell",cell);
                 intent.putExtra("location",location);

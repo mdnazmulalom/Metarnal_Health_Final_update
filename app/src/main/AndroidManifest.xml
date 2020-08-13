@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mothers.EditProfileActivity"></activity>
+        <activity android:name=".doctors.DoctorProfile"></activity>
+        <activity android:name=".mothers.EditProfileActivity" />
         <activity android:name=".mothers.MotherProfile" />
         <activity android:name=".mothers.MotherHomeActivity" />
         <activity android:name=".doctors.DoctorHomeActivity" />

@@ -34,19 +34,14 @@ public class MotherHomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mother_home);
 
-        getSupportActionBar().setHomeButtonEnabled(false); //for back button
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
-        getSupportActionBar().setTitle("Mother Home");
-
-
         sp = getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         editor = sp.edit();
 
         card_mother = findViewById(R.id.card_mother);
         cardlogout = findViewById(R.id.card_logout);
 
-        getSupportActionBar().setHomeButtonEnabled(true); //for back button
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setHomeButtonEnabled(false); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
         getSupportActionBar().setTitle("Mother Panel");
 
 
