@@ -14,7 +14,6 @@ import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.R;
-import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
 
 import es.dmoral.toasty.Toasty;
 
