@@ -33,21 +33,32 @@
                     android:id="@+id/txt_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="casual"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:text="Jhon Doe"
                     android:textColor="@color/button"
-                    android:textSize="24sp"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mother" />
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="0"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:text="Information"
-                    android:textColor="@color/button" />
+                    android:textColor="@color/button"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -57,7 +68,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="10dp">
 
                 <EditText
                     android:id="@+id/etxtfullname"
@@ -66,6 +78,7 @@
                     android:layout_marginLeft="22dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
+                    android:gravity="center"
                     android:hint="Full Name"
                     android:inputType="text"
                     android:padding="16dp"
@@ -80,6 +93,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
+                    android:gravity="center"
                     android:hint="Cell"
                     android:inputType="number"
                     android:padding="16dp"
@@ -99,6 +113,7 @@
                     android:background="@drawable/border"
                     android:drawableRight="@drawable/ic_arrow_down"
                     android:focusable="false"
+                    android:gravity="center"
                     android:hint="Location"
                     android:inputType="text"
                     android:padding="16dp"
@@ -115,6 +130,7 @@
                     android:background="@drawable/border"
                     android:drawableRight="@drawable/ic_arrow_down"
                     android:focusable="false"
+                    android:gravity="center"
                     android:hint="Gender"
                     android:inputType="text"
                     android:padding="16dp"
@@ -130,11 +146,12 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
+                    android:gravity="center"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:maxLength="12"
-                    android:padding="16dp"
 
+                    android:padding="16dp"
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
