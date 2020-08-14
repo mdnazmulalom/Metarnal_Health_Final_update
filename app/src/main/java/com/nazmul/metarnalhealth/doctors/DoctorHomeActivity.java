@@ -44,7 +44,7 @@ public class DoctorHomeActivity extends AppCompatActivity {
         CardDoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(DoctorHomeActivity.this,DoctorProfile.class);
+                Intent intent=new Intent(DoctorHomeActivity.this,DoctorProfileActivity.class);
                 startActivity(intent);
             }
         });
