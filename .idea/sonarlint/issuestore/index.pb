@@ -1,6 +1,4 @@
 
-S
-#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 o
 ?app/src/main/java/com/nazmul/metarnalhealth/SplashActivity.java,1/4/144010aae89f5d006ed596f21559b8e22cd9f2b5
 n
@@ -29,3 +27,7 @@ h
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 |
 Lapp/src/main/java/com/nazmul/metarnalhealth/mothers/EditProfileActivity.java,6/e/6e7e556602adaec7fa2b48c4e68c6166bc59daac
+~
+Napp/src/main/java/com/nazmul/metarnalhealth/doctors/DoctorProfileActivity.java,e/5/e571e4cfcef887dd7489ca3dc07e3d374a13caf5
+‚
+Rapp/src/main/java/com/nazmul/metarnalhealth/doctors/DoctorEditProfileActivity.java,f/0/f07999aaaca09e1d1edc20fb99a3bb0e22760bf3

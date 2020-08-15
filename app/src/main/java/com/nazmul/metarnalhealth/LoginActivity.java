@@ -166,7 +166,7 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.apply();
 
                                 loading.dismiss();
-                                Toasty.success(LoginActivity.this, "Login Success", Toasty.LENGTH_SHORT).show();
+                                Toasty.success(LoginActivity.this, "Mother Login Success", Toasty.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, MotherHomeActivity.class);
                                 startActivity(intent);
 
@@ -185,7 +185,7 @@ public class LoginActivity extends AppCompatActivity {
 
                                 loading.dismiss();
 
-                                Toasty.warning(LoginActivity.this, "Login Success", Toasty.LENGTH_SHORT).show();
+                                Toasty.success(LoginActivity.this, "Doctor Login Success", Toasty.LENGTH_SHORT).show();
                                 Intent intent = new Intent(LoginActivity.this, DoctorHomeActivity.class);
                                 startActivity(intent);
 
