@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".doctors.DoctorProfileActivity">
+    tools:context=".doctors.DoctorEditProfileActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 android:orientation="vertical"
                 android:paddingTop="10dp">
 
-                <TextView
+                <EditText
                     android:id="@+id/etxtfullname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/etxtcell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -98,10 +98,10 @@
                     android:textColor="@color/textcolor"
                     android:textSize="16sp">
 
-                </TextView>
+                </EditText>
 
 
-                <TextView
+                <EditText
                     android:id="@+id/location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -136,7 +136,7 @@
                     android:textSize="16dp" />
 
 
-                <TextView
+                <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -145,7 +145,6 @@
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
                     android:gravity="center"
-                    android:hint="******"
                     android:inputType="textPassword"
                     android:maxLength="12"
 
@@ -176,7 +175,7 @@
                     android:fontFamily="casual"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="Edit Profile"
+                    android:text="Update Profile"
                     android:textColor="@color/background"
                     android:textSize="16dp"
                     android:textStyle="bold" />

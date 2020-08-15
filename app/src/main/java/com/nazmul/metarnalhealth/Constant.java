@@ -15,7 +15,7 @@ public class Constant {
     public static final String SIGNUP_URL = MAIN_URL+"/signup.php";
     public static final String LOGIN_URL = MAIN_URL+"/login.php";
     public static final String PROFILE_URL= MAIN_URL+"/profile.php?cell=";
-
+    public static final String DOCTOR_PROFILE_URL=MAIN_URL+"/doctors_profile.php?cell=";
     public static final String JSON_ARRAY = "result";
     public static final String KEY_NAME="name";
     public static final String KEY_CELL="cell";

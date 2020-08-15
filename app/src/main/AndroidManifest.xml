@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nazmul.metarnalhealth">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".doctors.DoctorProfileActivity"></activity>
+        <activity android:name=".doctors.DoctorEditProfileActivity"></activity>
+        <activity android:name=".doctors.DoctorProfileActivity" />
         <activity android:name=".mothers.EditProfileActivity" />
         <activity android:name=".mothers.MotherProfile" />
         <activity android:name=".mothers.MotherHomeActivity" />
@@ -24,8 +28,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
