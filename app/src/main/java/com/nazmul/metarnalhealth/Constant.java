@@ -16,6 +16,15 @@ public class Constant {
     public static final String LOGIN_URL = MAIN_URL+"/login.php";
     public static final String PROFILE_URL= MAIN_URL+"/profile.php?cell=";
     public static final String DOCTOR_PROFILE_URL=MAIN_URL+"/doctors_profile.php?cell=";
+
+    public static final String MOTHER_PROFILE_UPDATE_URL = MAIN_URL+"/mother_profile_update.php";
+
+
+
+
+
+
+
     public static final String JSON_ARRAY = "result";
     public static final String KEY_NAME="name";
     public static final String KEY_CELL="cell";

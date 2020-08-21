@@ -15,6 +15,7 @@ import androidx.cardview.widget.CardView;
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.R;
 
+
 import es.dmoral.toasty.Toasty;
 
 public class MotherHomeActivity extends AppCompatActivity {
@@ -40,6 +41,7 @@ public class MotherHomeActivity extends AppCompatActivity {
         card_mother = findViewById(R.id.card_mother);
         cardlogout = findViewById(R.id.card_logout);
 
+
         getSupportActionBar().setHomeButtonEnabled(false); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
         getSupportActionBar().setTitle("Mother Panel");
@@ -61,6 +63,7 @@ public class MotherHomeActivity extends AppCompatActivity {
                 finishAffinity();
             }
         });
+
 
 
 

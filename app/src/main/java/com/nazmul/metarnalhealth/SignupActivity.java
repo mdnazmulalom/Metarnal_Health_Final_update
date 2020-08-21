@@ -52,7 +52,7 @@ public class SignupActivity extends AppCompatActivity {
         etxtLocation=findViewById(R.id.location);
         etxtGender=findViewById(R.id.gender);
         etxtPassword=findViewById(R.id.password);
-        txtSignup=findViewById(R.id.signup);
+        txtSignup=findViewById(R.id.mother_update);
 
 
         //for dropdown gender.....

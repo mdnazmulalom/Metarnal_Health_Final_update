@@ -52,7 +52,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
         txtLocation=findViewById(R.id.location);
         txtGender=findViewById(R.id.gender);
         txtPassword=findViewById(R.id.password);
-        txtUpdateprofile=findViewById(R.id.update_profile);
+        txtUpdateprofile=findViewById(R.id.mother_update_profile);
 
         txtUpdateprofile.setOnClickListener(new View.OnClickListener() {
             @Override

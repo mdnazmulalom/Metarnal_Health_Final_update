@@ -49,7 +49,7 @@ public class MotherProfile extends AppCompatActivity {
         etxtLocation=findViewById(R.id.location);
         etxtGender=findViewById(R.id.gender);
 
-        txtUpdate_profile=findViewById(R.id.update_profile);
+        txtUpdate_profile=findViewById(R.id.mother_update_profile);
 
 
 
