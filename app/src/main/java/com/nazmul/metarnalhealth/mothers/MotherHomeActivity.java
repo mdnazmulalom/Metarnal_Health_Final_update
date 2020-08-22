@@ -20,7 +20,7 @@ import es.dmoral.toasty.Toasty;
 
 public class MotherHomeActivity extends AppCompatActivity {
 
-    CardView card_mother,cardlogout;
+    CardView card_mother,cardlogout,first_aid;
 
     //for double back press to exit
     private static final int TIME_DELAY = 2000;
@@ -40,6 +40,7 @@ public class MotherHomeActivity extends AppCompatActivity {
 
         card_mother = findViewById(R.id.card_mother);
         cardlogout = findViewById(R.id.card_logout);
+        first_aid=findViewById(R.id.FirstAid);
 
 
         getSupportActionBar().setHomeButtonEnabled(false); //for back button
@@ -54,6 +55,15 @@ public class MotherHomeActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        first_aid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MotherHomeActivity.this,FirstaidActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         cardlogout.setOnClickListener(new View.OnClickListener() {
             @Override
