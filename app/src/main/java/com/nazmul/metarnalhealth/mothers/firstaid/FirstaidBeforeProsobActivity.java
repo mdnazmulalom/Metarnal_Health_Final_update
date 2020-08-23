@@ -1,43 +1,23 @@
-package com.nazmul.metarnalhealth.mothers;
+package com.nazmul.metarnalhealth.mothers.firstaid;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.R;
-import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidBeforeProsobActivity;
 
-public class FirstaidActivity extends AppCompatActivity {
-
-    CardView before_prosob;
+public class FirstaidBeforeProsobActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firstaid);
-
-        before_prosob=findViewById(R.id.beforeprosob);
+        setContentView(R.layout.activity_firstaid_before_prosob);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
-        getSupportActionBar().setTitle("নীড় পাতা ");
-
-
-
-        before_prosob.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FirstaidActivity.this, FirstaidBeforeProsobActivity.class);
-                startActivity(intent);
-            }
-        });
+        getSupportActionBar().setTitle("প্রসব পূর্ব সেবা");
     }
-
-
 
     //for back button
     @Override

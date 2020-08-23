@@ -146,7 +146,6 @@
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
                     android:gravity="center"
-                    android:hint="******"
                     android:inputType="textPassword"
                     android:maxLength="12"
 

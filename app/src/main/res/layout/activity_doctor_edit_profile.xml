@@ -147,7 +147,6 @@
                     android:gravity="center"
                     android:inputType="textPassword"
                     android:maxLength="12"
-
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
