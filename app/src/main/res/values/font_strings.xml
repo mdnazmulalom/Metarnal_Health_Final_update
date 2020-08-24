@@ -2,4 +2,7 @@
 <resources>
         <string name="prosob">প্রসব পূর্ব সেবা</string>
         <string name="nobojatok">নবজাতক সম্পর্কিত</string>
+        <string name="mayer_jotno">১. বাড়িতে প্রসূতি মায়ের যত্ন</string>
+        <string name="after_checkup">২. প্রসব পরবর্তী চেকআপ</string>
+        <string name="baby_system">৩. দুটি সন্তানের বেশী নয় একটি হলে ভালো হয় </string>
 </resources>

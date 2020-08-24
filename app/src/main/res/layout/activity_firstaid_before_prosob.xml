@@ -48,7 +48,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="kemon achen?" />
+                                android:text="@string/mayer_jotno"
+                                android:textColor="@color/button"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"/>
                         </androidx.cardview.widget.CardView>
                     </RelativeLayout>
 
@@ -80,7 +85,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="kemon achen?" />
+                                android:text="@string/after_checkup"
+                                android:textColor="@color/button"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"/>
                         </androidx.cardview.widget.CardView>
                     </RelativeLayout>
 
@@ -112,7 +122,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="kemon achen?" />
+                                android:text="@string/baby_system"
+                                android:textColor="@color/button"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"/>
                         </androidx.cardview.widget.CardView>
                     </RelativeLayout>
 
