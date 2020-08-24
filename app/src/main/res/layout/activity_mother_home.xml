@@ -112,9 +112,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/FirstAid"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -131,14 +133,13 @@
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                app:srcCompat="@drawable/doctorinformation" />
+                                app:srcCompat="@drawable/info" />
 
                             <TextView
-                                android:id="@+id/textView2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Doctor Info"
+                                android:text="First Aid"
                                 android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -240,15 +241,15 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/FirstAid"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -265,13 +266,14 @@
                             <ImageView
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                app:srcCompat="@drawable/info" />
+                                app:srcCompat="@drawable/doctorinformation" />
 
                             <TextView
+                                android:id="@+id/textView2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="First Aid"
+                                android:text="Doctor Info"
                                 android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>

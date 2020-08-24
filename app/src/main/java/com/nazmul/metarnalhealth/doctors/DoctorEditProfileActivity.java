@@ -44,8 +44,12 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         etxt_Cell.setEnabled(false);
         etxt_Location.setText(getLocation);
         etxt_Gender.setText(getGender);
+
+
     }
     //for back button
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

@@ -6,10 +6,6 @@ public class Constant {
 
     //    public static final String HOST_URL="https://android.nkrit.com/MetarnalHealth/";
 
-    
-
-
-
 
 
     public static final String SIGNUP_URL = MAIN_URL+"/signup.php";
