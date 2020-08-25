@@ -5,4 +5,11 @@
         <string name="mayer_jotno">১. বাড়িতে প্রসূতি মায়ের যত্ন</string>
         <string name="after_checkup">২. প্রসব পরবর্তী চেকআপ</string>
         <string name="baby_system">৩. দুটি সন্তানের বেশী নয় একটি হলে ভালো হয় </string>
+        <string name="bisram_khabar">বাড়িতে প্রসূতি মায়ের জন্য প্রয়োজনীয় বিশ্রাম ও বাড়তি খাবারের ব্যবস্থা করতে হবে : </string>
+        <string name="mayer_bisram">১.  প্রসূতি মায়ের বিশ্রাম </string>
+        <string name="baby_jotno">২.  শিশুর জন্য বাবার বেশী সময় দেওয়া </string>
+        <string name="mayer_khabar">৩.  প্রসূতি মায়ের জন্য বাড়তি খাবার </string>
+        <string name="jotno_4">৪.  শক্তিদায়ক খাবার</string>
+        <string name="jotno_5">৫.  শরীর বৃদ্ধিকারী খাবার</string>
+        <string name="jotno_6">৬.  রোগ প্রতিরোধক খাবার</string>
 </resources>

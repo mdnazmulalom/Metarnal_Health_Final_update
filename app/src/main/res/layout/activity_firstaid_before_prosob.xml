@@ -32,6 +32,7 @@
                         android:layout_height="match_parent">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/mayer_jotno"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
@@ -42,7 +43,9 @@
                             android:layout_marginBottom="10dp"
                             android:padding="10dp"
                             app:cardBackgroundColor="@color/background"
-                            app:cardCornerRadius="5dp">
+                            app:cardCornerRadius="5dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground">
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -51,9 +54,7 @@
                                 android:text="@string/mayer_jotno"
                                 android:textColor="@color/button"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground"/>
+                                android:textStyle="bold"/>
                         </androidx.cardview.widget.CardView>
                     </RelativeLayout>
 
@@ -69,6 +70,7 @@
                         android:layout_height="match_parent">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/after_checkup"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
@@ -79,7 +81,9 @@
                             android:layout_marginBottom="10dp"
                             android:padding="10dp"
                             app:cardBackgroundColor="@color/background"
-                            app:cardCornerRadius="5dp">
+                            app:cardCornerRadius="5dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground">
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -88,9 +92,7 @@
                                 android:text="@string/after_checkup"
                                 android:textColor="@color/button"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground"/>
+                                android:textStyle="bold"/>
                         </androidx.cardview.widget.CardView>
                     </RelativeLayout>
 
@@ -106,6 +108,7 @@
                         android:layout_height="match_parent">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/baby_system"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
@@ -116,7 +119,9 @@
                             android:layout_marginBottom="10dp"
                             android:padding="10dp"
                             app:cardBackgroundColor="@color/background"
-                            app:cardCornerRadius="5dp">
+                            app:cardCornerRadius="5dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground">
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -125,9 +130,7 @@
                                 android:text="@string/baby_system"
                                 android:textColor="@color/button"
                                 android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground"/>
+                                android:textStyle="bold"/>
                         </androidx.cardview.widget.CardView>
                     </RelativeLayout>
 

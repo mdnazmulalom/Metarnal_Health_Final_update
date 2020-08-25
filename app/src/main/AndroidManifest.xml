@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mothers.firstaid.FirstaidBeforeProsobActivity"></activity>
+        <activity android:name=".mothers.firstaid.Firstaid_after_1"></activity>
+        <activity android:name=".mothers.firstaid.FirstaidBeforeProsobActivity" />
         <activity android:name=".mothers.FirstaidActivity" />
         <activity android:name=".mothers.firstaid.First_Aid_Home_Activity" />
         <activity android:name=".doctors.DoctorEditProfileActivity" />
