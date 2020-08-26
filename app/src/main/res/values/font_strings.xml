@@ -2,6 +2,17 @@
 <resources>
         <string name="prosob">প্রসব পূর্ব সেবা</string>
         <string name="nobojatok">নবজাতক সম্পর্কিত</string>
+        <string name="firstaid_fistola">প্রসবজনিত ফিস্টুলা</string>
+        <string name="firstaid_after_proshop">প্রসব পরবতী সেবা</string>
+        <string name="firstadi_shisur_poriporok_khabar">শিশুর পরিপূরক খাবার</string>
+        <string name="firstaid_baby_roag">শিশুর রোগ</string>
+        <string name="firstaid_dobejawa_protirodh">শিশুর ডুবে যাওয়া প্রতিরোধ</string>
+        <string name="firstaid_hospital">নগর স্বাস্থ্য কেন্দ্র ও উপজেলা-স্বাস্থ্য-কমপ্লেক্স</string>
+        <string name="firstaid_mobile">মোবাইলে স্বাস্থ্যসেবা</string>
+        <string name="firstaid_jogajog">যোগাযোগ ও মতামত</string>
+
+
+
         <string name="mayer_jotno">১. বাড়িতে প্রসূতি মায়ের যত্ন</string>
         <string name="after_checkup">২. প্রসব পরবর্তী চেকআপ</string>
         <string name="baby_system">৩. দুটি সন্তানের বেশী নয় একটি হলে ভালো হয় </string>
