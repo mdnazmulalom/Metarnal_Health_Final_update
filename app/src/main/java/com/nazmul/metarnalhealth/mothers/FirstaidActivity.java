@@ -9,11 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.R;
-import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidBeforeProsobActivity;
+import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidAfterProsobActivity;
 
 public class FirstaidActivity extends AppCompatActivity {
 
-    CardView before_prosob;
+    CardView before_prosob,after_prosob;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class FirstaidActivity extends AppCompatActivity {
         setContentView(R.layout.activity_firstaid);
 
         before_prosob=findViewById(R.id.beforeprosob);
+        after_prosob=findViewById(R.id.afterprosob);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
@@ -28,14 +29,16 @@ public class FirstaidActivity extends AppCompatActivity {
 
 
 
-        before_prosob.setOnClickListener(new View.OnClickListener() {
+        after_prosob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstaidActivity.this, FirstaidBeforeProsobActivity.class);
+                Intent intent = new Intent(FirstaidActivity.this, FirstaidAfterProsobActivity.class);
                 startActivity(intent);
             }
         });
     }
+
+
 
 
 

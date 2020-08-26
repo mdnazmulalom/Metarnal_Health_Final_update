@@ -3,7 +3,30 @@
         <string name="prosob">প্রসব পূর্ব সেবা</string>
         <string name="nobojatok">নবজাতক সম্পর্কিত</string>
         <string name="firstaid_fistola">প্রসবজনিত ফিস্টুলা</string>
-        <string name="firstaid_after_proshop">প্রসব পরবতী সেবা</string>
+
+        <string name="firstaid_after_proshop">প্রসব পরবর্তী সেবা</string>
+        <string name="firstaid_after_checkup">প্রসব পরবর্তী সময়ে চার বার চেকআপ নিশ্চিত করুন </string>
+        <string name="firstaid_first_checkup"> ১ম চেকআপ : প্রসবের ২৪ ঘন্টার মধ্যে </string>
+        <string name="firstaid_second_checkup"> ২য় চেকআপ : প্রসবের ২-৩ দিনের মধ্যে </string>
+        <string name="firstaid_third_checkup"> ৩য় চেকআপ : প্রসবের ৪-৭ দিনের মধ্যে </string>
+        <string name="firstaid_fourth_checkup"> ৪র্থ চেকআপ : প্রসবের ৪২-৪৫ দিনের মধ্যে  </string>
+
+        <string name="baby_system">৩. দুটি সন্তানের বেশী নয় একটি হলে ভালো হয় </string>
+        <string name="firstaid_baby_system_1">প্রসবের পর পরিবার পরিকল্পনা </string>
+        <string name="firstaid_baby_system_2">*  পরিবার পরিকল্পনা সম্পর্কে পরামর্শ গ্রহন </string>
+        <string name="firstaid_baby_system_3">অস্থায়ী পদ্ধতি</string>
+        <string name="firstaid_baby_system_4">১.  খাবার বড়ি</string>
+        <string name="firstaid_baby_system_5">২.  কনডম</string>
+        <string name="firstaid_baby_system_6">দীর্ঘমেয়াদী পদ্ধতি</string>
+        <string name="firstaid_baby_system_7">১.  আইইউডি</string>
+        <string name="firstaid_baby_system_8">২.  ইনজেকশন </string>
+        <string name="firstaid_baby_system_9">৩.  ইমপ্ল্যান্ট </string>
+        <string name="firstaid_baby_system_10">স্থায়ী পদ্ধতি</string>
+        <string name="firstaid_baby_system_11">১.  টিউবেকটমি </string>
+        <string name="firstaid_baby_system_12">২.  এন এস ভি </string>
+
+
+
         <string name="firstadi_shisur_poriporok_khabar">শিশুর পরিপূরক খাবার</string>
         <string name="firstaid_baby_roag">শিশুর রোগ</string>
         <string name="firstaid_dobejawa_protirodh">শিশুর ডুবে যাওয়া প্রতিরোধ</string>
@@ -15,7 +38,6 @@
 
         <string name="mayer_jotno">১. বাড়িতে প্রসূতি মায়ের যত্ন</string>
         <string name="after_checkup">২. প্রসব পরবর্তী চেকআপ</string>
-        <string name="baby_system">৩. দুটি সন্তানের বেশী নয় একটি হলে ভালো হয় </string>
         <string name="bisram_khabar">বাড়িতে প্রসূতি মায়ের জন্য প্রয়োজনীয় বিশ্রাম ও বাড়তি খাবারের ব্যবস্থা করতে হবে : </string>
         <string name="mayer_bisram">১.  প্রসূতি মায়ের বিশ্রাম </string>
         <string name="baby_jotno">২.  শিশুর জন্য বাবার বেশী সময় দেওয়া </string>
@@ -23,4 +45,7 @@
         <string name="jotno_4">৪.  শক্তিদায়ক খাবার</string>
         <string name="jotno_5">৫.  শরীর বৃদ্ধিকারী খাবার</string>
         <string name="jotno_6">৬.  রোগ প্রতিরোধক খাবার</string>
+
+
+
 </resources>

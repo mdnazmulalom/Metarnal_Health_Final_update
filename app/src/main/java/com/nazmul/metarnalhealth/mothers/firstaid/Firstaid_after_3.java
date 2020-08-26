@@ -7,18 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.nazmul.metarnalhealth.R;
 
-public class Firstaid_after_1 extends AppCompatActivity {
+public class Firstaid_after_3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firstaid_after_1);
+        setContentView(R.layout.activity_firstaid_after_3);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
-        getSupportActionBar().setTitle("বাড়িতে প্রসূতি মায়ের যত্ন");
+        getSupportActionBar().setTitle("দুটি সন্তানের বেশী নয় একটি হলে ভালো হয়");
     }
-
     //for back button
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
