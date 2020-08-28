@@ -10,6 +10,7 @@ import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.R;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidAfterProsobActivity;
+import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidBeforeProsobActivity;
 
 public class FirstaidActivity extends AppCompatActivity {
 
@@ -27,7 +28,13 @@ public class FirstaidActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
         getSupportActionBar().setTitle("নীড় পাতা ");
 
-
+        before_prosob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstaidActivity.this, FirstaidBeforeProsobActivity.class);
+                startActivity(intent);
+            }
+        });
 
         after_prosob.setOnClickListener(new View.OnClickListener() {
             @Override

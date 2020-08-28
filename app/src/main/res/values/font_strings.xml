@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <string name="prosob">প্রসব পূর্ব সেবা</string>
+
+        <string name="firstaid_before_prosob_1">গর্ভকালীন চেকআপ চার বার</string>
+        <string name="firstaid_checkuptime_1">গর্ভবতীর শারিরিক অবস্থা ও গর্ভস্থ সন্তানের সুস্থতা বোঝার জন্য-ই গর্ভকালীন চেকআপ ।
+                গর্ভকালীন চেকআপের জন্য চার-বার(৪) নিয়মিত নিকটস্থ স্বাস্থ্যকেন্দ্র বা স্যাটেলাইট ক্লিনিকে যাবেন ।</string>
+        <string name="firstaid_checkuptime_2">১ম চেকআপ : গর্ভবতী হওয়ার পর যত তাড়াতাড়ি সম্ভব ।</string>
+        <string name="firstaid_checkuptime_3">২য় চেকআপ : ৪-৬ মাসের মধ্যে ।</string>
+        <string name="firstaid_checkuptime_4">৩য় চেকআপ : গর্ভের ৮(আট) মাস হলে ।</string>
+        <string name="firstaid_checkuptime_5">৪র্থ চেকআপ :গর্ভের ৯(নয়) মাস হলে ।</string>
+
+        <string name="firstaid_before_prosob_2">গর্ভবতী মহিলার স্বাস্থ্যকেন্দ্রে সেবা গ্রহন</string>
+        <string name="firstaid_health_seba_1">স্বাস্থ্যকেন্দ্রে সেবাগ্রহনকালে স্বাস্থ্যকর্মী যা যা পরীক্ষা করবেন সেগুলো হল :</string>
+        <string name="firstaid_health_seba_2">১.  ওজন দেখা</string>
+        <string name="firstaid_health_seba_3">২.  রক্তচাপ পরিমাপ</string>
+        <string name="firstaid_health_seba_4">৩.  রক্তশূন্যতা পরিমাপ</string>
+        <string name="firstaid_health_seba_5">৪.  জরায়ুর উচ্চতা মাপা</string>
+        <string name="firstaid_health_seba_6">৫.  টিটি টিকা দেওয়া</string>
+
+
+
+        <string name="firstaid_before_prosob_3">বাড়িতে গর্ভবতী মহিলার যত্ন</string>
+        <string name="firstaid_home_seba_1">গর্ভকালীন সময়ে যে সব যত্ন নেওয়া উচিত :</string>
+        <string name="firstaid_home_seba_2">১.  দিনের বেলা অন্তত দুই ঘন্টা বিশ্রাম নেওয়া</string>
+        <string name="firstaid_home_seba_3">২.  বেশী পরিমান পুষ্টিকর খাবার খাওয়া</string>
+        <string name="firstaid_home_seba_4">৩.  গর্ভবতীকে হাসি-খুশি রাখা</string>
+        <string name="firstaid_home_seba_5">৪.  ভরাপেটে আয়রন/ফলিক এসিড ট্যাবলেট খাওয়া</string>
+        <string name="firstaid_home_seba_6">গর্ভকালীন সময়ে যে সমস্ত ভারী কাজ করা উচিত নয়</string>
+        <string name="firstaid_home_seba_7">১.  টিউবওয়েল চাপা</string>
+        <string name="firstaid_home_seba_8">২.  ধান ভানা</string>
+        <string name="firstaid_home_seba_9">৩.  ভারী জিনিস তোলা</string>
+        <string name="firstaid_home_seba_10">৪.  অতিরিক্ত/ভারী কাপড় ধোয়া</string>
+
+
+        <string name="firstaid_before_prosob_4">প্রসব পরিকল্পনা</string>
+        <string name="firstaid_prosob_porikolpona_1">কোথায় ডেলিভারী করানো হবে,
+                সে ব্যাপারে পরিবারে আগে থেকে-ই সিদ্ধান্ত নিতে হবে :</string>
+        <string name="firstaid_prosob_porikolpona_2">১.  হাসপাতালে প্রসব করার সিদ্ধান্ত নিন</string>
+        <string name="firstaid_prosob_porikolpona_3">২.  হাসপাতালে সম্ভব না হলে, প্রশিক্ষনপ্রাপ্ত প্রসব সহায়তাকারী ঠিক করে রাখুন এবং তার মোবাইল নাম্বার সংগ্রহ করুন</string>
+        <string name="firstaid_prosob_porikolpona_4">৩.  গর্ভের শুরু থেকেই টাকা জমিয়ে রাখুন</string>
+        <string name="firstaid_prosob_porikolpona_5">৪.  যানবাহন ঠিক করে রাখুন এবং তাদের মোবাইল নাম্বার সাথে রাখুন</string>
+        <string name="firstaid_prosob_porikolpona_6">৫.  রক্তদাতা যোগাড় করে রাখুন</string>
+
+
+
+
+        <string name="firstaid_before_prosob_5">গর্ভ, প্রসব ও প্রসব পরবর্তী সময়ে মায়ের প্রধান ৫টি বিপদ চিহ্ন</string>
+        <string name="firstaid_bipod_1">পাঁচটি (৫) বিপদ চিহ্ন চিনে রাখব, দ্রুত স্বাস্থ্যকেন্দ্রে চিকিৎসা সুনিশ্চিত করব :</string>
+        <string name="firstaid_bipod_2">১.  অতিরিক্ত রক্তস্রাব ও গর্ভফুল না পড়া</string>
+        <string name="firstaid_bipod_3">২.  শরীরে পানি আসা, মাথা ব্যাথা ও চোখে ঝাপসা দেখা</string>
+        <string name="firstaid_bipod_4">৩.  খিচুনি</string>
+        <string name="firstaid_bipod_5">৪.  বিলম্বিত প্রসব ও প্রসবের সময় বাচ্চার মাথা ছাড়া অন্য কোন অঙ্গ প্রথমে বের হওয়া</string>
+        <string name="firstaid_bipod_6">৫.  তিন (৩)দিনের বেশী জ্বর বা দুর্গন্ধযুক্ত স্রাব</string>
+        <string name="firstaid_bipod_7">এই সমম্ত লক্ষন দেখা দেওয়া মাত্রই, দ্রুত নিকটস্ত স্বাস্থ্য কেন্দ্রে প্রেরন করতে হবে ।</string>
+
+
+
+        <string name="firstaid_before_prosob_6">গর্ভবতী পরিবারের প্রস্তুতি ও প্রয়োজনীয় উপকরন</string>
+        <string name="firstaid_family_preparation_1">গর্ভবতী পরিবারের প্রস্তুতি :</string>
+        <string name="firstaid_family_preparation_2">১.  প্রসবের জন্য পরিষ্কার ও আলো বাতাসপূর্ণ স্থান</string>
+        <string name="firstaid_family_preparation_3">২.  নবজাতকে মোছানো ও মোড়ানোর জন্য তিন টুকরো কাপড়</string>
+        <string name="firstaid_family_preparation_4">প্রসবকালীন প্রয়োজনীয় উপকরন (সুতা, ব্লেড) জীবাণুমুক্ত করার পদ্ধতি :</string>
+        <string name="firstaid_family_preparation_5">১.  নতুন ব্লেড ও তিন টুকরা সুতা</string>
+        <string name="firstaid_family_preparation_6">2.  ব্লেড ও সুতা জীবাণুমুক্ত করার জন্য পানিতে ফোটানোর ব্যবস্থা</string>
+        <string name="firstaid_family_preparation_7">3.  চাল পুরো সিদ্ধ না হওয়া পর্যন্ত ঢাকনা দিয়ে ঢেকে পানি ফোটান</string>
+        <string name="firstaid_family_preparation_8">৪.  ব্লেড ও সুতা বাটিতে করে ঢাকনা দিয়ে ঢেকে রাখুন</string>
+
+        <string name="firstaid_before_prosob_7">দক্ষ প্রসব সহায়তাকারীর প্রয়োজনীয় প্রস্তুতি, (যদি হাসপাতালে না হয়)</string>
+        <string name="firstaid_dokkho_sohayok_1">প্রশিক্ষণপ্রাপ্ত দক্ষ প্রসব সহায়তাকারী হাতের চুড়ি, ঘড়ি ও আংটি খুলে রাখবেন ।  তার প্রস্তুতি গুলোর মধ্যে রয়েছে :</string>
+        <string name="firstaid_dokkho_sohayok_2">১.  নখ কাটা</string>
+        <string name="firstaid_dokkho_sohayok_3">২.  দুই হাতের তালু ও আঙুল এবং আঙ্গুলের ফাঁক</string>
+        <string name="firstaid_dokkho_sohayok_4">৩.  হাতের পিঠ</string>
+        <string name="firstaid_dokkho_sohayok_5">৪.  আঙুলের গিঁট</string>
+        <string name="firstaid_dokkho_sohayok_6">৫.  বৃদ্ধাঙ্গুলি-সহ সবকটি আঙুল এক এক করে</string>
+        <string name="firstaid_dokkho_sohayok_7">৬.  আঙুলের অগ্রভাগ</string>
+        <string name="firstaid_dokkho_sohayok_8">৭.  কব্জি ও কুনুই পর্যন্ত সামনের বাহু</string>
+        <string name="firstaid_dokkho_sohayok_9">৮.  দুই হাত উঁচুকরে বাতাসে শুকানো</string>
+
+
+
         <string name="nobojatok">নবজাতক সম্পর্কিত</string>
         <string name="firstaid_fistola">প্রসবজনিত ফিস্টুলা</string>
 
@@ -34,8 +112,6 @@
         <string name="firstaid_mobile">মোবাইলে স্বাস্থ্যসেবা</string>
         <string name="firstaid_jogajog">যোগাযোগ ও মতামত</string>
 
-
-
         <string name="mayer_jotno">১. বাড়িতে প্রসূতি মায়ের যত্ন</string>
         <string name="after_checkup">২. প্রসব পরবর্তী চেকআপ</string>
         <string name="bisram_khabar">বাড়িতে প্রসূতি মায়ের জন্য প্রয়োজনীয় বিশ্রাম ও বাড়তি খাবারের ব্যবস্থা করতে হবে : </string>
@@ -45,7 +121,4 @@
         <string name="jotno_4">৪.  শক্তিদায়ক খাবার</string>
         <string name="jotno_5">৫.  শরীর বৃদ্ধিকারী খাবার</string>
         <string name="jotno_6">৬.  রোগ প্রতিরোধক খাবার</string>
-
-
-
 </resources>
