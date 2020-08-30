@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mothers.firstaid.FirstaidFistulaActivity">
+    tools:context=".mothers.firstaid.FirstAidPoripurokKhabar">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutheader"
@@ -64,72 +64,125 @@
                     android:id="@+id/textView18"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/button"
+                    android:background="@color/yollow"
                     android:padding="10dp"
-                    android:text="@string/firstaid_fistola_1"
+                    android:text="@string/firstaid_shisur_poriporok_khabar"
                     android:textColor="@color/background"
                     android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="240dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/skhabar_1" />
 
                 <TextView
                     android:id="@+id/textView19"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:background="@drawable/button_background_1"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_background"
                     android:padding="10dp"
-                    android:text="@string/firstaid_fistola_2"
+                    android:text="@string/firstaid_shisur_poriporok_khabar_1"
                     android:textColor="@color/background"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/skhabar_2" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:background="#F8A731"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_background"
                     android:padding="10dp"
-                    android:text="@string/firstaid_fistola_3"
-                    android:textColor="@color/background"
-                    android:textSize="20sp" />
-
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="40dp"
-                    android:layout_height="wrap_content"
-                    android:background="@color/button"
-                    android:padding="10dp"
-                    android:text="@string/firstaid_fistola_4"
-                    android:textColor="@color/background"
-                    android:textSize="20sp" />
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:background="@drawable/button_background_1"
-                    android:padding="10dp"
-                    android:text="@string/firstaid_fistola_5"
+                    android:text="@string/firstaid_shisur_poriporok_khabar_2"
                     android:textColor="@color/background"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/skhabar_3" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_background"
+                    android:padding="10dp"
+                    android:text="@string/firstaid_shisur_poriporok_khabar_3"
+                    android:textColor="@color/background"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/skhabar_4" />
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:background="#F8A731"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_background"
                     android:padding="10dp"
-                    android:text="@string/firstaid_fistola_6"
+                    android:text="@string/firstaid_shisur_poriporok_khabar_4"
                     android:textColor="@color/background"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/skhabar_5" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_background"
+                    android:padding="10dp"
+                    android:text="@string/firstaid_shisur_poriporok_khabar_5"
+                    android:textColor="@color/background"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/skhabar_6" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_background"
+                    android:padding="10dp"
+                    android:text="@string/firstaid_shisur_poriporok_khabar_6"
+                    android:textColor="@color/background"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </LinearLayout>

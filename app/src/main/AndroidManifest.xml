@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mothers.firstaid.FirstaidFistulaActivity"></activity>
+        <activity android:name=".mothers.firstaid.FirstaidShishuRogActivity"></activity>
+        <activity android:name=".mothers.firstaid.FirstAidPoripurokKhabar" />
+        <activity android:name=".mothers.firstaid.FirstaidFistulaActivity" />
         <activity android:name=".mothers.firstaid.FirstAid_Before_7" />
         <activity android:name=".mothers.firstaid.FirstAid_Before_6" />
         <activity android:name=".mothers.firstaid.FirstAid_Before_5" />

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <string name="prosob">প্রসব পূর্ব সেবা</string>
-
         <string name="firstaid_before_prosob_1">গর্ভকালীন চেকআপ চার বার</string>
         <string name="firstaid_checkuptime_1">গর্ভবতীর শারিরিক অবস্থা ও গর্ভস্থ সন্তানের সুস্থতা বোঝার জন্য-ই গর্ভকালীন চেকআপ ।
                 গর্ভকালীন চেকআপের জন্য চার-বার(৪) নিয়মিত নিকটস্থ স্বাস্থ্যকেন্দ্র বা স্যাটেলাইট ক্লিনিকে যাবেন ।</string>
@@ -18,8 +17,6 @@
         <string name="firstaid_health_seba_5">৪.  জরায়ুর উচ্চতা মাপা</string>
         <string name="firstaid_health_seba_6">৫.  টিটি টিকা দেওয়া</string>
 
-
-
         <string name="firstaid_before_prosob_3">বাড়িতে গর্ভবতী মহিলার যত্ন</string>
         <string name="firstaid_home_seba_1">গর্ভকালীন সময়ে যে সব যত্ন নেওয়া উচিত :</string>
         <string name="firstaid_home_seba_2">১.  দিনের বেলা অন্তত দুই ঘন্টা বিশ্রাম নেওয়া</string>
@@ -32,7 +29,6 @@
         <string name="firstaid_home_seba_9">৩.  ভারী জিনিস তোলা</string>
         <string name="firstaid_home_seba_10">৪.  অতিরিক্ত/ভারী কাপড় ধোয়া</string>
 
-
         <string name="firstaid_before_prosob_4">প্রসব পরিকল্পনা</string>
         <string name="firstaid_prosob_porikolpona_1">কোথায় ডেলিভারী করানো হবে,
                 সে ব্যাপারে পরিবারে আগে থেকে-ই সিদ্ধান্ত নিতে হবে :</string>
@@ -43,8 +39,6 @@
         <string name="firstaid_prosob_porikolpona_6">৫.  রক্তদাতা যোগাড় করে রাখুন</string>
 
 
-
-
         <string name="firstaid_before_prosob_5">গর্ভ, প্রসব ও প্রসব পরবর্তী সময়ে মায়ের প্রধান ৫টি বিপদ চিহ্ন</string>
         <string name="firstaid_bipod_1">পাঁচটি (৫) বিপদ চিহ্ন চিনে রাখব, দ্রুত স্বাস্থ্যকেন্দ্রে চিকিৎসা সুনিশ্চিত করব :</string>
         <string name="firstaid_bipod_2">১.  অতিরিক্ত রক্তস্রাব ও গর্ভফুল না পড়া</string>
@@ -53,8 +47,6 @@
         <string name="firstaid_bipod_5">৪.  বিলম্বিত প্রসব ও প্রসবের সময় বাচ্চার মাথা ছাড়া অন্য কোন অঙ্গ প্রথমে বের হওয়া</string>
         <string name="firstaid_bipod_6">৫.  তিন (৩)দিনের বেশী জ্বর বা দুর্গন্ধযুক্ত স্রাব</string>
         <string name="firstaid_bipod_7">এই সমম্ত লক্ষন দেখা দেওয়া মাত্রই, দ্রুত নিকটস্ত স্বাস্থ্য কেন্দ্রে প্রেরন করতে হবে ।</string>
-
-
 
         <string name="firstaid_before_prosob_6">গর্ভবতী পরিবারের প্রস্তুতি ও প্রয়োজনীয় উপকরন</string>
         <string name="firstaid_family_preparation_1">গর্ভবতী পরিবারের প্রস্তুতি :</string>
@@ -83,21 +75,31 @@
 
 
         <string name="firstaid_fistola">প্রসবজনিত ফিস্টুলা</string>
-        <string name="firstaid_fistola_1">পফিস্টুলা কি ?</string>
+        <string name="firstaid_fistola_1">ফিস্টুলা কি ?</string>
         <string name="firstaid_fistola_2">বিলম্বিত ও বাধাগ্রসস্ত প্রসবের কারনে সৃষ্ট ক্ষতের মধ্যে দিয়ে প্রসব
                 পথে অনবরত প্রস্রাব বা পায়খানা বা উভয় ঝরাকে প্রসব জনিত ফিস্টুলা বলা হয় ।
-               \n \n এই সমস্যার পাশাপাশি ফিস্টুলা রোগীরা আরো অনেক শারীরিক সমস্যায় ভুগতে পারেন ।লা</string>
+               \n \nএই সমস্যার পাশাপাশি ফিস্টুলা রোগীরা আরো অনেক শারীরিক সমস্যায় ভুগতে পারেন ।লা</string>
         <string name="firstaid_fistola_3">* ফিস্টুলা রোগীরা সাধারনত \n সামাজিকভাবে অবহেলা এবং অবমাননার শিকার হন,
                 যা তাদের জীবনকে দুর্বিসহ করে তোলে ।</string>
         <string name="firstaid_fistola_4">প্রসবজনিত ফিস্টুলায় আক্রান্ত-মহিলাদরে সনাক্ত করার চেকলিস্ট :</string>
         <string name="firstaid_fistola_5">১. মহিলার প্রসব বা ডেলিভারি হয়েছিল ?
-                \n ২. প্রসব বা ডেলিভারির ব্যাথা ১২ ঘন্টার বেশী স্থায়ী হয়েছিল ?
+                \n২. প্রসব বা ডেলিভারির ব্যাথা ১২ ঘন্টার বেশী স্থায়ী হয়েছিল ?
                 \n ৩. প্রসব পরবর্তী মাসিকের রাস্তা দিয়ে সর্বক্ষন পস্রাব বা পায়খানা ঝরে</string>
         <string name="firstaid_fistola_6">* উপরের সবগুলো প্রশ্নের উত্তর ‘হ্যাঁ’ হলে এই মহিলাকে হাসপাতালে রেফার করুন</string>
 
 
-
         <string name="firstaid_after_proshop">প্রসব পরবর্তী সেবা</string>
+        <string name="mayer_jotno">১. বাড়িতে প্রসূতি মায়ের যত্ন</string>
+        <string name="bisram_khabar">বাড়িতে প্রসূতি মায়ের জন্য প্রয়োজনীয় বিশ্রাম ও বাড়তি খাবারের ব্যবস্থা করতে হবে : </string>
+        <string name="mayer_bisram">১.  প্রসূতি মায়ের বিশ্রাম </string>
+        <string name="baby_jotno">২.  শিশুর জন্য বাবার বেশী সময় দেওয়া </string>
+        <string name="mayer_khabar">৩.  প্রসূতি মায়ের জন্য বাড়তি খাবার </string>
+        <string name="jotno_4">৪.  শক্তিদায়ক খাবার</string>
+        <string name="jotno_5">৫.  শরীর বৃদ্ধিকারী খাবার</string>
+        <string name="jotno_6">৬.  রোগ প্রতিরোধক খাবার</string>
+
+
+        <string name="after_checkup">২. প্রসব পরবর্তী চেকআপ</string>
         <string name="firstaid_after_checkup">প্রসব পরবর্তী সময়ে চার বার চেকআপ নিশ্চিত করুন </string>
         <string name="firstaid_first_checkup"> ১ম চেকআপ : প্রসবের ২৪ ঘন্টার মধ্যে </string>
         <string name="firstaid_second_checkup"> ২য় চেকআপ : প্রসবের ২-৩ দিনের মধ্যে </string>
@@ -120,20 +122,75 @@
 
 
 
-        <string name="firstadi_shisur_poriporok_khabar">শিশুর পরিপূরক খাবার</string>
+        <string name="firstaid_shisur_poriporok_khabar">শিশুর পরিপূরক খাবার</string>
+        <string name="firstaid_shisur_poriporok_khabar_1">১.  জন্মের পর ৬ মাস পূর্ণ হবার পর মায়ের দুধের পাশাপাশি বাড়তি খাবার খাওয়ান</string>
+        <string name="firstaid_shisur_poriporok_khabar_2">শ২.  শিশুকে প্রতিদিন পারিবারিক খাবার দিন</string>
+        <string name="firstaid_shisur_poriporok_khabar_3">৩.  প্রতিদিন কমপক্ষে ৩ বার বাড়তি খাবার ও ১-২ বার পুষ্টিকর নাস্তা দিন এবং
+                বয়স বাড়ার সাথে সাথে খাবারের পরিমান ও বাড়ান</string>
+        <string name="firstaid_shisur_poriporok_khabar_4">৪.  প্রতিদিস মাছ বা মাংস বা ডিম+ঘন ডাল+শাক অথবা হলুদ সবজি
+                ফল+১চা চামচ তেল এবং গরুর দুধ দিয়ে তৈলী খাবার খাওয়ান</string>
+        <string name="firstaid_shisur_poriporok_khabar_5">৫.  যথেষ্ট সময় নিয়ে শিশুকে আদর যত্ন সহকারে খাওয়ান</string>
+        <string name="firstaid_shisur_poriporok_khabar_6">৬.  খাবার তৈরী করা ও খাওয়ানোর আগে ভালভাবে হাত ধুয়ে নিন</string>
+
+
+
         <string name="firstaid_baby_roag">শিশুর রোগ</string>
+        <string name="firstaid_sordi_kasi_1">১. শিশুর সর্দি-কাশির লক্ষন</string>
+        <string name="firstaid_sordi_kasi_2">১. নাক দিয়ে পানি ঝরবে</string>
+        <string name="firstaid_sordi_kasi_3">২. কাশি থাকবে</string>
+        <string name="firstaid_sordi_kasi_4">৩. চোখ কিছুটা লাল হবে এবং পানি পড়তে পারে</string>
+        <string name="firstaid_sordi_kasi_5">৪. অল্প অল্প জ্বর ও থাকতে পারে</string>
+
+        <string name="firstaid_niomonia">২. নিউমোনিয়া কী</string>
+        <string name="firstaid_niomonia_1">নিউমোনিয়া হল একটি ফুসফুসপ্রদাহ সৃষ্টিকারী রোগ</string>
+        <string name="firstaid_niomonia_2">১.  সুস্থ শিশু</string>
+        <string name="firstaid_niomonia_3">২.  সর্দি-কাশিতে আক্রান্ত শিশু</string>
+        <string name="firstaid_niomonia_4">৩.  নিউমোনিয়ায় আক্রান্ত শিশু</string>
+        <string name="firstaid_niomonia_5">শিশুর নিউমোনিয়ার লক্ষন</string>
+        <string name="firstaid_niomonia_6">১.  স্বাভাবিকের চেয়ে দ্রুত শ্বাস নিলে এবং শ্বাস নিতে কষ্ট হলে</string>
+        <string name="firstaid_niomonia_7">২.  শ্বাস নেবার সময় বুকের নিচের অংশ দেবে গেলে</string>
+        <string name="firstaid_niomonia_8">৩.  শরীর নেতিয়ে বা অজ্ঞান হয়ে পড়লে</string>
+
+        <string name="firstaid_diriya">৩. শিশুর ডায়রিয়া</string>
+        <string name="firstaid_diriya_1">ডায়রিয়ার কারনে পানি সল্পতার কারন</string>
+        <string name="firstaid_diriya_2">১.  নেতিয়ে পড়ে বা অজ্ঞান হয়ে যায়</string>
+        <string name="firstaid_diriya_3">২.  চোখ বসে যায়</string>
+        <string name="firstaid_diriya_4">৩.  তরল পান করতে পারে না বা কম পান করে অথবা খুব আগ্রহের সাথে পান করে</string>
+        <string name="firstaid_diriya_5">৪.  চামড়া টেনে ধরে ছেড়ে দিলে খুব ধীরে ধীরে স্বাভাবিক অবস্থায় ফিরে যায়</string>
+
+
         <string name="firstaid_dobejawa_protirodh">শিশুর ডুবে যাওয়া প্রতিরোধ</string>
+        <string name="firstaid_dobejawa_protirodh_1">শিশুর ডুবে যাওয়া প্রতিরোধ-১</string>
+        <string name="firstaid_dobejawa_protirodh_2">ঝুঁকিসমূহ</string>
+        <string name="firstaid_dobejawa_protirodh_3">১.  বাড়ির কাছে পুকুর বা ডোবায় ডুবে যেতে পারে</string>
+        <string name="firstaid_dobejawa_protirodh_4">২.  বড় পানির পাত্রে ডুবে যেতে পারে</string>
+        <string name="firstaid_dobejawa_protirodh_5">৩.  বাড়ির আশেপাশের গর্তে জমা পানিতে ডুবে যেতে পারে প্রতিরোধে যা করণীয়</string>
+        <string name="firstaid_dobejawa_protirodh_6">১.  ঘরের দরজায়, বাড়ির চারিদিকে বা পুকুরে যাবার পথে বেড়া দেয়া এবং ছোট শিশুকে প্লে-পেনে রাখা</string>
+        <string name="firstaid_dobejawa_protirodh_7">২.  বড় পাত্রের পানি ফেলে দেওয়া বা ঢেকে রাখা</string>
+        <string name="firstaid_dobejawa_protirodh_8">৩.  বাড়ির আশেপাশের ছোট-বড় গর্ত ভরাট করা</string>
+
+        <string name="firstaid_dobejawa_protirodh_9">শিশুর ডুবে যাওয়া প্রতিরোধ-২</string>
+        <string name="firstaid_dobejawa_protirodh_10">ঝুঁকিসমূহ</string>
+        <string name="firstaid_dobejawa_protirodh_11">১.  ১ থেকে ৪ বছরের শিশুরা সবচেয়ে বেশী পানিতে ডুবে মারা যায়</string>
+        <string name="firstaid_dobejawa_protirodh_12">২.  সাঁতার না জানলে শিশু পুকুরের পানিতে ডুবে মারা যেতে পারে</string>
+        <string name="firstaid_dobejawa_protirodh_13">৩.  শিশু হাঁটা শিখলে কখন কোথায় যায় তা জানা বা বোঝা যায় না</string>
+        <string name="firstaid_dobejawa_protirodh_14">প্রতিরোধে যা করণীয়</string>
+        <string name="firstaid_dobejawa_protirodh_15">১.  বয়ষ্ক সদস্যদের কাছে শিশুকে সার্বক্ষণিক তত্বাবধানে রাখা</string>
+        <string name="firstaid_dobejawa_protirodh_16">২.  বড় কারো তত্বাবধানে শিশুদের সাঁতার শেখানো</string>
+        <string name="firstaid_dobejawa_protirodh_17">৩.  শিশুর কোমরে বা পায়ে ঘুঙুর বেঁধে দেয়া</string>
+
+
+
+
+
+
+
+
+
+
         <string name="firstaid_hospital">নগর স্বাস্থ্য কেন্দ্র ও উপজেলা-স্বাস্থ্য-কমপ্লেক্স</string>
         <string name="firstaid_mobile">মোবাইলে স্বাস্থ্যসেবা</string>
         <string name="firstaid_jogajog">যোগাযোগ ও মতামত</string>
 
-        <string name="mayer_jotno">১. বাড়িতে প্রসূতি মায়ের যত্ন</string>
-        <string name="after_checkup">২. প্রসব পরবর্তী চেকআপ</string>
-        <string name="bisram_khabar">বাড়িতে প্রসূতি মায়ের জন্য প্রয়োজনীয় বিশ্রাম ও বাড়তি খাবারের ব্যবস্থা করতে হবে : </string>
-        <string name="mayer_bisram">১.  প্রসূতি মায়ের বিশ্রাম </string>
-        <string name="baby_jotno">২.  শিশুর জন্য বাবার বেশী সময় দেওয়া </string>
-        <string name="mayer_khabar">৩.  প্রসূতি মায়ের জন্য বাড়তি খাবার </string>
-        <string name="jotno_4">৪.  শক্তিদায়ক খাবার</string>
-        <string name="jotno_5">৫.  শরীর বৃদ্ধিকারী খাবার</string>
-        <string name="jotno_6">৬.  রোগ প্রতিরোধক খাবার</string>
+
 </resources>

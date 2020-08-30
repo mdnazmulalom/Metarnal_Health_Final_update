@@ -9,13 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.R;
+import com.nazmul.metarnalhealth.mothers.firstaid.FirstAidPoripurokKhabar;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidAfterProsobActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidBeforeProsobActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidFistulaActivity;
+import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidShishuRogActivity;
 
 public class FirstaidActivity extends AppCompatActivity {
 
-    CardView before_prosob,after_prosob,prosobfistula;
+    CardView before_prosob,after_prosob,prosobfistula,shishuporipurokkhabar,shishurog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class FirstaidActivity extends AppCompatActivity {
         before_prosob=findViewById(R.id.beforeprosob);
         after_prosob=findViewById(R.id.afterprosob);
         prosobfistula=findViewById(R.id.prosob_fistula);
+        shishuporipurokkhabar=findViewById(R.id.shishu_poripurok_khabar);
+        shishurog=findViewById(R.id.shishu_rog);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
@@ -49,6 +53,22 @@ public class FirstaidActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstaidActivity.this, FirstaidFistulaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        shishuporipurokkhabar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstaidActivity.this, FirstAidPoripurokKhabar.class);
+                startActivity(intent);
+            }
+        });
+
+        shishurog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstaidActivity.this, FirstaidShishuRogActivity.class);
                 startActivity(intent);
             }
         });
