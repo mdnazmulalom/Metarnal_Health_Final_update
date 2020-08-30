@@ -78,7 +78,7 @@
         <string name="firstaid_fistola_1">ফিস্টুলা কি ?</string>
         <string name="firstaid_fistola_2">বিলম্বিত ও বাধাগ্রসস্ত প্রসবের কারনে সৃষ্ট ক্ষতের মধ্যে দিয়ে প্রসব
                 পথে অনবরত প্রস্রাব বা পায়খানা বা উভয় ঝরাকে প্রসব জনিত ফিস্টুলা বলা হয় ।
-               \n \nএই সমস্যার পাশাপাশি ফিস্টুলা রোগীরা আরো অনেক শারীরিক সমস্যায় ভুগতে পারেন ।লা</string>
+               \n \nএই সমস্যার পাশাপাশি ফিস্টুলা রোগীরা আরো অনেক শারীরিক সমস্যায় ভুগতে পারেন ।</string>
         <string name="firstaid_fistola_3">* ফিস্টুলা রোগীরা সাধারনত \n সামাজিকভাবে অবহেলা এবং অবমাননার শিকার হন,
                 যা তাদের জীবনকে দুর্বিসহ করে তোলে ।</string>
         <string name="firstaid_fistola_4">প্রসবজনিত ফিস্টুলায় আক্রান্ত-মহিলাদরে সনাক্ত করার চেকলিস্ট :</string>
@@ -124,7 +124,7 @@
 
         <string name="firstaid_shisur_poriporok_khabar">শিশুর পরিপূরক খাবার</string>
         <string name="firstaid_shisur_poriporok_khabar_1">১.  জন্মের পর ৬ মাস পূর্ণ হবার পর মায়ের দুধের পাশাপাশি বাড়তি খাবার খাওয়ান</string>
-        <string name="firstaid_shisur_poriporok_khabar_2">শ২.  শিশুকে প্রতিদিন পারিবারিক খাবার দিন</string>
+        <string name="firstaid_shisur_poriporok_khabar_2">২.  শিশুকে প্রতিদিন পারিবারিক খাবার দিন</string>
         <string name="firstaid_shisur_poriporok_khabar_3">৩.  প্রতিদিন কমপক্ষে ৩ বার বাড়তি খাবার ও ১-২ বার পুষ্টিকর নাস্তা দিন এবং
                 বয়স বাড়ার সাথে সাথে খাবারের পরিমান ও বাড়ান</string>
         <string name="firstaid_shisur_poriporok_khabar_4">৪.  প্রতিদিস মাছ বা মাংস বা ডিম+ঘন ডাল+শাক অথবা হলুদ সবজি
@@ -168,6 +168,7 @@
         <string name="firstaid_dobejawa_protirodh_6">১.  ঘরের দরজায়, বাড়ির চারিদিকে বা পুকুরে যাবার পথে বেড়া দেয়া এবং ছোট শিশুকে প্লে-পেনে রাখা</string>
         <string name="firstaid_dobejawa_protirodh_7">২.  বড় পাত্রের পানি ফেলে দেওয়া বা ঢেকে রাখা</string>
         <string name="firstaid_dobejawa_protirodh_8">৩.  বাড়ির আশেপাশের ছোট-বড় গর্ত ভরাট করা</string>
+        <string name="firstaid_dobejawa_protirodh_18">  প্রতিরোধে যা করণীয়</string>
 
         <string name="firstaid_dobejawa_protirodh_9">শিশুর ডুবে যাওয়া প্রতিরোধ-২</string>
         <string name="firstaid_dobejawa_protirodh_10">ঝুঁকিসমূহ</string>
