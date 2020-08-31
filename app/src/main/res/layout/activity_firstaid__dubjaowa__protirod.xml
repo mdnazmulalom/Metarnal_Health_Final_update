@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mothers.firstaid.FirstaidShishuRogActivity">
+    tools:context=".mothers.firstaid.Firstaid_Dubjaowa_Protirod">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
                         android:layout_height="match_parent">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/shishu_sordi_kasi"
+                            android:id="@+id/dobejaowa_protirod_1"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
@@ -50,7 +50,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="@string/firstaid_sordi_kasi_1"
+                                android:text="@string/firstaid_dobejawa_protirodh_1"
                                 android:textColor="@color/button"
                                 android:textSize="16sp"
                                 android:textStyle="bold"/>
@@ -69,7 +69,7 @@
                         android:layout_height="match_parent">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/shishu_niumonia"
+                            android:id="@+id/dobejaowa_protirod_2"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginStart="10dp"
@@ -88,7 +88,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="@string/firstaid_niomonia"
+                                android:text="@string/firstaid_dobejawa_protirodh_9"
                                 android:textColor="@color/button"
                                 android:textSize="16sp"
                                 android:textStyle="bold"/>
@@ -104,34 +104,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/shishu_diariya"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:padding="10dp"
-                            app:cardBackgroundColor="@color/background"
-                            app:cardCornerRadius="5dp"
-                            android:clickable="true"
-                            android:foreground="?android:attr/selectableItemBackground">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="@string/firstaid_diriya"
-                                android:textColor="@color/button"
-                                android:textSize="16sp"
-                                android:textStyle="bold"/>
-                        </androidx.cardview.widget.CardView>
-                    </RelativeLayout>
+                        android:layout_height="match_parent"/>
 
                 </LinearLayout>
 

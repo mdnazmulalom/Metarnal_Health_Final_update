@@ -14,10 +14,11 @@ import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidAfterProsobActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidBeforeProsobActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidFistulaActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidShishuRogActivity;
+import com.nazmul.metarnalhealth.mothers.firstaid.Firstaid_Dubjaowa_Protirod;
 
 public class FirstaidActivity extends AppCompatActivity {
 
-    CardView before_prosob,after_prosob,prosobfistula,shishuporipurokkhabar,shishurog;
+    CardView before_prosob,after_prosob,prosobfistula,shishuporipurokkhabar,shishurog,shishudobejaowaprotirod;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class FirstaidActivity extends AppCompatActivity {
         prosobfistula=findViewById(R.id.prosob_fistula);
         shishuporipurokkhabar=findViewById(R.id.shishu_poripurok_khabar);
         shishurog=findViewById(R.id.shishu_rog);
+        shishudobejaowaprotirod=findViewById(R.id.shishu_dobejaowa_protirod);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
@@ -69,6 +71,13 @@ public class FirstaidActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstaidActivity.this, FirstaidShishuRogActivity.class);
+                startActivity(intent);
+            }
+        });
+        shishudobejaowaprotirod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstaidActivity.this, Firstaid_Dubjaowa_Protirod.class);
                 startActivity(intent);
             }
         });

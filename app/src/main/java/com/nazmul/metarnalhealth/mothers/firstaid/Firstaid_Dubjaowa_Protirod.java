@@ -10,42 +10,32 @@ import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.R;
 
-public class FirstaidShishuRogActivity extends AppCompatActivity {
-    CardView shishusordikasi,shishuniumonia,shishudiariya;
+public class Firstaid_Dubjaowa_Protirod extends AppCompatActivity {
+    CardView dubejaowaprotirod1,dubejaowaprotirod2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firstaid_shishu_rog);
-
-        shishusordikasi=findViewById(R.id.shishu_sordi_kasi);
-        shishuniumonia=findViewById(R.id.shishu_niumonia);
-        shishudiariya=findViewById(R.id.shishu_diariya);
+        setContentView(R.layout.activity_firstaid__dubjaowa__protirod);
+        dubejaowaprotirod1=findViewById(R.id.dobejaowa_protirod_1);
+        dubejaowaprotirod2=findViewById(R.id.dobejaowa_protirod_2);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
-        getSupportActionBar().setTitle("শিশুর রোগ");
+        getSupportActionBar().setTitle("শিশুর ডুবে যাওয়া প্রতিরোধ");
 
-        shishusordikasi.setOnClickListener(new View.OnClickListener() {
+        dubejaowaprotirod1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstaidShishuRogActivity.this, Firstaid_Shishu_Sordikasi.class);
+                Intent intent = new Intent(Firstaid_Dubjaowa_Protirod.this, Firstaid_Dubejaowa_Protirod_1.class);
                 startActivity(intent);
             }
         });
 
-        shishuniumonia.setOnClickListener(new View.OnClickListener() {
+        dubejaowaprotirod2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstaidShishuRogActivity.this, Firstaid_Shishu_Niumonia.class);
-                startActivity(intent);
-            }
-        });
-
-        shishudiariya.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FirstaidShishuRogActivity.this, Firstaid_shishu_Diariya.class);
+                Intent intent = new Intent(Firstaid_Dubjaowa_Protirod.this, Firstaid_Dubejaowa_Protirod_2.class);
                 startActivity(intent);
             }
         });

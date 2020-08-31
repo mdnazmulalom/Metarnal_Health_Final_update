@@ -12,7 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mothers.firstaid.FirstaidShishuRogActivity"></activity>
+        <activity android:name=".mothers.firstaid.Firstaid_Dubejaowa_Protirod_2"></activity>
+        <activity android:name=".mothers.firstaid.Firstaid_Dubejaowa_Protirod_1" />
+        <activity android:name=".mothers.firstaid.Firstaid_Dubjaowa_Protirod" />
+        <activity android:name=".mothers.firstaid.Firstaid_Shishu_Niumonia" />
+        <activity android:name=".mothers.firstaid.Firstaid_shishu_Diariya" />
+        <activity android:name=".mothers.firstaid.Firstaid_Shishu_Sordikasi" />
+        <activity android:name=".mothers.firstaid.FirstaidShishuRogActivity" />
         <activity android:name=".mothers.firstaid.FirstAidPoripurokKhabar" />
         <activity android:name=".mothers.firstaid.FirstaidFistulaActivity" />
         <activity android:name=".mothers.firstaid.FirstAid_Before_7" />
