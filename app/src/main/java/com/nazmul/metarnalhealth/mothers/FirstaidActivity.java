@@ -1,6 +1,7 @@
 package com.nazmul.metarnalhealth.mothers;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,19 +19,23 @@ import com.nazmul.metarnalhealth.mothers.firstaid.Firstaid_Dubjaowa_Protirod;
 
 public class FirstaidActivity extends AppCompatActivity {
 
-    CardView before_prosob,after_prosob,prosobfistula,shishuporipurokkhabar,shishurog,shishudobejaowaprotirod;
+    CardView before_prosob, after_prosob, prosobfistula, shishuporipurokkhabar, shishurog, shishudobejaowaprotirod,
+            nobojatoksoporkito;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstaid);
 
-        before_prosob=findViewById(R.id.beforeprosob);
-        after_prosob=findViewById(R.id.afterprosob);
-        prosobfistula=findViewById(R.id.prosob_fistula);
-        shishuporipurokkhabar=findViewById(R.id.shishu_poripurok_khabar);
-        shishurog=findViewById(R.id.shishu_rog);
-        shishudobejaowaprotirod=findViewById(R.id.shishu_dobejaowa_protirod);
+        before_prosob = findViewById(R.id.beforeprosob);
+        after_prosob = findViewById(R.id.afterprosob);
+        prosobfistula = findViewById(R.id.prosob_fistula);
+        shishuporipurokkhabar = findViewById(R.id.shishu_poripurok_khabar);
+        shishurog = findViewById(R.id.shishu_rog);
+        shishudobejaowaprotirod = findViewById(R.id.shishu_dobejaowa_protirod);
+        nobojatoksoporkito = findViewById(R.id.nobojatok_somporkito);
+
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
@@ -81,6 +86,17 @@ public class FirstaidActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+       nobojatoksoporkito.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent callIntent = new Intent(Intent.ACTION_DIAL);
+               String p = "tel:" + "01628511467";
+               callIntent.setData(Uri.parse(p));
+               startActivity(callIntent);
+
+           }
+       });
     }
 
 
