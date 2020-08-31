@@ -27,7 +27,7 @@ import org.json.JSONObject;
 
 public class DoctorProfileActivity extends AppCompatActivity {
 
-    TextView txtFullname, txtName,txtCell,txtLocation,txtGender,txtPassword,txtUpdateprofile;
+    TextView txtFullname, txtName,txtdesignation,txtCell,txtLocation,txtGender,txtPassword,txtUpdateprofile;
     String UserCell;
     private ProgressDialog loading;
     SharedPreferences sharedPreferences;
@@ -47,24 +47,27 @@ public class DoctorProfileActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Doctor Profile");
 
         txtFullname=findViewById(R.id.etxtfullname);
+        txtdesignation = findViewById(R.id.txt_designation);
         txtName=findViewById(R.id.txt_name);
         txtCell=findViewById(R.id.etxtcell);
         txtLocation=findViewById(R.id.location);
         txtGender=findViewById(R.id.gender);
         txtPassword=findViewById(R.id.password);
-        txtUpdateprofile=findViewById(R.id.mother_update_profile);
+        txtUpdateprofile=findViewById(R.id.doctor_update_profile);
 
         txtUpdateprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String s= txtFullname.getText().toString();
+                String designation = txtdesignation.getText().toString();
                 String cell = txtCell.getText().toString();
                 String location = txtLocation.getText().toString();
                 String gender = txtGender.getText().toString();
 
                 Intent intent=new Intent(DoctorProfileActivity.this,DoctorEditProfileActivity.class);
                 intent.putExtra("Name",s);
+                intent.putExtra("Designation",designation);
                 intent.putExtra("cell",cell);
                 intent.putExtra("location",location);
                 intent.putExtra("gender",gender);
@@ -101,6 +104,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
     private void showJSON(String response){
 
         String name ="";
+        String designation ="";
         String cell ="";
         String location ="";
         String gender ="";
@@ -117,17 +121,19 @@ public class DoctorProfileActivity extends AppCompatActivity {
 
 
             name = ProfileData.getString(Constant.KEY_NAME);
+            designation = ProfileData.getString(Constant.KEY_DESIGNATION);
             cell = ProfileData.getString(Constant.KEY_CELL);
             location = ProfileData.getString(Constant.KEY_LOCATION);
             gender = ProfileData.getString(Constant.KEY_GENDER);
 //            password=ProfileData.getString(Constant.KEY_PASSWORD);
 
-            Log.d("Name",name+" "+cell+" "+location+" "+gender);
+            Log.d("Name",name+ designation +" "+cell+" "+location+" "+gender);
         }
         catch (JSONException e) {
             e.printStackTrace();
         }
         txtFullname.setText(name);
+        txtdesignation.setText(designation);
         txtName.setText(name);
         txtCell.setText(cell);
         txtLocation.setText(location);
