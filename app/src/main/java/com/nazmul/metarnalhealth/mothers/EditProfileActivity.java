@@ -90,7 +90,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(EditProfileActivity.this);
 
                 builder.setTitle("SELECT DIVISION");
-//                builder.setIcon(R.drawable.ic_location);
+                builder.setIcon(R.drawable.ic_location);
 
 
                 builder.setCancelable(false);

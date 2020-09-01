@@ -133,6 +133,7 @@ public class SignupActivity extends AppCompatActivity {
                 final String[] locationList={"Dhaka","Chittagong","Sylhet","Rajshahi","Barishal","Khulna","Rangpur","Mymensingh"};
                 AlertDialog.Builder builder=new AlertDialog.Builder(SignupActivity.this);
                 builder.setTitle("SELECT DIVISION");
+                builder.setIcon(R.drawable.ic_location);
                 builder.setCancelable(false);
                 builder.setItems(locationList, new DialogInterface.OnClickListener() {
                     @Override

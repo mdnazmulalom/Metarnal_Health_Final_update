@@ -68,6 +68,14 @@
                 android:orientation="vertical"
                 android:paddingTop="10dp">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Name:"
+                    android:textColor="@color/button"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/etxtfullname"
                     android:layout_width="match_parent"
@@ -81,6 +89,14 @@
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Designation:"
+                    android:textColor="@color/button"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etxtdesignation"
@@ -96,6 +112,15 @@
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Specialist:"
+                    android:textColor="@color/button"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etxtspeciallist"
@@ -114,6 +139,14 @@
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Mobile Number:"
+                    android:textColor="@color/button"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/etxtcell"
                     android:layout_width="match_parent"
@@ -130,6 +163,14 @@
                     android:textSize="16sp">
                 </EditText>
 
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Location:"
+                    android:textColor="@color/button"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/location"
@@ -148,6 +189,14 @@
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Gender:"
+                    android:textColor="@color/button"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/gender"
                     android:layout_width="match_parent"
@@ -165,6 +214,14 @@
                     android:textColor="@color/textcolor"
                     android:textSize="16dp" />
 
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Password:"
+                    android:textColor="@color/button"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/password"

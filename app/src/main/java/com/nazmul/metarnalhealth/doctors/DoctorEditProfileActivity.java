@@ -127,7 +127,7 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(DoctorEditProfileActivity.this);
 
                 builder.setTitle("SELECT DIVISION");
-//                builder.setIcon(R.drawable.ic_location);
+                builder.setIcon(R.drawable.ic_location);
 
 
                 builder.setCancelable(false);
