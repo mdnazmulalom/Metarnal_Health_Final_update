@@ -37,3 +37,7 @@ Iapp/src/main/java/com/nazmul/metarnalhealth/mothers/FirstaidActivity.java,c/6/
 ^app/src/main/java/com/nazmul/metarnalhealth/mothers/firstaid/FirstaidBeforeProsobActivity.java,4/8/48b3c529882b0ae1d2afb0f111dadb1072e311eb
 ‚
 Rapp/src/main/java/com/nazmul/metarnalhealth/mothers/firstaid/Firstaid_after_1.java,a/a/aa58742bbb86f93dc23fc8d135c35819ab0e885c
+c
+3app/src/main/res/layout/activity_mother_profile.xml,6/4/6467f9dc6d23e3a126f964a58be9edb0ba9b34be
+L
+.idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
