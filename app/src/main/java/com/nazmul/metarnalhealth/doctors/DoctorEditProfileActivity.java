@@ -3,6 +3,7 @@ package com.nazmul.metarnalhealth.doctors;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.icu.text.Transliterator;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -33,7 +34,7 @@ import es.dmoral.toasty.Toasty;
 
 public class DoctorEditProfileActivity extends AppCompatActivity {
 
-    EditText etxt_Fullame,etxt_Cell,txtLocation,etxt_Gender,etxt_Pass,etxt_designation;
+    EditText etxt_Fullame,etxt_Cell,txtLocation,etxt_Gender,etxt_Pass,etxt_designation,etxt_speciallist;
 
     TextView txt_Name,txtUpdate;
 
@@ -49,6 +50,8 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         etxt_Fullame = findViewById(R.id.etxtfullname);
         //extra add designation
         etxt_designation = findViewById(R.id.etxtdesignation);
+//        extra add speciallist
+        etxt_speciallist=findViewById(R.id.etxtspeciallist);
         etxt_Cell = findViewById(R.id.etxtcell);
         txtLocation= findViewById(R.id.location);
         etxt_Gender = findViewById(R.id.gender);
@@ -62,6 +65,7 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
 
         String getName=getIntent().getExtras().getString("Name");
         String getDesignation = getIntent().getExtras().getString("Designation");
+        String getSpeciallist = getIntent().getExtras().getString("speciallist");
         String getCell=getIntent().getExtras().getString("cell");
         String getLocation=getIntent().getExtras().getString("location");
         String getGender=getIntent().getExtras().getString("gender");
@@ -69,10 +73,50 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         txt_Name.setText(getName);
         etxt_Fullame.setText(getName);
         etxt_designation.setText(getDesignation);
+        etxt_speciallist.setText(getSpeciallist);
         etxt_Cell.setText(getCell);
         etxt_Cell.setEnabled(false);
         txtLocation.setText(getLocation);
         etxt_Gender.setText(getGender);
+
+
+        etxt_speciallist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String[] speciallist={"Medicine","Gynecologist"};
+                AlertDialog.Builder builder=new AlertDialog.Builder(DoctorEditProfileActivity.this);
+                builder.setTitle("SELECT SPECIALLIST");
+
+                builder.setCancelable(false);
+                builder.setItems(speciallist, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int position) {
+                        switch (position){
+                            case 0:
+                                etxt_speciallist.setText("Medicine");
+                                break;
+                            case 1:
+                                etxt_speciallist.setText("Gynecologist");
+                                break;
+                        }
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int position) {
+                        dialog.dismiss();
+                    }
+                });
+
+
+                AlertDialog locationTypeDialog = builder.create();
+
+                locationTypeDialog.show();
+            }
+        });
+
+
 
 
         txtLocation.setOnClickListener(new View.OnClickListener() {
@@ -228,8 +272,8 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
 
     public void UpdateProfile() {
         final String name = etxt_Fullame.getText().toString();
-
         final String designation = etxt_designation.getText().toString();
+        final String specialist = etxt_speciallist.getText().toString();
         final String cell = etxt_Cell.getText().toString();
         final String location = txtLocation.getText().toString();
         final String g = etxt_Gender.getText().toString();
@@ -322,13 +366,14 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
                     // params.put(Constant.KEY_ID, getID);
                     params.put(Constant.KEY_NAME, name);
                     params.put(Constant.KEY_DESIGNATION,designation);
+                    params.put(Constant.KEY_SPECIALLIST,specialist);
                     params.put(Constant.KEY_CELL, cell);
                     params.put(Constant.KEY_GENDER, g);
                     params.put(Constant.KEY_LOCATION, location);
                     params.put(Constant.KEY_PASSWORD, password);
 
 
-                    Log.d("INFO", name+designation+cell+g+location+password);
+                    Log.d("INFO", name+designation+specialist+cell+g+location+password);
 
                     //returning parameter
                     return params;

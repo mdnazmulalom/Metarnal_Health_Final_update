@@ -25,6 +25,7 @@ public class Constant {
     public static final String JSON_ARRAY = "result";
     public static final String KEY_NAME="name";
     public static final  String KEY_DESIGNATION ="designation";
+    public static final String KEY_SPECIALLIST="speciallist";
     public static final String KEY_CELL="cell";
     public static final String KEY_USER_TYPE="accounttype";
     public static final String KEY_PASSWORD="password";

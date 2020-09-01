@@ -98,11 +98,27 @@
                     android:textSize="16dp" />
 
                 <EditText
+                    android:id="@+id/etxtspeciallist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/border"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="Speciallist "
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16dp" />
+
+                <EditText
                     android:id="@+id/etxtcell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="22dp"
-
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="35dp"
                     android:background="@drawable/border"
@@ -112,7 +128,6 @@
                     android:padding="16dp"
                     android:textColor="@color/textcolor"
                     android:textSize="16sp">
-
                 </EditText>
 
 

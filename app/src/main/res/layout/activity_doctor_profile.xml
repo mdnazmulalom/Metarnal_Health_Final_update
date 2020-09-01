@@ -97,6 +97,20 @@
                     android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/txt_speciallist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:hint="Speciallist null"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16dp" />
+
+                <TextView
                     android:id="@+id/etxtcell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
