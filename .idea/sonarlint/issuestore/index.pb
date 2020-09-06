@@ -9,10 +9,6 @@ P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 i
 9app/src/main/java/com/nazmul/metarnalhealth/Constant.java,5/f/5f69b5785cf1e9e81b2516558e5cbe98c0df970f
-q
-Aapp/src/main/java/com/nazmul/metarnalhealth/remote/ApiClient.java,6/e/6ebb593ad53b09877f9eccb6edbc6d30d3269129
-t
-Dapp/src/main/java/com/nazmul/metarnalhealth/remote/ApiInterface.java,d/6/d6e2c16c8b3dc2453180819757388090a9b86b52
 @
 app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
 {
@@ -21,8 +17,6 @@ v
 Fapp/src/main/java/com/nazmul/metarnalhealth/mothers/MotherProfile.java,3/a/3a791d09a4fc1ab8088f748583db0cff7628b666
 {
 Kapp/src/main/java/com/nazmul/metarnalhealth/mothers/MotherHomeActivity.java,c/d/cd19ebcd61578b2226375fd9edeb0f9ca7fc17b9
-h
-8app/src/main/java/com/nazmul/metarnalhealth/Adapter.java,6/2/62a61ee91589dd150fcb49d976bd87307a9ae6b8
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 |
@@ -45,3 +39,13 @@ Y
 )app/src/main/res/drawable/ic_location.xml,3/9/39b22020c89ef8032129038bd44279b14cbfad3a
 ƒ
 Sapp/src/main/java/com/nazmul/metarnalhealth/mothers/firstaid/FirstAid_Before_7.java,e/2/e27f8741fd456db74cc3f2e0c1f4f71a5945f8ea
+~
+Napp/src/main/java/com/nazmul/metarnalhealth/doctors/adapter/DoctorAdapter.java,4/d/4dd8c344e85a668243b37b93515359326f837fd3
+v
+Fapp/src/main/java/com/nazmul/metarnalhealth/doctors/model/Doctors.java,2/6/26056ffd4eee6ca43232b63fb13c53284c0aa9f2
+y
+Iapp/src/main/java/com/nazmul/metarnalhealth/doctors/remote/ApiClient.java,f/0/f0db1d6a59668b6f19a5e141a72e87cf3a463ff7
+€
+Papp/src/main/java/com/nazmul/metarnalhealth/doctors/DoctorsInfoViewActivity.java,5/5/5578e8f9b8627115734bc6b554e6ed198450720b
+|
+Lapp/src/main/java/com/nazmul/metarnalhealth/doctors/remote/ApiInterface.java,7/8/7850a9703c510bc3d4007f9d1f77337b33a480a5
