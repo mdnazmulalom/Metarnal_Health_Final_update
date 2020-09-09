@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
@@ -44,6 +45,11 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctors_info_view);
 
+
+        getSupportActionBar().setHomeButtonEnabled(false); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
+        getSupportActionBar().setTitle("Doctor Information");
+
         recyclerView = findViewById(R.id.doctor_recyclerview);
         progressBar = findViewById(R.id.doctor_progressbar);
         layoutManager = new LinearLayoutManager(this);
@@ -65,7 +71,6 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
                 recyclerView.setAdapter(adapter);
                 adapter.notifyDataSetChanged();
 
-
             }
 
             @Override
@@ -81,26 +86,6 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater=getMenuInflater();
         inflater.inflate(R.menu.menu,menu);
-
-//        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-//        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
-//        searchView.setSearchableInfo(
-//                searchManager.getSearchableInfo(getComponentName()));
-//        searchView.setIconifiedByDefault(false);
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                FetchData("Doctors", query);
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                FetchData("Doctors", newText);
-//                return false;
-//            }
-//        });
-
         return true;
     }
 
@@ -112,6 +97,17 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
         FetchData("Doctors", "");
 
     }
-
+    //for back button
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 }
