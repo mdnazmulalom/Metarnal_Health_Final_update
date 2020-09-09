@@ -43,7 +43,7 @@ public class MotherProfile extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
         getSupportActionBar().setTitle("Mother Profile");
 
-        txtname = findViewById(R.id.txt_name);
+        txtname = findViewById(R.id.doctor_name);
         etxtFulname=findViewById(R.id.etxtfullname);
         etxtCell=findViewById(R.id.etxtcell);
         etxtLocation=findViewById(R.id.location);

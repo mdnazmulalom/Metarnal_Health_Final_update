@@ -3,7 +3,6 @@ package com.nazmul.metarnalhealth.doctors;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.icu.text.Transliterator;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -24,8 +23,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.R;
-import com.nazmul.metarnalhealth.mothers.EditProfileActivity;
-import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +43,7 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_doctor_edit_profile);
 
 
-        txt_Name = findViewById(R.id.txt_name);
+        txt_Name = findViewById(R.id.doctor_name);
         etxt_Fullame = findViewById(R.id.etxtfullname);
         //extra add designation
         etxt_designation = findViewById(R.id.etxtdesignation);

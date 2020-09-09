@@ -1,4 +1,4 @@
-package com.nazmul.metarnalhealth.doctors.remote;
+package com.nazmul.metarnalhealth.remote;
 
 
 

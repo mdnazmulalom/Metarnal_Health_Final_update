@@ -4,6 +4,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class Doctors {
 
+//    @SerializedName("id")
+//    private String id;
     @SerializedName("doctor_id")
     private String doctor_id;
     @SerializedName("name")

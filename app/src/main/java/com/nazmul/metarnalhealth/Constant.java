@@ -28,18 +28,18 @@ public class Constant {
 
     public static final String JSON_ARRAY = "result";
     public static final String KEY_NAME="name";
+    public static final String KEY_ID="id";
     public static final  String KEY_DESIGNATION ="designation";
     public static final String KEY_SPECIALLIST="speciallist";
     public static final String KEY_CELL="cell";
     public static final String KEY_USER_TYPE="accounttype";
     public static final String KEY_PASSWORD="password";
-
-
-
-
     public static final String KEY_LOCATION="location";
     public static final String KEY_GENDER="gender";
 
+
+
+//for share preferences
     public static final String SHARED_PREF_NAME = "com.nazmul.metarnalhealth";
 
     public static final String CELL_SHARED_PREF = "cell";

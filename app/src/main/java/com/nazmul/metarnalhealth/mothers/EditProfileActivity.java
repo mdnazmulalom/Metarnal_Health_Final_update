@@ -45,7 +45,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
         
 
-        txtName = findViewById(R.id.txt_name);
+        txtName = findViewById(R.id.doctor_name);
         etxtFullame = findViewById(R.id.etxtfullname);
         etxtCell = findViewById(R.id.etxtcell);
         txtLocation= findViewById(R.id.location);

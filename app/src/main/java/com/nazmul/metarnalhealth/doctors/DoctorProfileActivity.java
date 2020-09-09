@@ -49,7 +49,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
         txtFullname=findViewById(R.id.etxtfullname);
         txtdesignation = findViewById(R.id.txt_designation);
         txtspeciallist=findViewById(R.id.txt_speciallist);
-        txtName=findViewById(R.id.txt_name);
+        txtName=findViewById(R.id.doctor_name);
         txtCell=findViewById(R.id.etxtcell);
         txtLocation=findViewById(R.id.location);
         txtGender=findViewById(R.id.gender);

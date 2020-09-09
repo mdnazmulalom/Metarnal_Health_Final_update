@@ -1,4 +1,4 @@
-package com.nazmul.metarnalhealth.doctors.remote;
+package com.nazmul.metarnalhealth.remote;
 
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.doctors.model.Doctors;
@@ -67,14 +67,10 @@ public interface ApiInterface {
 
 
 
-
-    @POST("MetarnalHealth/android/readdoctors.php")
-    Call<List<Doctors>> getDoctors(
-            @Query("item_type") String item_type,
-            @Query("key") String keyword,
-            @Query("cell") String cell
-    );
-
+//
+//    @POST("MetarnalHealth/android/readdoctors.php")
+//    Call<List<Doctors>> getDoctors(String type, String key);
+//
 
 
 

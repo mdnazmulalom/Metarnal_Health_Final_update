@@ -14,13 +14,14 @@ import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.R;
+import com.nazmul.metarnalhealth.doctors.DoctorsInfoViewActivity;
 
 
 import es.dmoral.toasty.Toasty;
 
 public class MotherHomeActivity extends AppCompatActivity {
 
-    CardView card_mother,cardlogout,first_aid;
+    CardView card_mother,cardlogout,first_aid,card_doctorlist;
 
     //for double back press to exit
     private static final int TIME_DELAY = 2000;
@@ -41,6 +42,7 @@ public class MotherHomeActivity extends AppCompatActivity {
         card_mother = findViewById(R.id.card_mother);
         cardlogout = findViewById(R.id.card_logout);
         first_aid=findViewById(R.id.FirstAid);
+        card_doctorlist = findViewById(R.id.card_doctor_list);
 
 
         getSupportActionBar().setHomeButtonEnabled(false); //for back button
@@ -60,6 +62,14 @@ public class MotherHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MotherHomeActivity.this,FirstaidActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        card_doctorlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MotherHomeActivity.this,DoctorsInfoViewActivity.class);
                 startActivity(intent);
             }
         });

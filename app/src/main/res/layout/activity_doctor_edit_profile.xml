@@ -30,7 +30,7 @@
                     app:srcCompat="@drawable/icon_login" />
 
                 <TextView
-                    android:id="@+id/txt_name"
+                    android:id="@+id/doctor_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
