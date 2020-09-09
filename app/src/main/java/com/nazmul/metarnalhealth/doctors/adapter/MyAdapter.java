@@ -35,6 +35,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
       holder.name.setText(doctors.get(position).getName());
       holder.specialist.setText(doctors.get(position).getSpeciallist());
       holder.designation.setText(doctors.get(position).getDesignation());
+      holder.location.setText(doctors.get(position).getLocation());
     }
 
     @Override
@@ -43,12 +44,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView name,designation,specialist;
+        TextView name,designation,specialist,location;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.doctor_name);
             designation = itemView.findViewById(R.id.Designation);
             specialist = itemView.findViewById(R.id.Specialist);
+            location = itemView.findViewById(R.id.location);
             itemView.setOnClickListener(this);
 
         }
