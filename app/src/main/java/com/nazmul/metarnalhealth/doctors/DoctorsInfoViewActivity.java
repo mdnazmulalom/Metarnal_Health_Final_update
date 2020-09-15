@@ -12,8 +12,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.nazmul.metarnalhealth.R;
@@ -40,6 +42,7 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
    private ProgressBar progressBar;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +63,11 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
 
 
     }
+
+
+
+
+    //Data View korar jonno
     public void FetchData(String type,String key){
         Call<List<Doctors>> call = apiInterface.getDoctors(type,key);
         call.enqueue(new Callback<List<Doctors>>() {
@@ -82,6 +90,7 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
         });
     }
 
+    //Data Search korar jonno
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater=getMenuInflater();
