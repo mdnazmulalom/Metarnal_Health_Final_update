@@ -9,7 +9,7 @@
     android:background="@drawable/description"
     tools:context=".doctors.DoctorDescriptionActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,9 +65,8 @@
                 <TextView
                     android:id="@+id/Descricption_designation"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
                     android:hint="Designation"
                     android:textColor="#1B1717"
                     android:textSize="16sp"
@@ -76,26 +75,35 @@
                 <TextView
                     android:id="@+id/Description_speciallist"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
                     android:hint="Speciallist"
                     android:textColor="#1B1717"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/problem_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="আপনার সমস্যা লিখুন "
+                    android:inputType="textMultiLine" />
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="400dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background"
             android:text="Book Your Appointment"
             android:textColor="#FAEFEF" />
+
     </GridLayout>
 </RelativeLayout>

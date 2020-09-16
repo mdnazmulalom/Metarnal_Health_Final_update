@@ -6,27 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".doctors.DoctorsInfoViewActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctor_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
     <ProgressBar
         android:id="@+id/doctor_progressbar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="160dp"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="249dp"
         android:layout_marginEnd="203dp"
         android:layout_marginRight="203dp"
         android:layout_marginBottom="306dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/doctor_recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

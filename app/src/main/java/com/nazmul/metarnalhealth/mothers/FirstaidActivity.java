@@ -93,7 +93,7 @@ public class FirstaidActivity extends AppCompatActivity {
                Intent callIntent = new Intent(Intent.ACTION_DIAL);
                String p = "tel:" + "01628511467";
                callIntent.setData(Uri.parse(p));
-               startActivity(callIntent);
+//               startActivity(callIntent);
 
            }
        });
