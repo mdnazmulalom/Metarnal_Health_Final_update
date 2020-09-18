@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -47,13 +48,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView name,designation,specialist,location;
+        TextView name,designation,specialist,location,appoinment;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.doctor_name);
             designation = itemView.findViewById(R.id.Designation);
             specialist = itemView.findViewById(R.id.Specialist);
             location = itemView.findViewById(R.id.location);
+            appoinment = itemView.findViewById(R.id.appoinment);
             itemView.setOnClickListener(this);
 
         }

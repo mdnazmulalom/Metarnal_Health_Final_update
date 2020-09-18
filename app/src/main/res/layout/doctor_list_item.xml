@@ -81,17 +81,17 @@
                     android:layout_gravity="center"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/Appoinment"
+                    <TextView
+                        android:id="@+id/appoinment"
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:layout_margin="5dp"
                         android:layout_weight="1"
                         android:background="@color/button"
+                        android:gravity="center"
+                        android:padding="5dp"
                         android:text="Appoinment"
-                        android:textColor="@color/background"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/background" />
+
                 </LinearLayout>
 
             </LinearLayout>
