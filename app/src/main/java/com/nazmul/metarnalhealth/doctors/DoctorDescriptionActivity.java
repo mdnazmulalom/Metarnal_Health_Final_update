@@ -42,7 +42,7 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
 //    String user_cell,UserPassword;
       ProgressDialog loading;
-
+dsdfs
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
