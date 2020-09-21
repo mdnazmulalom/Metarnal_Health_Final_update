@@ -72,6 +72,13 @@ public interface ApiInterface {
 //    Call<List<Doctors>> getDoctors(String type, String key);
 //
 
+    @POST("MetarnalHealth/android/doctorsAppoinment.php")
+    Call<Doctors> doctorsAppoinment(
+            @Field("user_cell") String user_cell,
+            @Field("name") String name,
+            @Field("designation") String designation,
+            @Field("doctors_cell") String doctors_cell,
+            @Field("problem_descripion") String problem_descripion);
 
 
     //for live data search

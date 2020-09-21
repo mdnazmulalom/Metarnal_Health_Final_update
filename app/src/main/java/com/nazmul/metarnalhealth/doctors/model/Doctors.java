@@ -21,6 +21,11 @@ public class Doctors {
     @SerializedName("gender")
     private String gender;
 
+    @SerializedName("value")
+    private String value;
+    @SerializedName("message")
+    private String massage;
+
 
     public String getDoctorID() {
         return doctor_id;
@@ -43,5 +48,12 @@ public class Doctors {
     public String getGender() {
         return gender;
     }
+    public String getValue() {
+        return value;
+    }
+    public String getMassage() {
+        return massage;
+    }
+
 
 }

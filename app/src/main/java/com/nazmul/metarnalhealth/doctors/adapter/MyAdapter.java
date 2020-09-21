@@ -65,6 +65,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
           Intent intent=new Intent(context, DoctorDescriptionActivity.class);
           intent.putExtra("id",doctors.get(getAdapterPosition()).getDoctorID());
           intent.putExtra("name",doctors.get(getAdapterPosition()).getName());
+          intent.putExtra("cell",doctors.get(getAdapterPosition()).getCell());
           intent.putExtra("designaiton",doctors.get(getAdapterPosition()).getDesignation());
           intent.putExtra("speciallist",doctors.get(getAdapterPosition()).getSpeciallist());
           context.startActivity(intent);

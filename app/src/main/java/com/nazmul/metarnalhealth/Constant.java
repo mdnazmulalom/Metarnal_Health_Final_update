@@ -20,6 +20,8 @@ public class Constant {
     public static final String MOTHER_PROFILE_UPDATE_URL = MAIN_URL+"/mother_profile_update.php";
     public static final String DOCTOR_PROFILE_UPDATE_URL = MAIN_URL+"/doctors_profile_update.php";
 
+    public static final String DOCTOR_APPOINMENT = MAIN_URL+"/doctorsAppoinment.php";
+
 
 
 
@@ -32,6 +34,10 @@ public class Constant {
     public static final  String KEY_DESIGNATION ="designation";
     public static final String KEY_SPECIALLIST="speciallist";
     public static final String KEY_CELL="cell";
+    public static final String KEY_USER_CELL="user_cell";
+    public static final String KEY_DOCTOR_CELL="doctors_cell";
+    public static final String KEY_PROBLEM_DESCRIPTON="problem_descripion";
+
     public static final String KEY_USER_TYPE="accounttype";
     public static final String KEY_PASSWORD="password";
     public static final String KEY_LOCATION="location";
