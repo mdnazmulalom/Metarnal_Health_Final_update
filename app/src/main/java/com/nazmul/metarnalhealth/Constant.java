@@ -37,6 +37,7 @@ public class Constant {
     public static final String KEY_USER_CELL="user_cell";
     public static final String KEY_DOCTOR_CELL="doctors_cell";
     public static final String KEY_PROBLEM_DESCRIPTON="problem_descripion";
+    public static final String KEY_APPOINMENT_DATE="appoinment_date";
 
     public static final String KEY_USER_TYPE="accounttype";
     public static final String KEY_PASSWORD="password";

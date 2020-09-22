@@ -2,14 +2,18 @@ package com.nazmul.metarnalhealth.doctors;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +30,7 @@ import com.nazmul.metarnalhealth.R;
 import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
 import com.nazmul.metarnalhealth.remote.ApiInterface;
 
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,9 +40,12 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
 
     private ApiInterface apiInterface;
     String name,designation,speciallist,id,doctor_cell;
-    TextView DescriptionName,DescriptionDesignation,DescriptionSpeciallist;
-    EditText Problem_description;
+    TextView DescriptionName,DescriptionDesignation,DescriptionSpeciallist, TV_date;
+    EditText Problem_description,Et_date;
     Button btnAppoinment;
+
+    DatePickerDialog.OnDateSetListener setListener;
+
 
     SharedPreferences sharedPreferences;
 //    String user_cell,UserPassword;
@@ -52,6 +60,38 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         DescriptionSpeciallist=findViewById(R.id.Description_speciallist);
         Problem_description = findViewById(R.id.problem_description);
         btnAppoinment = findViewById(R.id.btn_appoinment);
+//        Et_date = findViewById(R.id.et_date);
+        TV_date = findViewById(R.id.tv_date);
+
+        Calendar calendar = Calendar.getInstance();
+        final int year = calendar.get(Calendar.YEAR);
+        final int month = calendar.get(Calendar.MONTH);
+        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        TV_date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(
+                        DoctorDescriptionActivity.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth
+                        ,setListener,year,month,day);
+                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                datePickerDialog.show();
+
+            }
+        });
+
+        setListener = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                month = month+1;
+                String date = day+"/"+month+"/"+year;
+                TV_date.setText(date);
+            }
+        };
+
+
+
+
 
 
         id=getIntent().getExtras().getString("id");
@@ -72,6 +112,11 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String problem_description =Problem_description.getText().toString();
+                String appoinment_date = TV_date.getText().toString();
+                if (appoinment_date.isEmpty()){
+                    TV_date.setError("Date can't be empty");
+                    TV_date.requestFocus();
+                }
                 if (problem_description.isEmpty()){
                     Problem_description.setError("Problem Description can't be empty");
                     Problem_description.requestFocus();
@@ -92,6 +137,7 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         final String doctors_cell = getIntent().getExtras().getString("cell");
         final String designation = getIntent().getExtras().getString("designaiton");
         final String problem_descripion = Problem_description.getText().toString();
+        final String appoinment_date = TV_date.getText().toString();
 
 
         loading = new ProgressDialog(DoctorDescriptionActivity.this);
@@ -130,8 +176,9 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 params.put(Constant.KEY_DOCTOR_CELL,doctors_cell);
                 params.put(Constant.KEY_DESIGNATION,designation);
                 params.put(Constant.KEY_PROBLEM_DESCRIPTON,problem_descripion);
+                params.put(Constant.KEY_APPOINMENT_DATE,appoinment_date);
 
-                Log.d("Fulldata",name+cell+doctors_cell+designation+problem_descripion);
+                Log.d("Fulldata",name+appoinment_date+cell+doctors_cell+designation+problem_descripion);
 
 
                 //returning parameter

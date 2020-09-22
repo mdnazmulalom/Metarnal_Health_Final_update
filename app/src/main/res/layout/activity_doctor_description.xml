@@ -89,7 +89,16 @@
                     android:ems="10"
                     android:gravity="start|top"
                     android:hint="আপনার সমস্যা লিখুন "
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Select Date"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
