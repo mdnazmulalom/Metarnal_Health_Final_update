@@ -77,7 +77,7 @@ public class MotherHomeActivity extends AppCompatActivity {
         card_doctor_appoinment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MotherHomeActivity.this,DoctorsInfoViewActivity.class);
+                Intent intent = new Intent(MotherHomeActivity.this,MotherAppoinmentHistory.class);
                 startActivity(intent);
             }
         });

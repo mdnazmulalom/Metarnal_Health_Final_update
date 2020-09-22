@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".doctors.DoctorDescriptionActivity"></activity>
+        <activity android:name=".doctors.DoctorAppoinmentHistory"></activity>
+        <activity android:name=".mothers.MotherAppoinmentHistory" />
+        <activity android:name=".doctors.DoctorDescriptionActivity" />
         <activity android:name=".doctors.DoctorsInfoViewActivity" />
         <activity android:name=".mothers.firstaid.Firstaid_Dubejaowa_Protirod_2" />
         <activity android:name=".mothers.firstaid.Firstaid_Dubejaowa_Protirod_1" />
