@@ -36,9 +36,7 @@ public class Doctor_Appoinment_Adapter extends RecyclerView.Adapter<Doctor_Appoi
        holder.doctor_appoinment_mother_cell.setText(doctor_appoinment_lists.get(position).getMother_number());
        holder.doctor_apponment_date.setText(doctor_appoinment_lists.get(position).getAppoinment_date());
        holder.problem_description.setText(doctor_appoinment_lists.get(position).getProblem_descripion());
-
     }
-
     @Override
     public int getItemCount() {
         return doctor_appoinment_lists.size();
@@ -54,7 +52,6 @@ public class Doctor_Appoinment_Adapter extends RecyclerView.Adapter<Doctor_Appoi
             doctor_apponment_date = itemView.findViewById(R.id.doctor_apponment_date);
             problem_description = itemView.findViewById(R.id.problem_description);
         }
-
         @Override
         public void onClick(View v) {
 

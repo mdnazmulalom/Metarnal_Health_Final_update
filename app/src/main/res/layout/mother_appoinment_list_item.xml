@@ -44,7 +44,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Dorctor Name"
+                        android:text="Status"
                         android:textColor="@color/button"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -52,7 +52,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Designation"
+                        android:text="Doctor Name"
                         android:textSize="14sp" />
 
                     <TextView
@@ -74,19 +74,19 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/doctor_appoinment_staatus"
+                        android:id="@+id/doctor_appoinment_status"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Doctor Name"
+                        android:hint="Status"
                         android:textColor="@color/button"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/doctor_appoinment_mother_cell"
+                        android:id="@+id/doctor_appoinment_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Designation"
+                        android:hint="Doctor Name"
                         android:textSize="14sp" />
 
                     <TextView
@@ -97,7 +97,7 @@
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/problem_description"
+                        android:id="@+id/doctor_problem_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Description" />

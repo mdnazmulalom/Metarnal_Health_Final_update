@@ -3,6 +3,7 @@ package com.nazmul.metarnalhealth.remote;
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.doctors.model.Doctor_Appoinment_List;
 import com.nazmul.metarnalhealth.doctors.model.Doctors;
+import com.nazmul.metarnalhealth.mothers.model.Mother;
 
 import java.util.List;
 
@@ -93,4 +94,11 @@ public interface ApiInterface {
             @Query("userCell") String userCell,
             @Query("key") String keyword
     );
+
+    @GET("MetarnalHealth/android/getmother_appoinment.php")
+    Call<List<Mother>> getMotherAppoinment(
+            @Query("UserCell") String UserCell,
+            @Query("key") String keyword
+    );
+
 }

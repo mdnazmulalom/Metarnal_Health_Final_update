@@ -19,14 +19,12 @@ import com.nazmul.metarnalhealth.doctors.model.Doctors;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
-
     private List<Doctors> doctors;
     Context context;
     public MyAdapter(Context context,List<Doctors> doctors){
         this.context = context;
         this.doctors = doctors;
     }
-
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

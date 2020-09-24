@@ -1,0 +1,60 @@
+package com.nazmul.metarnalhealth.mothers.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.nazmul.metarnalhealth.R;
+import com.nazmul.metarnalhealth.doctors.adapter.MyAdapter;
+import com.nazmul.metarnalhealth.mothers.model.Mother;
+
+import java.util.List;
+
+public class MotherAdapter extends RecyclerView.Adapter<MotherAdapter.MyViewHolder> {
+    private List<Mother> mothers;
+    Context context;
+    public MotherAdapter(Context context,List<Mother>mothers){
+        this.context=context;
+        this.mothers=mothers;
+    }
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.mother_appoinment_list_item, parent, false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        holder.doctorstatus.setText(mothers.get(position).getStatus());
+        holder.doctorname.setText(mothers.get(position).getDoctor_name());
+        holder.appoinmentdate.setText(mothers.get(position).getAppoinment_date());
+        holder.desctiption.setText(mothers.get(position).getProblem_descripion());
+    }
+
+    @Override
+    public int getItemCount() {
+        return mothers.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder  implements View.OnClickListener{
+        TextView doctorstatus,doctorname,appoinmentdate,desctiption;
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            doctorstatus= itemView.findViewById(R.id.doctor_appoinment_status);
+            doctorname=itemView.findViewById(R.id.doctor_appoinment_name);
+            appoinmentdate=itemView.findViewById(R.id.doctor_apponment_date);
+            desctiption=itemView.findViewById(R.id.doctor_problem_description);
+        }
+
+        @Override
+        public void onClick(View v) {
+
+        }
+    }
+}
