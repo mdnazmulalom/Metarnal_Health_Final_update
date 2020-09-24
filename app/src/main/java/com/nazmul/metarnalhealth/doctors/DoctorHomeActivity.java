@@ -18,7 +18,7 @@ import com.nazmul.metarnalhealth.R;
 import es.dmoral.toasty.Toasty;
 
 public class DoctorHomeActivity extends AppCompatActivity {
-    CardView CardDoctor,CardLogout;
+    CardView CardDoctor,CardLogout,all_appoinment;
 
     private static final int TIME_DELAY = 2000;
     private static long back_pressed;
@@ -36,6 +36,7 @@ public class DoctorHomeActivity extends AppCompatActivity {
 
         CardDoctor=findViewById(R.id.card_doctor_profile);
         CardLogout=findViewById(R.id.card_doctor_logout);
+        all_appoinment = findViewById(R.id.all_appoinment);
 
         getSupportActionBar().setHomeButtonEnabled(false); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
@@ -54,6 +55,13 @@ public class DoctorHomeActivity extends AppCompatActivity {
                 editor.clear();
                 editor.apply();
                 finishAffinity();
+            }
+        });
+        all_appoinment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DoctorHomeActivity.this,DoctorAppoinmentHistory.class);
+                startActivity(intent);
             }
         });
     }

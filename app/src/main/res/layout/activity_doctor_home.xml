@@ -115,12 +115,13 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/all_appoinment"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
-                        app:cardCornerRadius="20dp"
                         android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground">
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
