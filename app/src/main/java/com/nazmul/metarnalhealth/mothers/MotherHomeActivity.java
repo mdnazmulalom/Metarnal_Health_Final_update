@@ -21,7 +21,7 @@ import es.dmoral.toasty.Toasty;
 
 public class MotherHomeActivity extends AppCompatActivity {
 
-    CardView card_mother,cardlogout,first_aid,card_doctorlist,card_doctor_appoinment;
+    CardView card_mother,cardlogout,first_aid,card_doctorlist,card_doctor_appoinment,card_hospital_info;
 
     //for double back press to exit
     private static final int TIME_DELAY = 2000;
@@ -44,6 +44,8 @@ public class MotherHomeActivity extends AppCompatActivity {
         first_aid=findViewById(R.id.FirstAid);
         card_doctorlist = findViewById(R.id.card_doctor_list);
         card_doctor_appoinment=findViewById(R.id.card_doctor_appoinment);
+        card_hospital_info=findViewById(R.id.hospitalinfo);
+
 
 
         getSupportActionBar().setHomeButtonEnabled(false); //for back button
@@ -78,6 +80,13 @@ public class MotherHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MotherHomeActivity.this,MotherAppoinmentHistory.class);
+                startActivity(intent);
+            }
+        });
+        card_hospital_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MotherHomeActivity.this,HospitalInfoActivity.class);
                 startActivity(intent);
             }
         });

@@ -31,7 +31,21 @@ public class MotherAdapter extends RecyclerView.Adapter<MotherAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.doctorstatus.setText(mothers.get(position).getStatus());
+
+//        holder.doctorstatus.setText(mothers.get(position).getStatus());
+        String status=mothers.get(position).getStatus();
+        if (status.equals(0)){
+            holder.doctorstatus.setText("Panding");
+        }
+        if (status.equals(1)){
+            holder.doctorstatus.setText("Confirm");
+        }
+        else {
+            holder.doctorstatus.setText("delivared");
+        }
+
+
+
         holder.doctorname.setText(mothers.get(position).getDoctor_name());
         holder.appoinmentdate.setText(mothers.get(position).getAppoinment_date());
         holder.desctiption.setText(mothers.get(position).getProblem_descripion());

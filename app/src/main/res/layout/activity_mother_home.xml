@@ -162,6 +162,7 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/hospitalinfo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -179,14 +180,14 @@
                                 android:id="@+id/imageVie"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                app:srcCompat="@drawable/helppost" />
+                                app:srcCompat="@drawable/hospital" />
 
                             <TextView
                                 android:id="@+id/textView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Help Post"
+                                android:text="Hospital Info"
                                 android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>
