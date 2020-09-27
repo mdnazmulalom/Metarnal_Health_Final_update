@@ -66,12 +66,6 @@ public class HospitalInfoActivity extends AppCompatActivity {
             }
         });
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Fatchdata("Hospital", "");
-
-    }
+    
 }
 

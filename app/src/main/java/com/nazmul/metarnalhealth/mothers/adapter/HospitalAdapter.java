@@ -22,14 +22,12 @@ public class HospitalAdapter extends RecyclerView.Adapter<HospitalAdapter.MyView
         this.context=context;
         this.hospitals=hospitals;
     }
-
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.hospitalinfo_list_item,parent,false);
         return new MyViewHolder(view);
     }
-
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.txthospitalname.setText(hospitals.get(position).getHospitalname());
@@ -54,7 +52,6 @@ public class HospitalAdapter extends RecyclerView.Adapter<HospitalAdapter.MyView
             txtwebsite=itemView.findViewById(R.id.website);
             txthospitalnumber=itemView.findViewById(R.id.hospitalnumber);
         }
-
         @Override
         public void onClick(View v) {
 
