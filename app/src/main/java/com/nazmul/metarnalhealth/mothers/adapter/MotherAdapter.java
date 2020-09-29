@@ -41,7 +41,7 @@ public class MotherAdapter extends RecyclerView.Adapter<MotherAdapter.MyViewHold
             holder.doctorstatus.setText("Confirm");
         }
         else {
-            holder.doctorstatus.setText("delivared");
+            holder.doctorstatus.setText("Panding");
         }
 
 
