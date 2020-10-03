@@ -44,6 +44,8 @@ public class Constant {
     public static final String KEY_LOCATION="location";
     public static final String KEY_GENDER="gender";
 
+    public static final String KEY_DOCTOR_FEE="doctor_fee";
+
 
 
 //for share preferences

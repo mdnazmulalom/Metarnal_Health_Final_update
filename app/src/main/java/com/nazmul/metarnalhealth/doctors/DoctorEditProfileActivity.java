@@ -31,7 +31,7 @@ import es.dmoral.toasty.Toasty;
 
 public class DoctorEditProfileActivity extends AppCompatActivity {
 
-    EditText etxt_Fullame,etxt_Cell,txtLocation,etxt_Gender,etxt_Pass,etxt_designation,etxt_speciallist;
+    EditText etxt_Fullame,etxt_Cell,txtLocation,etxt_Gender,etxt_Pass,etxt_designation,etxt_speciallist,etxt_doctor_fee;
 
     TextView txt_Name,txtUpdate;
 
@@ -48,11 +48,13 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         //extra add designation
         etxt_designation = findViewById(R.id.etxtdesignation);
 //        extra add speciallist
-        etxt_speciallist=findViewById(R.id.etxtspeciallist);
+        etxt_speciallist=findViewById(R.id.etxt_specialist);
         etxt_Cell = findViewById(R.id.etxtcell);
         txtLocation= findViewById(R.id.location);
         etxt_Gender = findViewById(R.id.gender);
         etxt_Pass= findViewById(R.id.password);
+
+        etxt_doctor_fee = findViewById(R.id.etxt_doctor_fee);
         txtUpdate = findViewById(R.id.doctor_update_profile);
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
@@ -63,6 +65,7 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         String getName=getIntent().getExtras().getString("Name");
         String getDesignation = getIntent().getExtras().getString("Designation");
         String getSpeciallist = getIntent().getExtras().getString("speciallist");
+        String getDoctorfee = getIntent().getExtras().getString("doctor_fee");
         String getCell=getIntent().getExtras().getString("cell");
         String getLocation=getIntent().getExtras().getString("location");
         String getGender=getIntent().getExtras().getString("gender");
@@ -71,6 +74,7 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         etxt_Fullame.setText(getName);
         etxt_designation.setText(getDesignation);
         etxt_speciallist.setText(getSpeciallist);
+        etxt_doctor_fee.setText(getDoctorfee);
         etxt_Cell.setText(getCell);
         etxt_Cell.setEnabled(false);
         txtLocation.setText(getLocation);
@@ -80,7 +84,7 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         etxt_speciallist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String[] speciallist={"Medicine","Gynecologist"};
+                final String[] speciallist={"Medicine","Gynecologist","Child","Plastic Surgery"};
                 AlertDialog.Builder builder=new AlertDialog.Builder(DoctorEditProfileActivity.this);
                 builder.setTitle("SELECT SPECIALLIST");
 
@@ -93,7 +97,13 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
                                 etxt_speciallist.setText("Medicine");
                                 break;
                             case 1:
-                                etxt_speciallist.setText("Gynecologist");
+                                etxt_speciallist.setText("Gynecology");
+                                break;
+                            case 2:
+                                etxt_speciallist.setText("Child");
+                                break;
+                            case 3:
+                                etxt_speciallist.setText("Plastic Surgery");
                                 break;
                         }
                     }
@@ -271,6 +281,7 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
         final String name = etxt_Fullame.getText().toString();
         final String designation = etxt_designation.getText().toString();
         final String specialist = etxt_speciallist.getText().toString();
+        final String doctor_fee = etxt_doctor_fee.getText().toString();
         final String cell = etxt_Cell.getText().toString();
         final String location = txtLocation.getText().toString();
         final String g = etxt_Gender.getText().toString();
@@ -285,7 +296,12 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
             etxt_Cell.setError("Invalid Cell");
             etxt_Cell.requestFocus();
 
-        } else if (password.length()<4) {
+        }
+        else if (doctor_fee.isEmpty()){
+            etxt_doctor_fee.setError("Input Your Fee");
+            etxt_doctor_fee.requestFocus();
+        }
+        else if (password.length()<4) {
             etxt_Pass.setError("Password too short! or Invalid Password");
             etxt_Pass.requestFocus();
         } else {
@@ -364,13 +380,14 @@ public class DoctorEditProfileActivity extends AppCompatActivity {
                     params.put(Constant.KEY_NAME, name);
                     params.put(Constant.KEY_DESIGNATION,designation);
                     params.put(Constant.KEY_SPECIALLIST,specialist);
+                    params.put(Constant.KEY_DOCTOR_FEE,doctor_fee);
                     params.put(Constant.KEY_CELL, cell);
                     params.put(Constant.KEY_GENDER, g);
                     params.put(Constant.KEY_LOCATION, location);
                     params.put(Constant.KEY_PASSWORD, password);
 
 
-                    Log.d("INFO", name+designation+specialist+cell+g+location+password);
+                    Log.d("INFO", name+designation+specialist+doctor_fee+cell+g+location+password);
 
                     //returning parameter
                     return params;

@@ -27,7 +27,7 @@ import org.json.JSONObject;
 
 public class DoctorProfileActivity extends AppCompatActivity {
 
-    TextView txtFullname, txtName,txtdesignation,txtspeciallist,txtCell,txtLocation,txtGender,txtPassword,txtUpdateprofile;
+    TextView txtFullname, txtName,txtdesignation,txtspeciallist,txtdoctorfee,txtCell,txtLocation,txtGender,txtPassword,txtUpdateprofile;
     String UserCell;
     private ProgressDialog loading;
     SharedPreferences sharedPreferences;
@@ -49,6 +49,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
         txtFullname=findViewById(R.id.etxtfullname);
         txtdesignation = findViewById(R.id.txt_designation);
         txtspeciallist=findViewById(R.id.txt_speciallist);
+        txtdoctorfee = findViewById(R.id.txt_doctor_fee);
         txtName=findViewById(R.id.doctor_name);
         txtCell=findViewById(R.id.etxtcell);
         txtLocation=findViewById(R.id.location);
@@ -63,6 +64,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
                 String s= txtFullname.getText().toString();
                 String designation = txtdesignation.getText().toString();
                 String speciallist=txtspeciallist.getText().toString();
+                String doctor_fee = txtdoctorfee.getText().toString();
                 String cell = txtCell.getText().toString();
                 String location = txtLocation.getText().toString();
                 String gender = txtGender.getText().toString();
@@ -71,6 +73,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
                 intent.putExtra("Name",s);
                 intent.putExtra("Designation",designation);
                 intent.putExtra("speciallist",speciallist);
+                intent.putExtra("doctor_fee",doctor_fee);
                 intent.putExtra("cell",cell);
                 intent.putExtra("location",location);
                 intent.putExtra("gender",gender);
@@ -109,6 +112,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
         String name ="";
         String designation ="";
         String speciallist="";
+        String doctor_fee = "";
         String cell ="";
         String location ="";
         String gender ="";
@@ -127,12 +131,13 @@ public class DoctorProfileActivity extends AppCompatActivity {
             name = ProfileData.getString(Constant.KEY_NAME);
             designation = ProfileData.getString(Constant.KEY_DESIGNATION);
             speciallist=ProfileData.getString(Constant.KEY_SPECIALLIST);
+            doctor_fee = ProfileData.getString(Constant.KEY_DOCTOR_FEE);
             cell = ProfileData.getString(Constant.KEY_CELL);
             location = ProfileData.getString(Constant.KEY_LOCATION);
             gender = ProfileData.getString(Constant.KEY_GENDER);
 //            password=ProfileData.getString(Constant.KEY_PASSWORD);
 
-            Log.d("Name",name+ designation +" "+speciallist+""+cell+" "+location+" "+gender);
+            Log.d("Name",name+ designation +" "+speciallist+" "+doctor_fee+" "+cell+" "+location+" "+gender);
         }
         catch (JSONException e) {
             e.printStackTrace();
@@ -140,6 +145,7 @@ public class DoctorProfileActivity extends AppCompatActivity {
         txtFullname.setText(name);
         txtdesignation.setText(designation);
         txtspeciallist.setText(speciallist);
+        txtdoctorfee.setText(doctor_fee);
         txtName.setText(name);
         txtCell.setText(cell);
         txtLocation.setText(location);
