@@ -14,6 +14,8 @@ public class Doctors {
     private String designation;
     @SerializedName("speciallist")
     private String speciallist;
+    @SerializedName("doctor_fee")
+    private String doctor_fee;
     @SerializedName("cell")
     private String cell;
     @SerializedName("location")
@@ -38,6 +40,9 @@ public class Doctors {
     }
     public String getSpeciallist() {
         return speciallist;
+    }
+    public String getDoctor_fee() {
+        return doctor_fee;
     }
     public String getCell() {
         return cell;

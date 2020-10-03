@@ -91,8 +91,6 @@ Zapp/src/main/java/com/nazmul/metarnalhealth/mothers/firstaid/Firstaid_Shishu_Ni
 ]app/src/main/java/com/nazmul/metarnalhealth/mothers/firstaid/FirstaidAfterProsobActivity.java,2/8/28d88e5fa4606f5beef6412db8ac38d4100fa85b
 ‰
 Yapp/src/main/java/com/nazmul/metarnalhealth/mothers/firstaid/FirstaidFistulaActivity.java,4/7/477f367d71087402237d7ab1ddd44d569c53783f
-g
-7app/src/main/res/layout/activity_doctor_description.xml,8/9/8932b69591e14626574c1c49c09422988f140f53
 R
 "app/src/main/res/values/styles.xml,f/7/f79cc2688e29fcbc286fda14ae07b27c9e83690f
 €
@@ -111,3 +109,9 @@ Eapp/src/main/java/com/nazmul/metarnalhealth/mothers/model/Mother.java,2/c/2cb1
 Papp/src/main/java/com/nazmul/metarnalhealth/mothers/adapter/HospitalAdapter.java,a/e/ae202f46e3ea01516c94dda4d0a3794db65a843c
 }
 Mapp/src/main/java/com/nazmul/metarnalhealth/mothers/HospitalInfoActivity.java,5/6/569c1442b22079dd7fb0532e65cdd2d388a1f6c9
+h
+8app/src/main/res/layout/activity_doctor_edit_profile.xml,7/3/7326088ca9fe03ef38cbbe9331bb1991d75c98ee
+c
+3app/src/main/res/layout/activity_doctor_profile.xml,e/2/e217cd08a64e57981171e57fab44c5fb326ba34f
+„
+Tapp/src/main/java/com/nazmul/metarnalhealth/doctors/Confirm_Appoinment_Activity.java,2/7/272632849b4b6285adea76ccb637f567c05b6f25

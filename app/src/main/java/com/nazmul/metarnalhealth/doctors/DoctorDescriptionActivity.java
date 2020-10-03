@@ -39,7 +39,7 @@ import es.dmoral.toasty.Toasty;
 public class DoctorDescriptionActivity extends AppCompatActivity {
 
     private ApiInterface apiInterface;
-    String name,designation,speciallist,id,doctor_cell;
+    String name,designation,speciallist,id,doctor_cell,doctor_fee;
     TextView DescriptionName,DescriptionDesignation,DescriptionSpeciallist, TV_date;
     EditText Problem_description,Et_date;
     Button btnAppoinment;
@@ -99,6 +99,7 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         doctor_cell = getIntent().getExtras().getString("cell");
         designation=getIntent().getExtras().getString("designaiton");
         speciallist=getIntent().getExtras().getString("speciallist");
+        doctor_fee = getIntent().getExtras().getString("doctor_fee");
 
 
 

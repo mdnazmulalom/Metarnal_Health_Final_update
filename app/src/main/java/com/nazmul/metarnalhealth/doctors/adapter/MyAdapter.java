@@ -37,6 +37,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
       holder.name.setText(doctors.get(position).getName());
       holder.specialist.setText(doctors.get(position).getSpeciallist());
       holder.designation.setText(doctors.get(position).getDesignation());
+      holder.doctor_fee.setText(doctors.get(position).getDoctor_fee());
       holder.location.setText(doctors.get(position).getLocation());
     }
 
@@ -46,12 +47,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView name,designation,specialist,location,appoinment;
+        TextView name,designation,specialist,location,appoinment,doctor_fee;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.doctor_name);
             designation = itemView.findViewById(R.id.Designation);
             specialist = itemView.findViewById(R.id.Specialist);
+            doctor_fee = itemView.findViewById(R.id.txt_doctor_fee);
             location = itemView.findViewById(R.id.location);
             appoinment = itemView.findViewById(R.id.appoinment);
             itemView.setOnClickListener(this);
@@ -66,6 +68,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
           intent.putExtra("cell",doctors.get(getAdapterPosition()).getCell());
           intent.putExtra("designaiton",doctors.get(getAdapterPosition()).getDesignation());
           intent.putExtra("speciallist",doctors.get(getAdapterPosition()).getSpeciallist());
+          intent.putExtra("doctor_fee",doctors.get(getAdapterPosition()).getDoctor_fee());
           context.startActivity(intent);
         }
     }
