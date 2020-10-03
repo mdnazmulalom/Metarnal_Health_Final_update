@@ -8,6 +8,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -46,6 +47,11 @@ public class MotherAppoinmentHistory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mother_appoinment_history);
 
+        getSupportActionBar().setHomeButtonEnabled(false); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
+        getSupportActionBar().setTitle("Appointment");
+
+
         recyclerView=findViewById(R.id.mother_appoinment_recycleview);
         progressBar=findViewById(R.id.mother_appoinment_progressbar);
         layoutManager=new LinearLayoutManager(this);
@@ -79,5 +85,18 @@ public class MotherAppoinmentHistory extends AppCompatActivity {
             }
         });
 
+    }
+
+    //for back button
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

@@ -130,6 +130,7 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
         FetchData("Doctors", "");
 
     }
+
     //for back button
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -142,5 +143,4 @@ public class DoctorsInfoViewActivity extends AppCompatActivity{
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }
