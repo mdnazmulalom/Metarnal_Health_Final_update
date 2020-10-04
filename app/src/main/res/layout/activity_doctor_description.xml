@@ -56,8 +56,10 @@
                     android:id="@+id/Descripton_Name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
                     android:hint="Doctors name"
+                    android:paddingLeft="10dp"
                     android:textColor="#1B1717"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -66,43 +68,53 @@
                     android:id="@+id/Descricption_designation"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
                     android:hint="Designation"
+                    android:paddingLeft="10dp"
                     android:textColor="#1B1717"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/Description_speciallist"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
                     android:hint="Speciallist"
+                    android:paddingLeft="10dp"
                     android:textColor="#1B1717"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/problem_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:hint="আপনার সমস্যা লিখুন "
-                    android:inputType="textMultiLine"
-                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tv_date"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
                     android:gravity="center"
                     android:hint="Select Date"
                     android:textSize="18sp" />
 
+                <EditText
+                    android:id="@+id/problem_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="আপনার সমস্যা লিখুন "
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -122,13 +134,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="right"
-                            android:text="bKash Number:"
+                            android:text="To bKash Number:"
                             android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/textView27"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
                             android:gravity="right"
                             android:text="Payment Amount: TK."
                             android:textSize="18sp" />
@@ -136,9 +149,20 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
                             android:gravity="right"
                             android:text="bKash-Trans ID:"
                             android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:paddingTop="3dp"
+                            android:text="From bKash Number:"
+                            android:textSize="18sp" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -146,35 +170,91 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/textView26"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="TextView" />-->
+
                         <TextView
                             android:id="@+id/doctor_fee"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="700"
+                            android:textColor="@color/button"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
                             android:text="017100001111"
+                            android:textColor="@color/button"
                             android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/payment_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border"
+                            android:hint="700"
+                            android:inputType="number"
+                            android:padding="3dp"
+                            android:textColor="@color/textcolor"
+                            android:textSize="16sp">
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/bkash_trans_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/border"
+                            android:hint="7J170IJORANH"
+                            android:inputType="text"
+                            android:padding="3dp"
+                            android:textColor="@color/textcolor"
+                            android:textSize="16sp">
+
+                        </EditText>
+                        <EditText
+                            android:id="@+id/bkash_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/border"
+                            android:hint="01516000011"
+                            android:inputType="text"
+                            android:padding="3dp"
+                            android:textColor="@color/textcolor"
+                            android:textSize="16sp">
+
+                        </EditText>
+
 
                     </LinearLayout>
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_appoinment"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Book Your Appointment"
+                    android:textColor="#FAEFEF" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/btn_appoinment"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/button_background"
-            android:text="Book Your Appointment"
-            android:textColor="#FAEFEF" />
+
 
     </GridLayout>
 </RelativeLayout>
