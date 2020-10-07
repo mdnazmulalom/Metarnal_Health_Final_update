@@ -46,6 +46,11 @@ public class Constant {
 
     public static final String KEY_DOCTOR_FEE="doctor_fee";
 
+    // appoinment key
+    public static final String KEY_BK_PAYMENT_AMOUNT = "bk_payment_amount";
+    public static final String KEY_BK_TRANS_ID ="bk_trans_id";
+    public static final String KEY_FROM_BKASH_NUMBER = "form_bkash_number";
+
 
 
 //for share preferences

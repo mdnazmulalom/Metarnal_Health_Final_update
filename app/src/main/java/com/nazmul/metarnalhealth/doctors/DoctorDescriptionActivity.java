@@ -39,9 +39,9 @@ import es.dmoral.toasty.Toasty;
 public class DoctorDescriptionActivity extends AppCompatActivity {
 
     private ApiInterface apiInterface;
-    String name,designation,speciallist,id,doctor_cell,doctor_fee;
-    TextView DescriptionName,DescriptionDesignation,DescriptionSpeciallist, TV_date;
-    EditText Problem_description,Et_date;
+    String name,designation,speciallist,id,doctor_cell,get_doctor_fee;
+    TextView DescriptionName,DescriptionDesignation,DescriptionSpeciallist, TV_date,doctor_fee,payment_amount,doctor_bkash_cell;
+    EditText Problem_description,Et_date,bkash_trans_id,from_bkash_number;
     Button btnAppoinment;
 
     DatePickerDialog.OnDateSetListener setListener;
@@ -59,6 +59,13 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         DescriptionDesignation=findViewById(R.id.Descricption_designation);
         DescriptionSpeciallist=findViewById(R.id.Description_speciallist);
         Problem_description = findViewById(R.id.problem_description);
+        doctor_bkash_cell = findViewById(R.id.doctor_bkash_number);
+        doctor_fee = findViewById(R.id.doctor_fee);
+
+        payment_amount = findViewById(R.id.payment_amount);
+        bkash_trans_id = findViewById(R.id.bkash_trans_id);
+        from_bkash_number = findViewById(R.id.from_bkash_number);
+
         btnAppoinment = findViewById(R.id.btn_appoinment);
 //        Et_date = findViewById(R.id.et_date);
         TV_date = findViewById(R.id.tv_date);
@@ -99,7 +106,7 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         doctor_cell = getIntent().getExtras().getString("cell");
         designation=getIntent().getExtras().getString("designaiton");
         speciallist=getIntent().getExtras().getString("speciallist");
-        doctor_fee = getIntent().getExtras().getString("doctor_fee");
+        get_doctor_fee = getIntent().getExtras().getString("doctor_fee");
 
 
 
@@ -108,12 +115,21 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
 //        Problem_description.setText(cell);
         DescriptionDesignation.setText(designation);
         DescriptionSpeciallist.setText(speciallist);
+        doctor_fee.setText(get_doctor_fee);
+        payment_amount.setText(get_doctor_fee);
+        doctor_bkash_cell.setText(doctor_cell);
+
+
 
         btnAppoinment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String problem_description =Problem_description.getText().toString();
                 String appoinment_date = TV_date.getText().toString();
+                String bkash_trans = bkash_trans_id.getText().toString();
+                String fr_bkash_number = from_bkash_number.getText().toString();
+
+
                 if (appoinment_date.isEmpty()){
                     TV_date.setError("Date can't be empty");
                     TV_date.requestFocus();
@@ -121,6 +137,15 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 if (problem_description.isEmpty()){
                     Problem_description.setError("Problem Description can't be empty");
                     Problem_description.requestFocus();
+                }
+                if (bkash_trans.isEmpty()){
+                    bkash_trans_id.setError("Please Enter bKash Trans ID");
+                    bkash_trans_id.requestFocus();
+                }
+                if (fr_bkash_number.length()!=11 || fr_bkash_number.contains(" ") || fr_bkash_number.charAt(0)!='0' || fr_bkash_number.charAt(1)!='1')
+                {
+                    from_bkash_number.setError("Please enter correct cell");
+                    from_bkash_number.requestFocus();
                 }
                 else {
                     appoinment();
@@ -139,6 +164,10 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         final String designation = getIntent().getExtras().getString("designaiton");
         final String problem_descripion = Problem_description.getText().toString();
         final String appoinment_date = TV_date.getText().toString();
+
+        final String bk_payment_amount = payment_amount.getText().toString();
+        final String bk_trans_id = bkash_trans_id.getText().toString();
+        final String from_bkash_num = from_bkash_number.getText().toString();
 
 
         loading = new ProgressDialog(DoctorDescriptionActivity.this);
@@ -179,7 +208,12 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 params.put(Constant.KEY_PROBLEM_DESCRIPTON,problem_descripion);
                 params.put(Constant.KEY_APPOINMENT_DATE,appoinment_date);
 
-                Log.d("Fulldata",name+appoinment_date+cell+doctors_cell+designation+problem_descripion);
+                params.put(Constant.KEY_BK_PAYMENT_AMOUNT,bk_payment_amount);
+                params.put(Constant.KEY_BK_TRANS_ID,bk_trans_id);
+                params.put(Constant.KEY_FROM_BKASH_NUMBER,from_bkash_num);
+
+
+                Log.d("Fulldata",name+appoinment_date+cell+doctors_cell+designation+problem_descripion+" amount"+ bk_payment_amount+bk_trans_id+from_bkash_num);
 
 
                 //returning parameter
