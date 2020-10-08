@@ -32,7 +32,23 @@ public class Doctor_Appoinment_Adapter extends RecyclerView.Adapter<Doctor_Appoi
 
     @Override
     public void onBindViewHolder(@NonNull Doctor_Appoinment_Adapter.MyViewHolder holder, int position) {
-       holder.doctor_appoinment_staatus.setText(doctor_appoinment_lists.get(position).getStatus());
+//       holder.doctor_appoinment_staatus.setText(doctor_appoinment_lists.get(position).getStatus());
+
+        //        holder.doctorstatus.setText(mothers.get(position).getStatus());
+        String status=doctor_appoinment_lists.get(position).getStatus();
+        if (status.equals("0")){
+            holder.doctor_appoinment_staatus.setText("Panding");
+        }
+        else if (status.equals("1")){
+            holder.doctor_appoinment_staatus.setText("Confirm");
+        }
+        else {
+            holder.doctor_appoinment_staatus.setText("Cancel");
+        }
+
+
+
+
        holder.doctor_appoinment_mother_cell.setText(doctor_appoinment_lists.get(position).getMother_number());
        holder.doctor_apponment_date.setText(doctor_appoinment_lists.get(position).getAppoinment_date());
        holder.problem_description.setText(doctor_appoinment_lists.get(position).getProblem_descripion());

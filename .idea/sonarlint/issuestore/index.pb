@@ -109,8 +109,6 @@ Eapp/src/main/java/com/nazmul/metarnalhealth/mothers/model/Mother.java,2/c/2cb1
 Papp/src/main/java/com/nazmul/metarnalhealth/mothers/adapter/HospitalAdapter.java,a/e/ae202f46e3ea01516c94dda4d0a3794db65a843c
 }
 Mapp/src/main/java/com/nazmul/metarnalhealth/mothers/HospitalInfoActivity.java,5/6/569c1442b22079dd7fb0532e65cdd2d388a1f6c9
-h
-8app/src/main/res/layout/activity_doctor_edit_profile.xml,7/3/7326088ca9fe03ef38cbbe9331bb1991d75c98ee
 c
 3app/src/main/res/layout/activity_doctor_profile.xml,e/2/e217cd08a64e57981171e57fab44c5fb326ba34f
 „

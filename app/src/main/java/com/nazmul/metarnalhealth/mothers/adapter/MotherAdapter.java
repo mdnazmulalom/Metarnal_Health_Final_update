@@ -34,17 +34,15 @@ public class MotherAdapter extends RecyclerView.Adapter<MotherAdapter.MyViewHold
 
 //        holder.doctorstatus.setText(mothers.get(position).getStatus());
         String status=mothers.get(position).getStatus();
-        if (status.equals(0)){
+        if (status.equals("0")){
             holder.doctorstatus.setText("Panding");
         }
-        if (status.equals(1)){
+        else if (status.equals("1")){
             holder.doctorstatus.setText("Confirm");
         }
         else {
-            holder.doctorstatus.setText("Panding");
+            holder.doctorstatus.setText("Cancel");
         }
-
-
 
         holder.doctorname.setText(mothers.get(position).getDoctor_name());
         holder.appoinmentdate.setText(mothers.get(position).getAppoinment_date());
