@@ -1,6 +1,7 @@
 package com.nazmul.metarnalhealth.doctors.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,6 +68,7 @@ public class Doctor_Appoinment_Adapter extends RecyclerView.Adapter<Doctor_Appoi
             doctor_appoinment_mother_cell = itemView.findViewById(R.id.doctor_appoinment_mother_cell);
             doctor_apponment_date = itemView.findViewById(R.id.doctor_apponment_date);
             problem_description = itemView.findViewById(R.id.problem_description);
+            itemView.setOnClickListener(this);
         }
         @Override
         public void onClick(View v) {
