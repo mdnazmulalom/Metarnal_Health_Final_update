@@ -187,7 +187,6 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                         if (response.equals("failure")) {
                             loading.dismiss();
                             Toasty.success(DoctorDescriptionActivity.this, "Appoinment failed!", Toast.LENGTH_SHORT).show();
-
                         }
                     }
                 },

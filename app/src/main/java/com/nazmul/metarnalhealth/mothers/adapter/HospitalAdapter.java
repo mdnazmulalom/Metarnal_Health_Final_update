@@ -1,6 +1,7 @@
 package com.nazmul.metarnalhealth.mothers.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nazmul.metarnalhealth.R;
+import com.nazmul.metarnalhealth.doctors.Confirm_Appoinment_Activity;
+import com.nazmul.metarnalhealth.doctors.DoctorAppoinmentHistory;
+import com.nazmul.metarnalhealth.doctors.DoctorDescriptionActivity;
 import com.nazmul.metarnalhealth.mothers.model.Hospital;
 import com.nazmul.metarnalhealth.mothers.model.Mother;
 
@@ -51,9 +55,10 @@ public class HospitalAdapter extends RecyclerView.Adapter<HospitalAdapter.MyView
             txtaddress=itemView.findViewById(R.id.address);
             txtwebsite=itemView.findViewById(R.id.website);
             txthospitalnumber=itemView.findViewById(R.id.hospitalnumber);
+            itemView.setOnClickListener(this);
         }
         @Override
-        public void onClick(View v) {
+        public void onClick(View view) {
 
         }
     }

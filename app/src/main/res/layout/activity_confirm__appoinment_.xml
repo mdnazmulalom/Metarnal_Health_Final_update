@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".doctors.Confirm_Appoinment_Activity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etxtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="Id"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/etxtstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="Panding"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/etxtmothercell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Mother Cell"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/etxtdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Appointment date"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/etxtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Description"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_mothercall"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="Call to mother"
+            android:textColor="#FAEFEF" />
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="Confirm Appointment"
+            android:textColor="#FAEFEF" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="Cancel Appointment"
+            android:textColor="#FAEFEF" />
+
+
+    </LinearLayout>
+</RelativeLayout>

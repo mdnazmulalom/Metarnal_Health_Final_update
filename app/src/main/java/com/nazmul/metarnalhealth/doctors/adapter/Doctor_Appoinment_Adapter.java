@@ -1,6 +1,9 @@
 package com.nazmul.metarnalhealth.doctors.adapter;
 
 import android.content.Context;
+
+import android.content.Intent;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +13,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nazmul.metarnalhealth.R;
+import com.nazmul.metarnalhealth.doctors.Confirm_Appoinment_Activity;
+import com.nazmul.metarnalhealth.doctors.DoctorDescriptionActivity;
 import com.nazmul.metarnalhealth.doctors.model.Doctor_Appoinment_List;
+
 
 import java.util.List;
 
@@ -67,10 +73,18 @@ public class Doctor_Appoinment_Adapter extends RecyclerView.Adapter<Doctor_Appoi
             doctor_appoinment_mother_cell = itemView.findViewById(R.id.doctor_appoinment_mother_cell);
             doctor_apponment_date = itemView.findViewById(R.id.doctor_apponment_date);
             problem_description = itemView.findViewById(R.id.problem_description);
+            itemView.setOnClickListener(this);
+
         }
         @Override
         public void onClick(View v) {
-
+            Intent intent=new Intent(context, Confirm_Appoinment_Activity.class);
+            intent.putExtra("id",doctor_appoinment_lists.get(getAdapterPosition()).getAppoinment_id());
+            intent.putExtra("status",doctor_appoinment_lists.get(getAdapterPosition()).getStatus());
+            intent.putExtra("mothercell",doctor_appoinment_lists.get(getAdapterPosition()).getMother_number());
+            intent.putExtra("appointmentdate",doctor_appoinment_lists.get(getAdapterPosition()).getAppoinment_date());
+            intent.putExtra("description",doctor_appoinment_lists.get(getAdapterPosition()).getProblem_descripion());
+            context.startActivity(intent);
         }
     }
 }

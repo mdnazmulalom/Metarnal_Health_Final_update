@@ -21,6 +21,7 @@ public class Constant {
     public static final String DOCTOR_PROFILE_UPDATE_URL = MAIN_URL+"/doctors_profile_update.php";
 
     public static final String DOCTOR_APPOINMENT = MAIN_URL+"/doctorsAppoinment.php";
+    public static final String APPOINTMENT_CONFIRMATION_URL = MAIN_URL+"/doctor_appointment_confirm.php";
 
 
 
@@ -46,10 +47,14 @@ public class Constant {
 
     public static final String KEY_DOCTOR_FEE="doctor_fee";
 
+    public static final String KEY_STATUS = "status";
+
     // appoinment key
     public static final String KEY_BK_PAYMENT_AMOUNT = "bk_payment_amount";
     public static final String KEY_BK_TRANS_ID ="bk_trans_id";
     public static final String KEY_FROM_BKASH_NUMBER = "form_bkash_number";
+
+
 
 
 
