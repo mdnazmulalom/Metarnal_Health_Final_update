@@ -21,7 +21,7 @@ public class Constant {
     public static final String DOCTOR_PROFILE_UPDATE_URL = MAIN_URL+"/doctors_profile_update.php";
 
     public static final String DOCTOR_APPOINMENT = MAIN_URL+"/doctorsAppoinment.php";
-    public static final String APPOINTMENT_CONFIRMATION_URL = MAIN_URL+"/doctor_appointment_confirm.php";
+    public static final String APPOINTMENT_CONFIRMATION_URL = MAIN_URL+"/doctorconfirmappointment.php";
 
 
 
