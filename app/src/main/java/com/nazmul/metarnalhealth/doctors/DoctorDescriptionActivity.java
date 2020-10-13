@@ -2,9 +2,11 @@ package com.nazmul.metarnalhealth.doctors;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -27,6 +29,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.R;
+import com.nazmul.metarnalhealth.SignupActivity;
 import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
 import com.nazmul.metarnalhealth.remote.ApiInterface;
 
@@ -41,7 +44,7 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
     private ApiInterface apiInterface;
     String name,designation,speciallist,id,doctor_cell,get_doctor_fee;
     TextView DescriptionName,DescriptionDesignation,DescriptionSpeciallist, TV_date,doctor_fee,payment_amount,doctor_bkash_cell;
-    EditText Problem_description,Et_date,bkash_trans_id,from_bkash_number;
+    EditText Problem_description,Et_date,bkash_trans_id,from_bkash_number,appoinment_chamber_type;
     Button btnAppoinment;
 
     DatePickerDialog.OnDateSetListener setListener;
@@ -61,10 +64,13 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         Problem_description = findViewById(R.id.problem_description);
         doctor_bkash_cell = findViewById(R.id.doctor_bkash_number);
         doctor_fee = findViewById(R.id.doctor_fee);
+        appoinment_chamber_type = findViewById(R.id.appoinment_chamber_type);
 
         payment_amount = findViewById(R.id.payment_amount);
         bkash_trans_id = findViewById(R.id.bkash_trans_id);
         from_bkash_number = findViewById(R.id.from_bkash_number);
+
+
 
         btnAppoinment = findViewById(R.id.btn_appoinment);
 //        Et_date = findViewById(R.id.et_date);
@@ -119,6 +125,43 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         payment_amount.setText(get_doctor_fee);
         doctor_bkash_cell.setText(doctor_cell);
 
+
+        appoinment_chamber_type.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String[] chamberlist={"Online Video Consultation Chamber","Physical Chamber"};
+                AlertDialog.Builder builder=new AlertDialog.Builder(DoctorDescriptionActivity.this);
+                builder.setTitle("Please Select Chamber");
+//                builder.setIcon(R.drawable.ic_location);
+                builder.setCancelable(false);
+                builder.setItems(chamberlist, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int position) {
+                        switch (position) {
+                            case 0:
+
+                                appoinment_chamber_type.setText("Online Video Consultation Chamber");
+                                break;
+
+                            case 1:
+
+                                appoinment_chamber_type.setText("Physical Chamber");
+                                break;
+
+                        }
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                AlertDialog locationTypeDialog = builder.create();
+                locationTypeDialog.show();
+            }
+        });
 
 
         btnAppoinment.setOnClickListener(new View.OnClickListener() {

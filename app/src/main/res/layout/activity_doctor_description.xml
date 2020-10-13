@@ -115,7 +115,7 @@
                             android:textSize="18sp" />
 
                         <EditText
-                            android:id="@+id/appoinment_type"
+                            android:id="@+id/appoinment_chamber_type"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_margin="5dp"
@@ -136,7 +136,7 @@
                             android:background="@drawable/border"
                             android:ems="10"
                             android:gravity="start|top"
-                            android:hint="আপনার সমস্যা লিখুন "
+                            android:hint="Problem"
                             android:inputType="textMultiLine"
                             android:paddingLeft="10dp"
                             android:textSize="18sp" />
