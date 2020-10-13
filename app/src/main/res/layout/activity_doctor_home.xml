@@ -162,6 +162,7 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_hospital_info"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -170,6 +171,7 @@
                         android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout
+
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:gravity="center"
@@ -179,14 +181,14 @@
                                 android:id="@+id/imageVie"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                app:srcCompat="@drawable/imgviewhelp" />
+                                app:srcCompat="@drawable/hospital" />
 
                             <TextView
                                 android:id="@+id/textView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="View Help Post"
+                                android:text="Hospital Information"
                                 android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>

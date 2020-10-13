@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,7 @@ import es.dmoral.toasty.Toasty;
 public class MotherHomeActivity extends AppCompatActivity {
 
     CardView card_mother,cardlogout,first_aid,card_doctorlist,card_doctor_appoinment,card_hospital_info;
+    TextView txtmother_profile;
 
     //for double back press to exit
     private static final int TIME_DELAY = 2000;
@@ -45,6 +47,8 @@ public class MotherHomeActivity extends AppCompatActivity {
         card_doctorlist = findViewById(R.id.card_doctor_list);
         card_doctor_appoinment=findViewById(R.id.card_doctor_appoinment);
         card_hospital_info=findViewById(R.id.hospitalinfo);
+
+
 
 
 

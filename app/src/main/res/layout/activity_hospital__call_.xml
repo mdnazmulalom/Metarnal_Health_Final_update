@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mothers.Hospital_Call_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txthospitalname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Hopital Name"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txthoptalcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Category"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Address"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txthospitalnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Hospital number"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/txtwebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Website"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_hospitalcall"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="Call to hospital"
+            android:textColor="#FAEFEF" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

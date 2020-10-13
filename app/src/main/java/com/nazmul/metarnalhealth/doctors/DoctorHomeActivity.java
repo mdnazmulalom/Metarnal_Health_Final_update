@@ -14,11 +14,12 @@ import androidx.cardview.widget.CardView;
 
 import com.nazmul.metarnalhealth.Constant;
 import com.nazmul.metarnalhealth.R;
+import com.nazmul.metarnalhealth.mothers.HospitalInfoActivity;
 
 import es.dmoral.toasty.Toasty;
 
 public class DoctorHomeActivity extends AppCompatActivity {
-    CardView CardDoctor,CardLogout,all_appoinment;
+    CardView CardDoctor,CardLogout,all_appoinment,cardhospitalinfo;
 
     private static final int TIME_DELAY = 2000;
     private static long back_pressed;
@@ -37,6 +38,7 @@ public class DoctorHomeActivity extends AppCompatActivity {
         CardDoctor=findViewById(R.id.card_doctor_profile);
         CardLogout=findViewById(R.id.card_doctor_logout);
         all_appoinment = findViewById(R.id.all_appoinment);
+        cardhospitalinfo=findViewById(R.id.card_hospital_info);
 
         getSupportActionBar().setHomeButtonEnabled(false); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
@@ -64,13 +66,20 @@ public class DoctorHomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+//        cardhospitalinfo.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+
+//            }
+//        });
+
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.menu, menu);
+//        return true;
+//    }
 
     //double backpress to exit
     @Override
