@@ -66,6 +66,13 @@ public class DoctorHomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        cardhospitalinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DoctorHomeActivity.this,HospitalInfoActivity.class);
+                startActivity(intent);
+            }
+        });
 //        cardhospitalinfo.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

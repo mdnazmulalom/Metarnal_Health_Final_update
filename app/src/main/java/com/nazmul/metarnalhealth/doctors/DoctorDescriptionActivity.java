@@ -206,13 +206,12 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 params.put(Constant.KEY_DESIGNATION,designation);
                 params.put(Constant.KEY_PROBLEM_DESCRIPTON,problem_descripion);
                 params.put(Constant.KEY_APPOINMENT_DATE,appoinment_date);
-
                 params.put(Constant.KEY_BK_PAYMENT_AMOUNT,bk_payment_amount);
                 params.put(Constant.KEY_BK_TRANS_ID,bk_trans_id);
                 params.put(Constant.KEY_FROM_BKASH_NUMBER,from_bkash_num);
 
 
-                Log.d("Fulldata",name+appoinment_date+cell+doctors_cell+designation+problem_descripion+" amount"+ bk_payment_amount+bk_trans_id+from_bkash_num);
+                Log.d("Fulldata",name+appoinment_date+" "+cell+" "+doctors_cell+designation+problem_descripion+" amount"+ bk_payment_amount+bk_trans_id+from_bkash_num);
 
 
                 //returning parameter
@@ -252,7 +251,6 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
 //        });
 //
 //
-
 
 
 

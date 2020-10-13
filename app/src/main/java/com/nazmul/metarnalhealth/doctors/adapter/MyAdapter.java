@@ -57,7 +57,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             location = itemView.findViewById(R.id.location);
             appoinment = itemView.findViewById(R.id.appoinment);
             itemView.setOnClickListener(this);
-
         }
 
         @Override

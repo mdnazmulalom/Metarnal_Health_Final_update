@@ -107,4 +107,8 @@ public interface ApiInterface {
             @Query("item_type") String item_type,
             @Query("key") String keyword
     );
+
+    
+
+
 }
