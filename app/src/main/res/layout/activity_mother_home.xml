@@ -98,10 +98,11 @@
                                 app:srcCompat="@drawable/profile" />
 
                             <TextView
+                                android:id="@+id/motherprofile"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:text="Mother Profile"
+                                android:text="Your Profile"
                                 android:textColor="@color/button"
                                 android:textStyle="bold" />
                         </LinearLayout>

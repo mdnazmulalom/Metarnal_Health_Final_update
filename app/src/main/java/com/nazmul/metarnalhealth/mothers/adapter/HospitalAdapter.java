@@ -14,6 +14,7 @@ import com.nazmul.metarnalhealth.R;
 import com.nazmul.metarnalhealth.doctors.Confirm_Appoinment_Activity;
 import com.nazmul.metarnalhealth.doctors.DoctorAppoinmentHistory;
 import com.nazmul.metarnalhealth.doctors.DoctorDescriptionActivity;
+import com.nazmul.metarnalhealth.mothers.Hospital_Call_Activity;
 import com.nazmul.metarnalhealth.mothers.model.Hospital;
 import com.nazmul.metarnalhealth.mothers.model.Mother;
 
@@ -59,7 +60,13 @@ public class HospitalAdapter extends RecyclerView.Adapter<HospitalAdapter.MyView
         }
         @Override
         public void onClick(View view) {
-
+            Intent intent=new Intent(context, Hospital_Call_Activity.class);
+            intent.putExtra("hospital_name",hospitals.get(getAdapterPosition()).getHospitalname());
+            intent.putExtra("category",hospitals.get(getAdapterPosition()).getCategory());
+            intent.putExtra("address",hospitals.get(getAdapterPosition()).getAddress());
+            intent.putExtra("hospital_number",hospitals.get(getAdapterPosition()).gethospitalnumber());
+            intent.putExtra("website",hospitals.get(getAdapterPosition()).getWebsite());
+            context.startActivity(intent);
         }
     }
 }

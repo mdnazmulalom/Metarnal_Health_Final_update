@@ -143,9 +143,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:gravity="right"
-                            android:text="Payment Amount: TK."
+                            android:text="Payment Amount:"
                             android:textColor="@android:color/holo_red_light"
-                            android:textSize="18sp" />
+                            android:textSize="17sp" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -154,17 +154,18 @@
                             android:gravity="right"
                             android:text="bKash-Trans ID:"
                             android:textColor="@android:color/holo_red_light"
-                            android:textSize="18sp" />
+                            android:textSize="17sp" />
 
                         <TextView
                             android:id="@+id/textView25"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
                             android:gravity="right"
                             android:paddingTop="3dp"
                             android:text="From bKash Number:"
                             android:textColor="@android:color/holo_red_light"
-                            android:textSize="18sp" />
+                            android:textSize="17sp" />
 
                     </LinearLayout>
 

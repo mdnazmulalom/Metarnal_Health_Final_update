@@ -46,7 +46,7 @@ public class Doctor_Appoinment_Adapter extends RecyclerView.Adapter<Doctor_Appoi
             holder.doctor_appoinment_staatus.setText("Panding");
         }
         else if (status.equals("1")){
-            holder.doctor_appoinment_staatus.setText("Confirm");
+            holder.doctor_appoinment_staatus.setText("Confirmed");
         }
         else {
             holder.doctor_appoinment_staatus.setText("Cancel");
