@@ -84,6 +84,11 @@ public class Doctor_Appoinment_Adapter extends RecyclerView.Adapter<Doctor_Appoi
             intent.putExtra("mothercell",doctor_appoinment_lists.get(getAdapterPosition()).getMother_number());
             intent.putExtra("appointmentdate",doctor_appoinment_lists.get(getAdapterPosition()).getAppoinment_date());
             intent.putExtra("description",doctor_appoinment_lists.get(getAdapterPosition()).getProblem_descripion());
+            intent.putExtra("chamber_type",doctor_appoinment_lists.get(getAdapterPosition()).getChamber_type());
+            intent.putExtra("zoom_or_chamber_address",doctor_appoinment_lists.get(getAdapterPosition()).getzoom_or_chamber_address());
+            intent.putExtra("bkash_number",doctor_appoinment_lists.get(getAdapterPosition()).getbkash_number());
+            intent.putExtra("bkash_trans_id",doctor_appoinment_lists.get(getAdapterPosition()).getbkash_trans_id());
+            intent.putExtra("bkash_amount",doctor_appoinment_lists.get(getAdapterPosition()).getbkash_amount());
             context.startActivity(intent);
         }
     }

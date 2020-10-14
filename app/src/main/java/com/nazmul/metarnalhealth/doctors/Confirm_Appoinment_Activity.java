@@ -38,7 +38,9 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
     TextView txt_id, txt_status,txt_mothercell,txt_appointmentdate,txt_description;
     Button btnmothercall,btnconfirmappointment,btncencelappointment;
     String getUserCell,getstatus,appointmentid,status,mothernumber;
+    TextView txt_chamber_type,txt_bkash_number,txt_bkash_amount,txt_bkash_trans_id;
     ProgressDialog loading;
+    EditText etxt_zoom_or_chamber_address;
 
     String UserCell;
     SharedPreferences sharedPreferences;
@@ -55,6 +57,14 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
         txt_appointmentdate=findViewById(R.id.etxtdate);
         txt_description=findViewById(R.id.etxtdescription);
 
+        txt_chamber_type = findViewById(R.id.txt_chamber_type);
+        txt_bkash_number = findViewById(R.id.txt_bkash_number);
+        txt_bkash_amount = findViewById(R.id.txt_bkash_amount);
+        txt_bkash_trans_id = findViewById(R.id.txt_bkash_trans_id);
+        etxt_zoom_or_chamber_address = findViewById(R.id.zoom_or_chamber_address);
+
+
+
 
         btnmothercall=findViewById(R.id.btn_mothercall);
         btnconfirmappointment=findViewById(R.id.btn_confirm);
@@ -66,12 +76,32 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
         mothernumber=getIntent().getExtras().getString("mothercell");
         String appointmentdate=getIntent().getExtras().getString("appointmentdate");
         String description=getIntent().getExtras().getString("description");
+        String chamber_type = getIntent().getExtras().getString("chamber_type");
+        String zoom_or_chamber_address =getIntent().getExtras().getString("zoom_or_chamber_address");
+        String bkash_number = getIntent().getExtras().getString("bkash_number");
+        String bkash_trans_id = getIntent().getExtras().getString("bkash_trans_id");
+        String bkash_amount = getIntent().getExtras().getString("bkash_amount");
+
+
+//        intent.putExtra("chamber_type",doctor_appoinment_lists.get(getAdapterPosition()).getChamber_type());
+//        intent.putExtra("zoom_or_chamber_address",doctor_appoinment_lists.get(getAdapterPosition()).getzoom_or_chamber_address());
+//        intent.putExtra("bkash_number",doctor_appoinment_lists.get(getAdapterPosition()).getbkash_number());
+//        intent.putExtra("bkash_trans_id",doctor_appoinment_lists.get(getAdapterPosition()).getbkash_trans_id());
+//        intent.putExtra("bkash_amount",doctor_appoinment_lists.get(getAdapterPosition()).getbkash_amount());
+
 
         txt_id.setText(appointmentid);
         txt_status.setText(status);
         txt_mothercell.setText(mothernumber);
         txt_appointmentdate.setText(appointmentdate);
         txt_description.setText(description);
+
+        txt_chamber_type.setText(chamber_type);
+        txt_bkash_number.setText(bkash_number);
+        txt_bkash_trans_id.setText(bkash_trans_id);
+        txt_bkash_amount.setText(bkash_amount);
+        etxt_zoom_or_chamber_address.setText(zoom_or_chamber_address);
+
 
         btnmothercall.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)

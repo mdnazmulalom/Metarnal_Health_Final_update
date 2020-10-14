@@ -15,6 +15,22 @@ public class Doctor_Appoinment_List {
     private String problem_descripion;
     @SerializedName("appoinment_date")
     private String appoinment_date;
+
+    @SerializedName("chamber_type")
+    private String chamber_type;
+
+    @SerializedName("zoom_or_chamber_address")
+    private String zoom_or_chamber_address;
+
+    @SerializedName("bkash_number")
+    private String bkash_number;
+
+    @SerializedName("bkash_trans_id")
+    private String bkash_trans_id;
+
+    @SerializedName("bkash_amount")
+    private String bkash_amount;
+
     @SerializedName("status")
     private String status;
 
@@ -42,6 +58,23 @@ public class Doctor_Appoinment_List {
     public String getAppoinment_date() {
         return appoinment_date;
     }
+    public String getChamber_type() {
+        return chamber_type;
+    }
+
+    public String getzoom_or_chamber_address() {
+        return zoom_or_chamber_address;
+    }
+    public String getbkash_number() {
+        return bkash_number;
+    }
+    public String getbkash_trans_id() {
+        return bkash_trans_id;
+    }
+    public String getbkash_amount() {
+        return bkash_amount;
+    }
+
     public String getStatus() {
         return status;
     }
