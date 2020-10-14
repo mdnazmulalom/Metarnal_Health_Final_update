@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.nazmul.metarnalhealth.R;
 import com.nazmul.metarnalhealth.doctors.Confirm_Appoinment_Activity;
 import com.nazmul.metarnalhealth.doctors.adapter.MyAdapter;
+import com.nazmul.metarnalhealth.mothers.Mother_Appointment_Details_ctivity;
 import com.nazmul.metarnalhealth.mothers.model.Mother;
 
 import java.util.List;
@@ -64,18 +65,18 @@ public class MotherAdapter extends RecyclerView.Adapter<MotherAdapter.MyViewHold
             doctorname=itemView.findViewById(R.id.doctor_appoinment_name);
             appoinmentdate=itemView.findViewById(R.id.doctor_apponment_date);
             desctiption=itemView.findViewById(R.id.doctor_problem_description);
-//            itemView.setOnClickListener(this);
+            itemView.setOnClickListener(this);
         }
         @Override
         public void onClick(View v) {
-//            Intent intent = new Intent(context, Confirm_Appoinment_Activity.class);
+            Intent intent = new Intent(context, Mother_Appointment_Details_ctivity.class);
 //            intent.putExtra("status",mothers.get(getAdapterPosition()).getStatus());
 //            intent.putExtra("doctor_name",mothers.get(getAdapterPosition()).getDoctor_name());
 //            intent.putExtra("Date",mothers.get(getAdapterPosition()).getAppoinment_date());
 //            intent.putExtra("descripton",mothers.get(getAdapterPosition()).getProblem_descripion());
 ////            intent.putExtra("speciallist",doctors.get(getAdapterPosition()).getSpeciallist());
 ////            intent.putExtra("doctor_fee",doctors.get(getAdapterPosition()).getDoctor_fee());
-//            context.startActivity(intent);
+            context.startActivity(intent);
         }
     }
 }
