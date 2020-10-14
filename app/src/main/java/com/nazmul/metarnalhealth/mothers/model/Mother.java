@@ -3,8 +3,6 @@ package com.nazmul.metarnalhealth.mothers.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Mother {
-    @SerializedName("date")
-    private String 	date;
     @SerializedName("appoinment_id")
     private String appoinment_id;
     @SerializedName("doctor_name")
@@ -17,8 +15,27 @@ public class Mother {
     private String problem_descripion;
     @SerializedName("appoinment_date")
     private String appoinment_date;
+
+
+    @SerializedName("chamber_type")
+    private String chamber_type;
+
+    @SerializedName("zoom_or_chamber_address")
+    private String zoom_or_chamber_address;
+
+    @SerializedName("bkash_number")
+    private String bkash_number;
+
+    @SerializedName("bkash_trans_id")
+    private String bkash_trans_id;
+
+    @SerializedName("bkash_amount")
+    private String bkash_amount;
     @SerializedName("status")
     private String status;
+
+    @SerializedName("date")
+    private String 	date;
 
     @SerializedName("value")
     private String value;
@@ -44,6 +61,24 @@ public class Mother {
     public String getAppoinment_date() {
         return appoinment_date;
     }
+
+    public String getChamber_type() {
+        return chamber_type;
+    }
+
+    public String getzoom_or_chamber_address() {
+        return zoom_or_chamber_address;
+    }
+    public String getbkash_number() {
+        return bkash_number;
+    }
+    public String getbkash_trans_id() {
+        return bkash_trans_id;
+    }
+    public String getbkash_amount() {
+        return bkash_amount;
+    }
+
     public String getStatus() {
         return status;
     }

@@ -47,9 +47,9 @@ public class MotherAppoinmentHistory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mother_appoinment_history);
 
-        getSupportActionBar().setHomeButtonEnabled(false); //for back button
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
-        getSupportActionBar().setTitle("Appointment");
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("All Appointment");
 
 
         recyclerView=findViewById(R.id.mother_appoinment_recycleview);

@@ -70,12 +70,16 @@ public class MotherAdapter extends RecyclerView.Adapter<MotherAdapter.MyViewHold
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(context, Mother_Appointment_Details_ctivity.class);
-//            intent.putExtra("status",mothers.get(getAdapterPosition()).getStatus());
-//            intent.putExtra("doctor_name",mothers.get(getAdapterPosition()).getDoctor_name());
-//            intent.putExtra("Date",mothers.get(getAdapterPosition()).getAppoinment_date());
-//            intent.putExtra("descripton",mothers.get(getAdapterPosition()).getProblem_descripion());
-////            intent.putExtra("speciallist",doctors.get(getAdapterPosition()).getSpeciallist());
-////            intent.putExtra("doctor_fee",doctors.get(getAdapterPosition()).getDoctor_fee());
+            intent.putExtra("id",mothers.get(getAdapterPosition()).getAppoinment_id());
+            intent.putExtra("status",mothers.get(getAdapterPosition()).getStatus());
+            intent.putExtra("doctor_name",mothers.get(getAdapterPosition()).getDoctor_name());
+            intent.putExtra("Date",mothers.get(getAdapterPosition()).getAppoinment_date());
+            intent.putExtra("descripton",mothers.get(getAdapterPosition()).getProblem_descripion());
+            intent.putExtra("chamber_type",mothers.get(getAdapterPosition()).getChamber_type());
+            intent.putExtra("zoom_or_chamber_address",mothers.get(getAdapterPosition()).getzoom_or_chamber_address());
+            intent.putExtra("bkash_number",mothers.get(getAdapterPosition()).getbkash_number());
+            intent.putExtra("bkash_trans_id",mothers.get(getAdapterPosition()).getbkash_trans_id());
+            intent.putExtra("bkash_amount",mothers.get(getAdapterPosition()).getbkash_amount());
             context.startActivity(intent);
         }
     }
