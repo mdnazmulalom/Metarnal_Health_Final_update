@@ -171,6 +171,7 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 String appoinment_date = TV_date.getText().toString();
                 String bkash_trans = bkash_trans_id.getText().toString();
                 String fr_bkash_number = from_bkash_number.getText().toString();
+                String chamber_type = appoinment_chamber_type.getText().toString();
 
 
                 if (appoinment_date.isEmpty()){
@@ -189,6 +190,10 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 {
                     from_bkash_number.setError("Please enter correct cell");
                     from_bkash_number.requestFocus();
+                }
+                if (chamber_type.isEmpty()){
+                    appoinment_chamber_type.setError("Please Select Chamber");
+                    appoinment_chamber_type.requestFocus();
                 }
                 else {
                     appoinment();
@@ -211,6 +216,8 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         final String bk_payment_amount = payment_amount.getText().toString();
         final String bk_trans_id = bkash_trans_id.getText().toString();
         final String from_bkash_num = from_bkash_number.getText().toString();
+
+        final String Appointment_Chamber_type = appoinment_chamber_type.getText().toString();
 
 
         loading = new ProgressDialog(DoctorDescriptionActivity.this);
@@ -252,9 +259,10 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 params.put(Constant.KEY_BK_PAYMENT_AMOUNT,bk_payment_amount);
                 params.put(Constant.KEY_BK_TRANS_ID,bk_trans_id);
                 params.put(Constant.KEY_FROM_BKASH_NUMBER,from_bkash_num);
+                params.put(Constant.KEY_APPOINTMENT_CHAMBER_TYPE,Appointment_Chamber_type);
 
 
-                Log.d("Fulldata",name+appoinment_date+" "+cell+" "+doctors_cell+designation+problem_descripion+" amount"+ bk_payment_amount+bk_trans_id+from_bkash_num);
+                Log.d("NEW",name+appoinment_date+" "+cell+" "+doctors_cell+designation+problem_descripion+" amount"+ bk_payment_amount+bk_trans_id+from_bkash_num+Appointment_Chamber_type);
 
 
                 //returning parameter

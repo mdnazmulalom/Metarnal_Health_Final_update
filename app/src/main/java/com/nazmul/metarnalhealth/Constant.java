@@ -54,6 +54,8 @@ public class Constant {
     public static final String KEY_BK_TRANS_ID ="bk_trans_id";
     public static final String KEY_FROM_BKASH_NUMBER = "form_bkash_number";
 
+    public static final String KEY_APPOINTMENT_CHAMBER_TYPE = "chamber_type";
+
 
 
 
