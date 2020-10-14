@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.app.usage.UsageEvents;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,6 +16,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -33,8 +37,12 @@ import com.nazmul.metarnalhealth.SignupActivity;
 import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
 import com.nazmul.metarnalhealth.remote.ApiInterface;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 import es.dmoral.toasty.Toasty;
@@ -44,10 +52,13 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
     private ApiInterface apiInterface;
     String name,designation,speciallist,id,doctor_cell,get_doctor_fee;
     TextView DescriptionName,DescriptionDesignation,DescriptionSpeciallist, TV_date,doctor_fee,payment_amount,doctor_bkash_cell;
-    EditText Problem_description,Et_date,bkash_trans_id,from_bkash_number,appoinment_chamber_type;
+    EditText Problem_description,Et_date,bkash_trans_id,from_bkash_number,appoinment_chamber_type,appointmetdate;
     Button btnAppoinment;
 
     DatePickerDialog.OnDateSetListener setListener;
+
+    public Calendar myCalendar = Calendar.getInstance();
+    public DatePickerDialog.OnDateSetListener date;
 
 
     SharedPreferences sharedPreferences;
@@ -95,17 +106,12 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
 
         setListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+            public void onDateSet(DatePicker view, int year, int month, int day) {
                 month = month+1;
                 String date = day+"/"+month+"/"+year;
                 TV_date.setText(date);
             }
         };
-
-
-
-
-
 
         id=getIntent().getExtras().getString("id");
         name=getIntent().getExtras().getString("name");
@@ -114,9 +120,6 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         speciallist=getIntent().getExtras().getString("speciallist");
         get_doctor_fee = getIntent().getExtras().getString("doctor_fee");
 
-
-
-
         DescriptionName.setText(name);
 //        Problem_description.setText(cell);
         DescriptionDesignation.setText(designation);
@@ -124,6 +127,11 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         doctor_fee.setText(get_doctor_fee);
         payment_amount.setText(get_doctor_fee);
         doctor_bkash_cell.setText(doctor_cell);
+
+
+
+
+
 
 
         appoinment_chamber_type.setOnClickListener(new View.OnClickListener() {
@@ -202,6 +210,11 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         });
 
     }
+
+
+
+
+
     private void appoinment() {
         sharedPreferences = getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         final String cell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
