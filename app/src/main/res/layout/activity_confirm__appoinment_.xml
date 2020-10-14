@@ -29,9 +29,7 @@
                         android:id="@+id/etxtid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="35dp"
+                        android:layout_margin="10dp"
                         android:background="@drawable/border"
                         android:gravity="center"
                         android:inputType="text"
@@ -50,9 +48,7 @@
                         android:id="@+id/etxtstatus"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="35dp"
+                        android:layout_margin="10dp"
                         android:background="@drawable/border"
                         android:gravity="center"
                         android:inputType="text"
@@ -71,9 +67,7 @@
                         android:id="@+id/etxtmothercell"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="35dp"
+                        android:layout_margin="10dp"
                         android:background="@drawable/border"
                         android:gravity="center"
                         android:hint="Mother Cell"
@@ -92,9 +86,7 @@
                         android:id="@+id/etxtdate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="35dp"
+                        android:layout_margin="10dp"
                         android:background="@drawable/border"
                         android:gravity="center"
                         android:hint="Appointment date"
@@ -113,9 +105,7 @@
                         android:id="@+id/etxtdescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="35dp"
+                        android:layout_margin="10dp"
                         android:background="@drawable/border"
                         android:gravity="center"
                         android:hint="Description"
@@ -123,6 +113,33 @@
                         android:padding="16dp"
                         android:textColor="@color/textcolor"
                         android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="bottom"
+                        android:text="Input Zoom link or Chamber Address:"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editTextTextMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine" />
                 </LinearLayout>
 
                 <Button
@@ -134,6 +151,7 @@
                     android:background="@drawable/button_background"
                     android:text="Call to mother"
                     android:textColor="#FAEFEF" />
+
                 <Button
                     android:id="@+id/btn_confirm"
                     android:layout_width="250dp"
