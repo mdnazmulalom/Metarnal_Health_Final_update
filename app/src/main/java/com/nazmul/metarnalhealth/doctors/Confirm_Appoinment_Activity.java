@@ -13,7 +13,9 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -65,6 +67,9 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
 
 
 
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("Doctor Appoinment Details");
 
         btnmothercall=findViewById(R.id.btn_mothercall);
         btnconfirmappointment=findViewById(R.id.btn_confirm);
@@ -77,7 +82,7 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
         String appointmentdate=getIntent().getExtras().getString("appointmentdate");
         String description=getIntent().getExtras().getString("description");
         String chamber_type = getIntent().getExtras().getString("chamber_type");
-        String zoom_or_chamber_address =getIntent().getExtras().getString("zoom_or_chamber_address");
+        final String zoom_or_chamber_address =getIntent().getExtras().getString("zoom_or_chamber_address");
         String bkash_number = getIntent().getExtras().getString("bkash_number");
         String bkash_trans_id = getIntent().getExtras().getString("bkash_trans_id");
         String bkash_amount = getIntent().getExtras().getString("bkash_amount");
@@ -127,37 +132,57 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
         else if (status.equals("1"))
         {
             txt_status.setText("Confirmed");
-            btncencelappointment.setVisibility(View.GONE);
-            btnconfirmappointment.setVisibility(View.GONE);
+//            btncencelappointment.setVisibility(View.GONE);
+//            btnconfirmappointment.setVisibility(View.GONE);
         }
 
         else if (status.equals("2"))
         {
             txt_status.setText("Cancel");
-            btncencelappointment.setVisibility(View.GONE);
-            btnconfirmappointment.setVisibility(View.GONE);
+//            btncencelappointment.setVisibility(View.GONE);
+//            btnconfirmappointment.setVisibility(View.GONE);
         }
+
 
         btnconfirmappointment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(Confirm_Appoinment_Activity.this);
-                builder.setMessage("Want to confirmed appointment ?")
-                        .setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                UpdateConfimation("1");
-                                dialog.cancel();
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                // Perform Your Task Here--When No is pressed
-                                dialog.cancel();
-                            }
-                        }).show();
+               String zoom_or_chamber_address=etxt_zoom_or_chamber_address.getText().toString().trim();
+
+                if (zoom_or_chamber_address.isEmpty()){
+                    etxt_zoom_or_chamber_address.setError("Please Input zoom link/Address");
+                    requestfocus(etxt_zoom_or_chamber_address);
+                }
+
+                else {
+                    UpdateConfimation("1");
+                }
             }
         });
+
+
+
+
+//        btnconfirmappointment.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                AlertDialog.Builder builder = new AlertDialog.Builder(Confirm_Appoinment_Activity.this);
+//                builder.setMessage("Want to confirmed appointment ?")
+//                        .setCancelable(false)
+//                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                UpdateConfimation("1");
+//                                dialog.cancel();
+//                            }
+//                        })
+//                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                // Perform Your Task Here--When No is pressed
+//                                dialog.cancel();
+//                            }
+//                        }).show();
+//            }
+//        });
 
         btncencelappointment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -182,6 +207,7 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
     }
     public void UpdateConfimation(String s){
         getstatus=s;
+        final String zoom_or_chamber_address = etxt_zoom_or_chamber_address.getText().toString();
         loading = new ProgressDialog(this);
         loading.setTitle("Confirm");
         loading.setMessage("Please wait....");
@@ -200,10 +226,10 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
                             loading.dismiss();
                             Intent intent = new Intent(Confirm_Appoinment_Activity.this, DoctorAppoinmentHistory.class);
                             if (getstatus.equals("1")) {
-                                Toasty.success(Confirm_Appoinment_Activity.this, " Order Successfully Confirmed!", Toast.LENGTH_SHORT).show();
+                                Toasty.success(Confirm_Appoinment_Activity.this, " Appointment Confirmed!", Toast.LENGTH_SHORT).show();
                             }
                             else if (getstatus.equals("2")) {
-                                Toasty.error(Confirm_Appoinment_Activity.this, " Order Cancel!", Toast.LENGTH_SHORT).show();
+                                Toasty.error(Confirm_Appoinment_Activity.this, " Appointment Cancel!", Toast.LENGTH_SHORT).show();
                             }
                             startActivity(intent);
                         } else if (getResponse.equals("failure")) {
@@ -233,7 +259,9 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
 
                 params.put(Constant.KEY_ID, appointmentid);
                 params.put(Constant.KEY_STATUS, getstatus);
-                Log.d("Fulldata",appointmentid+getstatus);
+                params.put(Constant.KEY_ZOOM_OR_CHAMBER_ADDRESS,zoom_or_chamber_address	);
+
+                Log.d("Fulldata",appointmentid+getstatus+zoom_or_chamber_address);
 
                 //returning parameter
                 return params;
@@ -242,6 +270,28 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(Confirm_Appoinment_Activity.this);
         requestQueue.add(stringRequest);
+    }
+
+
+    //FOR REQUEST FOCUS
+    private void requestfocus(View view){
+        if (view.requestFocus()){
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+        }
+    }
+
+
+    //for back button
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".doctors.Confirm_Appoinment_Activity">
 
 
@@ -79,7 +80,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
@@ -111,9 +112,8 @@
                     <TextView
                         android:id="@+id/etxtdescription"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="70dp"
                         android:background="@drawable/border"
-                        android:gravity="center"
                         android:hint="Description"
                         android:inputType="text"
                         android:padding="10dp"
@@ -134,16 +134,17 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:background="@drawable/border"
+                    android:background="@drawable/button_background"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/txt_chamber_type"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
                         android:gravity="center"
-                        android:text="null"
+                        android:padding="5dp"
+                        android:text="Online video Consultation"
+                        android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -241,16 +242,6 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/btn_mothercall"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/button_background"
-                    android:text="Call to mother"
-                    android:textColor="#FAEFEF" />
-
-                <Button
                     android:id="@+id/btn_confirm"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
@@ -258,6 +249,16 @@
                     android:layout_margin="5dp"
                     android:background="@drawable/button_background"
                     android:text="Confirm Appointment"
+                    android:textColor="#FAEFEF" />
+
+                <Button
+                    android:id="@+id/btn_mothercall"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background"
+                    android:text="Call to mother"
                     android:textColor="#FAEFEF" />
 
                 <Button

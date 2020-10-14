@@ -49,6 +49,8 @@ public class Constant {
 
     public static final String KEY_STATUS = "status";
 
+    public static final String KEY_ZOOM_OR_CHAMBER_ADDRESS ="zoom_or_chamber_address";
+
     // appoinment key
     public static final String KEY_BK_PAYMENT_AMOUNT = "bk_payment_amount";
     public static final String KEY_BK_TRANS_ID ="bk_trans_id";
