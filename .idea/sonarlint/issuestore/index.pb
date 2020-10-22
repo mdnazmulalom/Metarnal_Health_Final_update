@@ -129,3 +129,5 @@ R
 "app/src/main/res/values/dimens.xml,c/3/c3c1811dec2dbad2deeafb9aad505ca9631da740
 ‹
 [app/src/main/java/com/nazmul/metarnalhealth/mothers/Mother_Appointment_Details_ctivity.java,2/9/296c00972d6246707f2b7a37c9b839ccd251228c
+g
+7app/src/main/res/layout/doctor_appoinment_list_item.xml,8/b/8bc96926ba256396578b70cdde0ec7eb98d5b04d
