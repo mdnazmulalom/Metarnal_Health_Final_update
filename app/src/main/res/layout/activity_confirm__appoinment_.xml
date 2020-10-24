@@ -254,7 +254,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -262,15 +263,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="REFUND Trans_ID" />
+                        android:text="REFUND"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/border"
                         android:ems="10"
+                        android:hint="bKash Trans ID"
                         android:inputType="textPersonName"
-                        android:text="Name" />
+                        android:paddingLeft="10dp"
+                        android:textSize="24sp" />
+
                 </LinearLayout>
 
                 <Button
