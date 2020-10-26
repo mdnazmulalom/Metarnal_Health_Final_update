@@ -269,6 +269,7 @@
                         android:textStyle="bold" />
 
                     <EditText
+                        android:id="@+id/refund_bkashtrans_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/border"

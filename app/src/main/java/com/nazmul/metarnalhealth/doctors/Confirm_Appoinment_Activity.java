@@ -42,7 +42,7 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
     String getUserCell,getstatus,appointmentid,status,mothernumber;
     TextView txt_chamber_type,txt_bkash_number,txt_bkash_amount,txt_bkash_trans_id;
     ProgressDialog loading;
-    EditText etxt_zoom_or_chamber_address;
+    EditText etxt_zoom_or_chamber_address,Refund_bkash_trans_id;
 
     String UserCell;
     SharedPreferences sharedPreferences;
@@ -64,6 +64,7 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
         txt_bkash_amount = findViewById(R.id.txt_bkash_amount);
         txt_bkash_trans_id = findViewById(R.id.txt_bkash_trans_id);
         etxt_zoom_or_chamber_address = findViewById(R.id.zoom_or_chamber_address);
+        Refund_bkash_trans_id = findViewById(R.id.refund_bkashtrans_id);
 
 
 
@@ -160,6 +161,21 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
             }
         });
 
+        btncencelappointment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String refund_bkash_trans_id = Refund_bkash_trans_id.getText().toString().trim();
+
+                if (refund_bkash_trans_id.isEmpty()){
+                    Refund_bkash_trans_id.setError("Please Input Refund bkash Trans ID");
+                    requestfocus(Refund_bkash_trans_id);
+                }
+                else {
+                    UpdateConfimation("2");
+                }
+            }
+        });
+
 
 
 
@@ -184,26 +200,26 @@ public class Confirm_Appoinment_Activity extends AppCompatActivity {
 //            }
 //        });
 
-        btncencelappointment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(Confirm_Appoinment_Activity.this);
-                builder.setMessage("Want to cancel appointment ?")
-                        .setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                UpdateConfimation("2");
-                                dialog.cancel();
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                // Perform Your Task Here--When No is pressed
-                                dialog.cancel();
-                            }
-                        }).show();
-            }
-        });
+//        btncencelappointment.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                AlertDialog.Builder builder = new AlertDialog.Builder(Confirm_Appoinment_Activity.this);
+//                builder.setMessage("Want to cancel appointment ?")
+//                        .setCancelable(false)
+//                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                UpdateConfimation("2");
+//                                dialog.cancel();
+//                            }
+//                        })
+//                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                // Perform Your Task Here--When No is pressed
+//                                dialog.cancel();
+//                            }
+//                        }).show();
+//            }
+//        });
     }
     public void UpdateConfimation(String s){
         getstatus=s;
