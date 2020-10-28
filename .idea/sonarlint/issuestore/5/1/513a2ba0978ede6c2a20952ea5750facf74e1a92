@@ -1,0 +1,16 @@
+
+K
+java:S1659"0Declare "txt_hospitalnumber" on a separate line.(±†„ÿøÿÿÿÿ
+w	java:S116"]Rename this field "txt_hospitalnumber" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±†„ÿøÿÿÿÿ
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆþªW
+t	java:S116"ZRename this field "txt_hopitalname" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±†„ÿøÿÿÿÿ
+y	java:S116"_Rename this field "txt_hospitalcategory" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±†„ÿøÿÿÿÿ
+M
+java:S1659"2Declare "txt_hospitalcategory" on a separate line.(±†„ÿøÿÿÿÿ
+L
+java:S1659"1Declare "txt_hospitaladdress" on a separate line.(±†„ÿøÿÿÿÿ
+x	java:S116"^Rename this field "txt_hospitaladdress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±†„ÿøÿÿÿÿ
+L
+java:S1659"1Declare "txt_hospitalwebsite" on a separate line.(±†„ÿøÿÿÿÿ
+x	java:S116"^Rename this field "txt_hospitalwebsite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±†„ÿøÿÿÿÿ
+p	java:S116"[Rename this field "btn_hospitalcall" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·èè“

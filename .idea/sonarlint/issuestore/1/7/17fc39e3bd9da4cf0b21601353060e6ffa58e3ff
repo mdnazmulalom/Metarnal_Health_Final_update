@@ -1,0 +1,18 @@
+
+z	java:S116E"^Rename this field "problem_description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(พฮไง8าณ์๎ั.
+	java:S116"bRename this field "doctor_appoinment_lists" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ฟ๎๖üÿÿÿÿ8าณ์๎ั.
+X	java:S125+"<This block of commented-out lines of code should be removed.(ูผ็ฆ8าณ์๎ั.
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(๎ธผ–ÿÿÿÿÿ8าณ์๎ั.
+X	java:S125)"<This block of commented-out lines of code should be removed.(ü๘๔ญ8าณ์๎ั.
+u
+java:S1128"XRemove this unused import 'com.nazmul.metarnalhealth.doctors.DoctorDescriptionActivity'.(ช”ฑ8าณ์๎ั.
+	java:S116E"hRename this field "doctor_appoinment_mother_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(พฮไง8าณ์๎ั.
+€	java:S116E"dRename this field "doctor_appoinment_staatus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(พฮไง8าณ์๎ั.
+P
+java:S1659E"3Declare "doctor_apponment_date" on a separate line.(พฮไง8าณ์๎ั.
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(บþ€ท8าณ์๎ั.
+X
+java:S1659E";Declare "doctor_appoinment_mother_cell" on a separate line.(พฮไง8าณ์๎ั.
+|	java:S116E"`Rename this field "doctor_apponment_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(พฮไง8าณ์๎ั.
+N
+java:S1659E"1Declare "problem_description" on a separate line.(พฮไง8าณ์๎ั.

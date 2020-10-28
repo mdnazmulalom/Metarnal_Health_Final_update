@@ -1,0 +1,18 @@
+
+u	java:S116"YRename this field "all_appoinment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê’Ÿë8€ï”›Ò.
+]	java:S125P"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8€ï”›Ò.
+K
+java:S1659".Declare "cardhospitalinfo" on a separate line.(ê’Ÿë8€ï”›Ò.
+I
+java:S1659",Declare "all_appoinment" on a separate line.(ê’Ÿë8€ï”›Ò.
+L
+java:S2696j"6Make the enclosing method "static" or remove this set.(éŽ‘
+E
+java:S1659"(Declare "CardLogout" on a separate line.(ê’Ÿë8€ï”›Ò.
+q	java:S116"URename this field "CardDoctor" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê’Ÿë8€ï”›Ò.
+X	java:S125N"<This block of commented-out lines of code should be removed.(Ž®ƒ÷8€ï”›Ò.
+X	java:S125U"<This block of commented-out lines of code should be removed.(ÿ—Ò¼8€ï”›Ò.
+m
+java:S3008"WRename this field "back_pressed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ð¼ÑÄ
+q	java:S116"URename this field "CardLogout" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê’Ÿë8€ï”›Ò.
+X	java:S125L"<This block of commented-out lines of code should be removed.(¹ŒÜî8€ï”›Ò.

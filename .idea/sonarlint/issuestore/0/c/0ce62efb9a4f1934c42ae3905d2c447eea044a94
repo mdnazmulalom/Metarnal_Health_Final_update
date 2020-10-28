@@ -1,0 +1,29 @@
+
+C
+java:S1659&"(Declare "etxtGender" on a separate line.(Þ†ÖŒøÿÿÿÿ
+H
+java:S1659&"-Declare "etxtAccountType" on a separate line.(Þ†ÖŒøÿÿÿÿ
+?
+java:S1659$")Declare "accounttype" on a separate line.(¾ÇÂ¬
+g
+java:S1301³"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+A
+java:S1659&"&Declare "etxtCell" on a separate line.(Þ†ÖŒøÿÿÿÿ
+b
+java:S1192Q"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄÝöøÿÿÿÿ
+<
+java:S1659$"&Declare "location" on a separate line.(¾ÇÂ¬
+:
+java:S1659$"$Declare "gender" on a separate line.(¾ÇÂ¬
+=	java:S131""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+E
+java:S1659&"*Declare "etxtPassword" on a separate line.(Þ†ÖŒøÿÿÿÿ
+Q	java:S125ÿ"<This block of commented-out lines of code should be removed.(œŸÖ
+<
+java:S1659$"&Declare "password" on a separate line.(¾ÇÂ¬
+E
+java:S1659&"*Declare "etxtLocation" on a separate line.(Þ†ÖŒøÿÿÿÿ
+m
+java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ž¨Œþÿÿÿÿ
+8
+java:S1659$""Declare "cell" on a separate line.(¾ÇÂ¬

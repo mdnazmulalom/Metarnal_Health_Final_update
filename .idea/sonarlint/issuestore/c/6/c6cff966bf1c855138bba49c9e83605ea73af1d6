@@ -1,0 +1,18 @@
+
+f
+java:S1301m"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+D
+java:S1659"'Declare "shishurog" on a separate line.(ÃËø8ùÏÖ±Ä.
+P
+java:S1659"3Declare "shishuporipurokkhabar" on a separate line.(ÃËø8ùÏÖ±Ä.
+]	java:S125`"<This block of commented-out lines of code should be removed.(¼áñ’üÿÿÿÿ8Ğ‘­É.
+t	java:S116"XRename this field "before_prosob" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃËø8ùÏÖ±Ä.
+R
+java:S1659"0Declare "nobojatoksoporkito" on a separate line.(ûçç×ıÿÿÿÿ8ùÏÖ±Ä.
+H
+java:S1659"+Declare "prosobfistula" on a separate line.(ÃËø8ùÏÖ±Ä.
+s	java:S116"WRename this field "after_prosob" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃËø8ùÏÖ±Ä.
+R
+java:S1659"5Declare "shishudobejaowaprotirod" on a separate line.(ÃËø8ùÏÖ±Ä.
+G
+java:S1659"*Declare "after_prosob" on a separate line.(ÃËø8ùÏÖ±Ä.

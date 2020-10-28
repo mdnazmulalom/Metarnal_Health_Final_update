@@ -1,0 +1,31 @@
+
+g
+java:S1301è"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+C
+java:S1172Ò",Remove this unused method parameter "which".(¦Œœ¢
+W	java:S125Æ"<This block of commented-out lines of code should be removed.(âÜ©ñùÿÿÿÿ
+W	java:S125€"<This block of commented-out lines of code should be removed.(’¬…±þÿÿÿÿ
+B
+java:S1659$"'Declare "txtUpdate" on a separate line.(¤‡ìèùÿÿÿÿ
+B
+java:S1481©"+Remove this unused "intent" local variable.(‹ðúŸ
+Q	java:S125J"<This block of commented-out lines of code should be removed.(¼çÓÙ
+C
+java:S1172Ü",Remove this unused method parameter "which".(¦Œœ¢
+V	java:S125="<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+W	java:S125«"<This block of commented-out lines of code should be removed.(Úö”èüÿÿÿÿ
+=
+java:S1659""'Declare "etxt_Pass" on a separate line.(Ôƒç÷
+<
+java:S1659""&Declare "etxtCell" on a separate line.(Ôƒç÷
+?
+java:S1659"")Declare "txtLocation" on a separate line.(Ôƒç÷
+<	java:S131d""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+i	java:S100ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êù³‘ÿÿÿÿÿ
+i	java:S116""TRename this field "etxt_Pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôƒç÷
+P	java:S1258"<This block of commented-out lines of code should be removed.(ÚÒ
+=
+java:S1659""'Declare "txtGender" on a separate line.(Ôƒç÷
+Q	java:S125:"<This block of commented-out lines of code should be removed.(Ž®ƒ÷
+g	java:S117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á²È­
+W	java:S125“"<This block of commented-out lines of code should be removed.(ëÃÍ¡ùÿÿÿÿ

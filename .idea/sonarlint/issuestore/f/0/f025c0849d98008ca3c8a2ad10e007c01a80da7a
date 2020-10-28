@@ -1,0 +1,16 @@
+
+T
+java:S1128	"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8—‹˜ÿÉ.
+E
+java:S16592"(Declare "appoinment" on a separate line.(‹œ¦Ë8ó®˜ÿÉ.
+F
+java:S16592")Declare "designation" on a separate line.(‹œ¦Ë8Ë£²¬É.
+E
+java:S16592"(Declare "specialist" on a separate line.(‹œ¦Ë8Ë£²¬É.
+[
+java:S1128"9Remove this unused import 'android.content.IntentFilter'.(ò³ñ£ÿÿÿÿÿ8Ë£²¬É.
+C
+java:S16592"&Declare "location" on a separate line.(‹œ¦Ë8Ë£²¬É.
+E
+java:S16592"(Declare "doctor_fee" on a separate line.(‹œ¦Ë8àşØ‚Ï.
+q	java:S1162"URename this field "doctor_fee" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹œ¦Ë8àşØ‚Ï.

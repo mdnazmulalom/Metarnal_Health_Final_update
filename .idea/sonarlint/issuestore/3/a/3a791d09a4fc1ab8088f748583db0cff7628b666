@@ -1,0 +1,20 @@
+
+h	java:S116"SRename this field "Usercell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ«“
+V	java:S125{"<This block of commented-out lines of code should be removed.(ûá¼µüÿÿÿÿ
+l	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü‹ıÙúÿÿÿÿ
+;
+java:S1659"%Declare "txtname" on a separate line.(úš­÷
+?
+java:S1659")Declare "etxtFulname" on a separate line.(úš­÷
+>
+java:S1659"(Declare "etxtGender" on a separate line.(úš­÷
+q	java:S116"\Rename this field "txtUpdate_profile" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úš­÷
+g
+java:S1301œ"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+<
+java:S1659"&Declare "etxtCell" on a separate line.(úš­÷
+V	java:S125="<This block of commented-out lines of code should be removed.(İÖ±Šúÿÿÿÿ
+R	java:S125ˆ"<This block of commented-out lines of code should be removed.(ÊÁ¹
+@
+java:S1659"*Declare "etxtLocation" on a separate line.(úš­÷
+V	java:S125M"<This block of commented-out lines of code should be removed.(’Œ¦‘ùÿÿÿÿ

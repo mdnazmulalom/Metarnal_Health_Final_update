@@ -1,0 +1,23 @@
+
+j	java:S100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õô„İ8×‹ ÂÒ.
+s	java:S116"WRename this field "bkash_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ƒÏÑ8ùœÂÒ.
+c	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Ü¿â
+i	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ™Ø!8×‹ ÂÒ.
+h	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õºöşüÿÿÿÿ
+m	java:S116"XRename this field "appoinment_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÖı
+h	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·îè…şÿÿÿÿ
+c	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Íó‘
+j	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÙà¢8×‹ ÂÒ.
+x	java:S116"WRename this field "chamber_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÅê’ÿÿÿÿÿ8ùœÂÒ.
+j	java:S100N"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼µ“’8×‹ ÂÒ.
+x	java:S116!"WRename this field "bkash_amount" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ğ¼üÿÿÿÿ8ùœÂÒ.
+r	java:S116"XRename this field "mother_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı€ƒÓûÿÿÿÿ
+z	java:S116"YRename this field "bkash_trans_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶°Ô¼úÿÿÿÿ8ùœÂÒ.
+c	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß°ù­
+~	java:S116"bRename this field "zoom_or_chamber_address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß²…Ï8ùœÂÒ.
+j	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şŸ£ı8×‹ ÂÒ.
+o	java:S116"ZRename this field "appoinment_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î¹÷
+c	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã€Ğ»
+p	java:S116	"VRename this field "doctor_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ¹¶Ôøÿÿÿÿ
+w	java:S116"]Rename this field "problem_descripion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ºÆËûÿÿÿÿ
+l	java:S116"XRename this field "doctor_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…¬£Q
