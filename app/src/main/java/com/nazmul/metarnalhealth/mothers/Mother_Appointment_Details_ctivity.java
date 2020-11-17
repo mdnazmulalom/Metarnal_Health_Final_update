@@ -22,7 +22,7 @@ public class Mother_Appointment_Details_ctivity extends AppCompatActivity {
 //    String getUserCell,getstatus,appointmentid,status,mothernumber;
     TextView txt_chamber_type,txt_bkash_number,txt_bkash_amount,txt_bkash_trans_id;
     ProgressDialog loading;
-    TextView etxt_zoom_or_chamber_address;
+    EditText etxt_zoom_or_chamber_address;
 
     String UserCell;
     SharedPreferences sharedPreferences;

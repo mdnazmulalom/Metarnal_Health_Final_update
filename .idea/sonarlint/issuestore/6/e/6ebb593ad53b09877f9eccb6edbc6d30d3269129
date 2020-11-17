@@ -1,0 +1,13 @@
+
+V	java:S125#"<This block of commented-out lines of code should be removed.(ñ„ë…ıÿÿÿÿ
+K
+java:S1444".Make this "public static retrofit" field final(²‰ïá8ûÄâ¨Å.
+V	java:S125-"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+q
+java:S1104"TMake retrofit a static final constant or non-public and provide accessors if needed.(²‰ïá8ûÄâ¨Å.
+W
+java:S1118
+":Add a private constructor to hide the implicit public one.(Ô¼¼Â8ûÄâ¨Å.
+V	java:S125%"<This block of commented-out lines of code should be removed.(ëéîªùÿÿÿÿ
+Q	java:S125 "<This block of commented-out lines of code should be removed.(… ú¡
+V	java:S125)"<This block of commented-out lines of code should be removed.(Â™†úÿÿÿÿ

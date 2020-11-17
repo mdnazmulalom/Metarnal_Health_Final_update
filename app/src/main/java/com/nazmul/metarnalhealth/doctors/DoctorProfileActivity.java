@@ -37,6 +37,8 @@ public class DoctorProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_profile);
 
+        //test
+
         sharedPreferences =getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         String cell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
         UserCell = cell;

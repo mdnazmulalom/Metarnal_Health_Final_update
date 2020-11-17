@@ -1,0 +1,43 @@
+
+^	java:S125µ"<This block of commented-out lines of code should be removed.(’¬…±şÿÿÿÿ8·î¸ÓÄ.
+I
+java:S1659$"'Declare "txtUpdate" on a separate line.(·™ìâüÿÿÿÿ8·î¸ÓÄ.
+K
+java:S1659"".Declare "etxt_designation" on a separate line.(ìî¸ß8·î¸ÓÄ.
+D
+java:S1659""'Declare "etxt_Pass" on a separate line.(ìî¸ß8·î¸ÓÄ.
+J
+java:S1172Š",Remove this unused method parameter "which".(¦Œœ¢8·î¸ÓÄ.
+w	java:S116""[Rename this field "etxt_speciallist" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìî¸ß8·î¸ÓÄ.
+D	java:S131""Add a default case to this switch.(¼œóÛüÿÿÿÿ8·î¸ÓÄ.
+F
+java:S1659"")Declare "etxt_Gender" on a separate line.(ìî¸ß8·î¸ÓÄ.
+t	java:S116$"SRename this field "txt_Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·™ìâüÿÿÿÿ8·î¸ÓÄ.
+F
+java:S1659"")Declare "txtLocation" on a separate line.(ìî¸ß8·î¸ÓÄ.
+^	java:S125û"<This block of commented-out lines of code should be removed.(âÜ©ñùÿÿÿÿ8·î¸ÓÄ.
+w	java:S116""[Rename this field "etxt_designation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìî¸ß8·î¸ÓÄ.
+r	java:S116""VRename this field "etxt_Gender" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìî¸ß8·î¸ÓÄ.
+p	java:S100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êù³‘ÿÿÿÿÿ8·î¸ÓÄ.
+^	java:S125È"<This block of commented-out lines of code should be removed.(ëÃÍ¡ùÿÿÿÿ8·î¸ÓÄ.
+^	java:S125à"<This block of commented-out lines of code should be removed.(Úö”èüÿÿÿÿ8·î¸ÓÄ.
+s	java:S117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äĞÿ…øÿÿÿÿ8·î¸ÓÄ.
+v	java:S116""ZRename this field "etxt_doctor_fee" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìî¸ß8îì¿øÎ.
+J
+java:S1172€",Remove this unused method parameter "which".(¦Œœ¢8·î¸ÓÄ.
+p	java:S116""TRename this field "etxt_Cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìî¸ß8·î¸ÓÄ.
+s	java:S116""WRename this field "etxt_Fullame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìî¸ß8·î¸ÓÄ.
+D
+java:S1659""'Declare "etxt_Cell" on a separate line.(ìî¸ß8·î¸ÓÄ.
+p	java:S116""TRename this field "etxt_Pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìî¸ß8·î¸ÓÄ.
+g
+java:S1301¡"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+i
+java:S1192o"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8·î¸ÓÄ.
+C	java:S131_""Add a default case to this switch.(¼œóÛüÿÿÿÿ8·î¸ÓÄ.
+K
+java:S1659"".Declare "etxt_speciallist" on a separate line.(ìî¸ß8·î¸ÓÄ.
+J
+java:S1659""-Declare "etxt_doctor_fee" on a separate line.(ìî¸ß8îì¿øÎ.
+I
+java:S1481Ş"+Remove this unused "intent" local variable.(»éè¸8·î¸ÓÄ.

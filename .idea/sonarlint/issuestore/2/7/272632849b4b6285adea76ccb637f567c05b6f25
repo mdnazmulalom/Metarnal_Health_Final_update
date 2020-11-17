@@ -1,0 +1,69 @@
+
+D
+java:S1659*"'Declare "getstatus" on a separate line.(òéî8Ô…îîÑ.
+Q
+java:S1128"4Remove this unused import 'android.content.Context'.(©Ê‰è8Ô…îîÑ.
+n
+java:S1301¯"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8¢æå³Ö.
+]	java:S125\"<This block of commented-out lines of code should be removed.(¥²²ğúÿÿÿÿ8İÇ¾»Ò.
+m	java:S117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÎŸ8¡£Ä»Ò.
+S
+java:S1659("1Declare "txt_appointmentdate" on a separate line.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+^	java:S125¼"<This block of commented-out lines of code should be removed.(ÇÚÆÉùÿÿÿÿ8¢æå³Ö.
+k	java:S100à"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ã‚¸8¢æå³Ö.
+N
+java:S1659(",Declare "txt_mothercell" on a separate line.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+Y	java:S125Â"<This block of commented-out lines of code should be removed.(Ìì”„8¢æå³Ö.
+Y	java:S125¶"<This block of commented-out lines of code should be removed.(åÍ´À8¢æå³Ö.
+U
+java:S1659)"3Declare "btnconfirmappointment" on a separate line.(Ìµºúÿÿÿÿ8Ô…îîÑ.
+A
+java:S1659*"$Declare "status" on a separate line.(òéî8Ô…îîÑ.
+Y	java:S125"<This block of commented-out lines of code should be removed.(Şúï³8Ôüš¿Ò.
+n	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı­ï¬8 Úİ³Ö.
+{	java:S116("ZRename this field "txt_description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+Y	java:S125¸"<This block of commented-out lines of code should be removed.(®ƒ÷8¢æå³Ö.
+Y	java:S125×"<This block of commented-out lines of code should be removed.(Ìì”„8Äåæ³Ö.
+N
+java:S1481ÿ"+Remove this unused "intent" local variable.(ÁäÇ®ûÿÿÿÿ8¢æå³Ö.
+P
+java:S1659+".Declare "txt_bkash_amount" on a separate line.(ı±·Ïùÿÿÿÿ8†­œ»Ò.
+m	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãÕ·£8ÕêÀ»Ò.
+~	java:S116+"]Rename this field "txt_bkash_trans_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı±·Ïùÿÿÿÿ8†­œ»Ò.
+^	java:S125Ë"<This block of commented-out lines of code should be removed.(Üä¼Õşÿÿÿÿ8Äåæ³Ö.
+m	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Âµ¶8â¢Å»Ò.
+r	java:S116("QRename this field "txt_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+Y	java:S125Í"<This block of commented-out lines of code should be removed.(®ƒ÷8Äåæ³Ö.
+H
+java:S1659*"+Declare "appointmentid" on a separate line.(òéî8Ô…îîÑ.
+T
+java:S1659)"2Declare "btncencelappointment" on a separate line.(Ìµºúÿÿÿÿ8Ô…îîÑ.
+z	java:S116("YRename this field "txt_mothercell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+r	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ú¤İúÿÿÿÿ8ªÔÇ»Ò.
+^	java:S125Å"<This block of commented-out lines of code should be removed.(âğßüıÿÿÿÿ8¢æå³Ö.
+P
+java:S1659+".Declare "txt_bkash_number" on a separate line.(ı±·Ïùÿÿÿÿ8†­œ»Ò.
+|	java:S116+"[Rename this field "txt_bkash_amount" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı±·Ïùÿÿÿÿ8†­œ»Ò.
+v	java:S116("URename this field "txt_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+ƒ	java:S116-"gRename this field "etxt_zoom_or_chamber_address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç‚ô²8ÅñÔ»Ò.
+s	java:S117é"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦âåÛøÿÿÿÿ8¢æå³Ö.
+J
+java:S1659("(Declare "txt_status" on a separate line.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+P
+java:S1659-"3Declare "Refund_bkash_trans_id" on a separate line.(Ç‚ô²8·ÓÕ³Ö.
+O
+java:S1659("-Declare "txt_description" on a separate line.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+|	java:S116-"`Rename this field "Refund_bkash_trans_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç‚ô²8·ÓÕ³Ö.
+n	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İË÷Û8ê¬ß½Ò.
+|	java:S116+"[Rename this field "txt_chamber_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı±·Ïùÿÿÿÿ8†­œ»Ò.
+^	java:S125Ñ"<This block of commented-out lines of code should be removed.(ÇÚÆÉùÿÿÿÿ8Äåæ³Ö.
+	java:S116("^Rename this field "txt_appointmentdate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¡õüÿÿÿÿ8Ô…îîÑ.
+|	java:S116+"[Rename this field "txt_bkash_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı±·Ïùÿÿÿÿ8†­œ»Ò.
+t	java:S116/"SRename this field "UserCell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÃ ‘ûÿÿÿÿ8Ô…îîÑ.
+G
+java:S1659*"*Declare "mothernumber" on a separate line.(òéî8Ô…îîÑ.
+g	java:S101'"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã®óµûÿÿÿÿ
+Y	java:S125ˆ"<This block of commented-out lines of code should be removed.(Şúï³8Ñãš¿Ò.
+^	java:S125Ú"<This block of commented-out lines of code should be removed.(âğßüıÿÿÿÿ8Äåæ³Ö.
+R
+java:S1659+"0Declare "txt_bkash_trans_id" on a separate line.(ı±·Ïùÿÿÿÿ8†­œ»Ò.

@@ -1,0 +1,27 @@
+
+;
+java:S1659"%Declare "txtName" on a separate line.(óÈŸ
+F
+java:S1659")Declare "txtLocation" on a separate line.(óÈŸ8æ†¹ÓÄ.
+Y	java:S125Š"<This block of commented-out lines of code should be removed.(ÊÁ¹8æ†¹ÓÄ.
+I
+java:S1659",Declare "txtdesignation" on a separate line.(óÈŸ8ÖÖŞ°Ä.
+r	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü‹ıÙúÿÿÿÿ8æ†¹ÓÄ.
+I
+java:S1659",Declare "txtspeciallist" on a separate line.(óÈŸ8æ†¹ÓÄ.
+G
+java:S1659"*Declare "txtdoctorfee" on a separate line.(óÈŸ8‡„˜ùÎ.
+F
+java:S1659")Declare "txtPassword" on a separate line.(óÈŸ8æ†¹ÓÄ.
+K
+java:S1659".Declare "txtUpdateprofile" on a separate line.(óÈŸ8æ†¹ÓÄ.
+]	java:S125x"<This block of commented-out lines of code should be removed.(ûá¼µüÿÿÿÿ8æ†¹ÓÄ.
+l	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÍÖ8ÆòùÎ.
+D
+java:S1659"'Declare "txtGender" on a separate line.(óÈŸ8æ†¹ÓÄ.
+r	java:S117s"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÍ•œøÿÿÿÿ8–‰¡ùÎ.
+;
+java:S1659"%Declare "txtCell" on a separate line.(óÈŸ
+t	java:S116"SRename this field "UserCell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÃ ‘ûÿÿÿÿ8æ†¹ÓÄ.
+n
+java:S1301¡"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8ìûæ°Ä.

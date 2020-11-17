@@ -1,0 +1,96 @@
+
+s
+java:S1104<"VMake myCalendar a static final constant or non-public and provide accessors if needed.(ê©À8³íÈ¼Ò.
+D
+java:S16596"(Declare "doctor_fee" on a separate line.(—¾²=8³íÈ¼Ò.
+N
+java:S16597",Declare "bkash_trans_id" on a separate line.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+s	java:S117´"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¥óÔıÿÿÿÿ8³íÈ¼Ò.
+R
+java:S1128("5Remove this unused import 'java.text.ParseException'.(ñ®ï•8³íÈ¼Ò.
+F
+java:S16595")Declare "doctor_cell" on a separate line.(„¿Õ8³íÈ¼Ò.
+p	java:S1166"URename this field "doctor_fee" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¾²=8³íÈ¼Ò.
+t	java:S1166"YRename this field "payment_amount" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¾²=8³íÈ¼Ò.
+Q
+java:S16597"/Declare "from_bkash_number" on a separate line.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+	java:S1167"^Rename this field "Problem_description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+W
+java:S16597"5Declare "appoinment_chamber_type" on a separate line.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+H
+java:S1128+"+Remove this unused import 'java.util.Date'.(¸…¼ü8³íÈ¼Ò.
+K
+java:S16596"/Declare "doctor_bkash_cell" on a separate line.(—¾²=8³íÈ¼Ò.
+s	java:S1167"RRename this field "Et_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+G
+java:S16597"%Declare "Et_date" on a separate line.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+s	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ–œùÿÿÿÿ8³íÈ¼Ò.
+I
+java:S16595",Declare "get_doctor_fee" on a separate line.(„¿Õ8³íÈ¼Ò.
+|	java:S1166"aRename this field "DescriptionSpeciallist" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¾²=8³íÈ¼Ò.
+[
+java:S1117ß"8Rename "name" which hides the field declared at line 53.(â£ıüüÿÿÿÿ8ÚÖÚĞ.
+u	java:S1165"YRename this field "get_doctor_fee" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¿Õ8³íÈ¼Ò.
+u	java:S1166"ZRename this field "DescriptionName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¾²=8³íÈ¼Ò.
+Q
+java:S1128"/Remove this unused import 'android.app.Dialog'.(·‚Àúÿÿÿÿ8³íÈ¼Ò.
+|	java:S1166"aRename this field "DescriptionDesignation" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¾²=8³íÈ¼Ò.
+w	java:S1166"\Rename this field "doctor_bkash_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¾²=8³íÈ¼Ò.
+ƒ	java:S1167"bRename this field "appoinment_chamber_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+N
+java:S16597",Declare "appointmetdate" on a separate line.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+W
+java:S1128	":Remove this unused import 'android.app.usage.UsageEvents'.(¿¾ñò8³íÈ¼Ò.
+]
+java:S1161ˆ":Add the "@Override" annotation above this method signature(ÜÁ×¥üÿÿÿÿ8ÚÖÚĞ.
+]	java:S125|"<This block of commented-out lines of code should be removed.(¼ÈÖäøÿÿÿÿ8³íÈ¼Ò.
+M
+java:S10684"0Remove this unused "apiInterface" private field.(ï¹ë›8³íÈ¼Ò.
+D	java:S131”""Add a default case to this switch.(¼œóÛüÿÿÿÿ8³íÈ¼Ò.
+]	java:S125W"<This block of commented-out lines of code should be removed.(û’øÿÿÿÿÿ8³íÈ¼Ò.
+^	java:S125¸"<This block of commented-out lines of code should be removed.(’ˆ¼øÿÿÿÿ8ÚÖÚĞ.
+R
+java:S1128"0Remove this unused import 'android.view.Window'.(¿è™÷úÿÿÿÿ8³íÈ¼Ò.
+F
+java:S16595")Declare "designation" on a separate line.(„¿Õ8³íÈ¼Ò.
+r	java:S1165"VRename this field "doctor_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¿Õ8³íÈ¼Ò.
+b
+java:S1117á"?Rename "designation" which hides the field declared at line 53.(ÌÃ±¤üÿÿÿÿ8ÚÖÚĞ.
+n	java:S117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Óá¶8³íÈ¼Ò.
+r
+java:S1104="PMake date a static final constant or non-public and provide accessors if needed.(€åœ·ûÿÿÿÿ8³íÈ¼Ò.
+H
+java:S16596",Declare "payment_amount" on a separate line.(—¾²=8³íÈ¼Ò.
+b
+java:S1128$"ERemove this unused import 'com.nazmul.metarnalhealth.SignupActivity'.(ÆË„8³íÈ¼Ò.
+^	java:S125Á"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8óèë˜Ò.
+A
+java:S16596"%Declare "TV_date" on a separate line.(—¾²=8³íÈ¼Ò.
+U
+java:S1117o"8Rename "date" which hides the field declared at line 61.(ºÁ•æ8³íÈ¼Ò.
+Y	java:S125§"<This block of commented-out lines of code should be removed.(œ¶ùË8ÚÖÚĞ.
+s	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş‰Öøÿÿÿÿ8³íÈ¼Ò.
+=
+java:S16595" Declare "id" on a separate line.(„¿Õ8³íÈ¼Ò.
+^	java:S125Ş"<This block of commented-out lines of code should be removed.(Çç’¢úÿÿÿÿ8ÚÖÚĞ.
+Y	java:S125"<This block of commented-out lines of code should be removed.(ùü…á8³íÈ¼Ò.
+T
+java:S1128"7Remove this unused import 'android.view.WindowManager'.(Ü³‹Å8³íÈ¼Ò.
+P
+java:S16596"4Declare "DescriptionDesignation" on a separate line.(—¾²=8³íÈ¼Ò.
+T
+java:S1128)"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8³íÈ¼Ò.
+F
+java:S16595")Declare "speciallist" on a separate line.(„¿Õ8³íÈ¼Ò.
+X	java:S125A"<This block of commented-out lines of code should be removed.(®®Áï8³íÈ¼Ò.
+n	java:S117³"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Ò•8³íÈ¼Ò.
+z	java:S1167"YRename this field "bkash_trans_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Œûÿÿÿÿ8³íÈ¼Ò.
+P
+java:S16596"4Declare "DescriptionSpeciallist" on a separate line.(—¾²=8³íÈ¼Ò.
+Y	java:S125«"<This block of commented-out lines of code should be removed.(Æ­É8ÚÖÚĞ.
+n
+java:S1301”"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8³íÈ¼Ò.
+O
+java:S1128-"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8³íÈ¼Ò.
+m	java:S1166"RRename this field "TV_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¾²=8³íÈ¼Ò.
+}	java:S1167"\Rename this field "from_bkash_number" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Œûÿÿÿÿ8³íÈ¼Ò.

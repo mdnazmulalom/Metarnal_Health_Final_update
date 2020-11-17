@@ -1,0 +1,13 @@
+
+T
+java:S1128"2Remove this unused import 'android.widget.Switch'.(¬Ü´¹üÿÿÿÿ8ùŸ²¬É.
+j	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¯‹ü8ùŸ²¬É.
+n
+java:S1301‰"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8Ëÿ–†Ï.
+T
+java:S1128"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8ùŸ²¬É.
+j
+java:S1192>"HDefine a constant instead of duplicating this literal "Doctors" 4 times.(©âÏ™ùÿÿÿÿ8ùŸ²¬É.
+]	java:S125f"<This block of commented-out lines of code should be removed.(„©ç¥ıÿÿÿÿ8ÁŠÎéÈ.
+y
+java:S1450&"\Remove the "layoutManager" field and declare it as a local variable in the relevant methods.(üÉÙ¼8ùŸ²¬É.

@@ -1,0 +1,25 @@
+
+K
+java:S1128".Remove this unused import 'android.view.Menu'.(£¯Ò…8ËßÒªÊ.
+O
+java:S1659"-Declare "card_doctorlist" on a separate line.(²‹ĞÔüÿÿÿÿ8‰°Ş‹Í.
+{	java:S116"ZRename this field "card_doctorlist" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²‹ĞÔüÿÿÿÿ8È”Û‰Ç.
+J
+java:S1659"(Declare "cardlogout" on a separate line.(²‹ĞÔüÿÿÿÿ8å·¶­É.
+‚	java:S116"aRename this field "card_doctor_appoinment" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²‹ĞÔüÿÿÿÿ8å·¶­É.
+V
+java:S1659"4Declare "card_doctor_appoinment" on a separate line.(²‹ĞÔüÿÿÿÿ8È”Û‰Ç.
+p	java:S116"VRename this field "card_mother" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²‹ĞÔüÿÿÿÿ
+x	java:S116"\Rename this field "txtmother_profile" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥­œş8ÙÙúšÒ.
+n	java:S116"TRename this field "first_aid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²‹ĞÔüÿÿÿÿ
+K
+java:S1659"0Declare "card_hospital_info" on a separate line.(²‹ĞÔüÿÿÿÿ
+t
+java:S3008"WRename this field "back_pressed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¼ÑÄ8‰°Ş‹Í.
+S
+java:S1128"6Remove this unused import 'android.view.MenuInflater'.(¥ñ´Ò8ËßÒªÊ.
+M
+java:S2696‚"6Make the enclosing method "static" or remove this set.(é‘
+B
+java:S1659"'Declare "first_aid" on a separate line.(²‹ĞÔüÿÿÿÿ
+~	java:S116"]Rename this field "card_hospital_info" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²‹ĞÔüÿÿÿÿ8‰°Ş‹Í.

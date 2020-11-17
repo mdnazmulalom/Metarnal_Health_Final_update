@@ -186,20 +186,20 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                     TV_date.setError("Date can't be empty");
                     TV_date.requestFocus();
                 }
-                if (problem_description.isEmpty()){
+                else if (problem_description.isEmpty()){
                     Problem_description.setError("Problem Description can't be empty");
                     Problem_description.requestFocus();
                 }
-                if (bkash_trans.isEmpty()){
+                else if (bkash_trans.isEmpty()){
                     bkash_trans_id.setError("Please Enter bKash Trans ID");
                     bkash_trans_id.requestFocus();
                 }
-                if (fr_bkash_number.length()!=11 || fr_bkash_number.contains(" ") || fr_bkash_number.charAt(0)!='0' || fr_bkash_number.charAt(1)!='1')
+                else if (fr_bkash_number.length()!=11 || fr_bkash_number.contains(" ") || fr_bkash_number.charAt(0)!='0' || fr_bkash_number.charAt(1)!='1')
                 {
                     from_bkash_number.setError("Please enter correct cell");
                     from_bkash_number.requestFocus();
                 }
-                if (chamber_type.isEmpty()){
+               else if (chamber_type.isEmpty()){
                     appoinment_chamber_type.setError("Please Select Chamber");
                     appoinment_chamber_type.requestFocus();
                 }

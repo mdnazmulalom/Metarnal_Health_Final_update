@@ -1,0 +1,14 @@
+
+H
+java:S1659#"-Declare "etxtAccountType" on a separate line.(‘–×¡øÿÿÿÿ
+q	java:S116("WRename this field "UserPassword" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìªÇ©ùÿÿÿÿ
+k	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ÿ–‹şÿÿÿÿ
+E
+java:S1659#"*Declare "etxtPassword" on a separate line.(‘–×¡øÿÿÿÿ
+:
+java:S1659$"$Declare "signup" on a separate line.(ï‰ò
+k	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹®ÌÉúÿÿÿÿ
+m	java:S116("SRename this field "UserCell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìªÇ©ùÿÿÿÿ
+V	java:S125/"<This block of commented-out lines of code should be removed.(°Æ…Êøÿÿÿÿ
+E
+java:S1659("*Declare "UserPassword" on a separate line.(ìªÇ©ùÿÿÿÿ
