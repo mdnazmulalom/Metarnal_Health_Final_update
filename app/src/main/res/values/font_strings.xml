@@ -72,6 +72,23 @@
 
 
         <string name="nobojatok">নবজাতক সম্পর্কিত</string>
+        <string name="firstaid_nobojatok_1">নবজাতকের অত্যাবশকীয় সেবাগুলো হল :</string>
+        <string name="firstaid_nobojatok_11">১.  নবজাতকে মুছিয়ে ও মুড়িয়ে মায়ের কোলে দিন</string>
+        <string name="firstaid_nobojatok_12">২.  জন্মের সাথে-সাথেই মায়ের দুধ খাওয়ানো শুরু করুন </string>
+        <string name="firstaid_nobojatok_13">৩.  নবজাতকে গরম রাখুন ও ৭২ ঘন্টার আগে গোসল করাবেন না</string>
+        <string name="firstaid_nobojatok_14">৪.  স্বাভাবিকভাবে শ্বাস প্রশ্বাস নিচ্ছে কিনা খেয়াল করুন</string>
+        <string name="firstaid_nobojatok_15">৫. নাভির সঠিক যত্ন নিন</string>
+        <string name="firstaid_nobojatok_16">৬. কম ওজনের নবজাতকের বিশেষ যত্ন নিন</string>
+
+
+
+        <string name="firstaid_nobojatok_2">নবজাতককে মোড়ানোর পদ্ধতি</string>
+        <string name="firstaid_nobojatok_21">১.  শুকনো, পরিষ্কার নরম সুতি কাপড়ের উপর নবজাতককে শুইয়ে দিন</string>
+        <string name="firstaid_nobojatok_22">২.  নবজাতকের কপাল পর্যন্ত পুরো মাথা ও দুই কাঁধ এবং পা ঢেকে দিন</string>
+        <string name="firstaid_nobojatok_23">৩.  সম্পূর্ণ মোড়ানো নবজাতক</string>
+        <string name="firstaid_nobojatok_24">৪.  পুরোপুরি মোড়ানোর পর নবজাতককে গরম রাখার জন্য মায়ের বুকে দিন</string>
+
+
 
 
 

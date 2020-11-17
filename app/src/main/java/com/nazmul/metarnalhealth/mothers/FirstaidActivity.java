@@ -16,6 +16,7 @@ import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidBeforeProsobActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidFistulaActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.FirstaidShishuRogActivity;
 import com.nazmul.metarnalhealth.mothers.firstaid.Firstaid_Dubjaowa_Protirod;
+import com.nazmul.metarnalhealth.mothers.firstaid.Firstaid_Nobojatok_Activity;
 
 public class FirstaidActivity extends AppCompatActivity {
 
@@ -90,10 +91,13 @@ public class FirstaidActivity extends AppCompatActivity {
        nobojatoksoporkito.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent callIntent = new Intent(Intent.ACTION_DIAL);
-               String p = "tel:" + "01628511467";
-               callIntent.setData(Uri.parse(p));
-//               startActivity(callIntent);
+               Intent intent=new Intent(FirstaidActivity.this, Firstaid_Nobojatok_Activity.class);
+               startActivity(intent);
+
+//               Intent callIntent = new Intent(Intent.ACTION_DIAL);
+//               String p = "tel:" + "01628511467";
+//               callIntent.setData(Uri.parse(p));
+////               startActivity(callIntent);
 
            }
        });

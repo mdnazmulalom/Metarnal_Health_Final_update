@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nazmul.metarnalhealth">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mothers.Mother_Appointment_Details_ctivity"></activity>
+        <activity android:name=".mothers.firstaid.Nobojatok_Activity_2"></activity>
+        <activity android:name=".mothers.firstaid.Nobojatok_Activity_1" />
+        <activity android:name=".mothers.firstaid.Firstaid_Nobojatok_Activity" />
+        <activity android:name=".mothers.Mother_Appointment_Details_ctivity" />
         <activity android:name=".mothers.Hospital_Call_Activity" />
         <activity android:name=".mothers.HospitalDescriprionActivity" />
         <activity android:name=".doctors.Confirm_Appoinment_Activity" />
@@ -56,9 +63,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
