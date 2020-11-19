@@ -3,12 +3,15 @@ package com.nazmul.metarnalhealth;
 public class Constant {
 
 
-// for volly
-    public static final String MAIN_URL="https://android.nkrit.com/MetarnalHealth/android";
+//// for volly
+//    public static final String MAIN_URL="https://android.nkrit.com/MetarnalHealth/android";
+//       // for retrofit
+//        public static final String HOST_URL="https://android.nkrit.com/";
 
+    public static final String MAIN_URL="https://demo.digitalmarketingctg.xyz/MetarnalHealth/android";
 
-       // for retrofit
-        public static final String HOST_URL="https://android.nkrit.com/";
+    // for retrofit
+    public static final String HOST_URL="https://demo.digitalmarketingctg.xyz/";
 
 
 
