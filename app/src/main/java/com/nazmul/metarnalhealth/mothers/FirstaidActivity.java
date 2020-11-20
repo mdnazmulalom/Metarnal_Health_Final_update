@@ -40,7 +40,7 @@ public class FirstaidActivity extends AppCompatActivity {
 
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
-        getSupportActionBar().setTitle("নীড় পাতা ");
+        getSupportActionBar().setTitle("First aid ");
 
         before_prosob.setOnClickListener(new View.OnClickListener() {
             @Override
