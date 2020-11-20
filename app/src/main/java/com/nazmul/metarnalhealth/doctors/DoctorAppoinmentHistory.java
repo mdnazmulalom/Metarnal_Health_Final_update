@@ -83,7 +83,6 @@ public class DoctorAppoinmentHistory extends AppCompatActivity {
                 recyclerView.setAdapter(doctor_appoinment_adapter);
                 doctor_appoinment_adapter.notifyDataSetChanged();//for search
             }
-
             @Override
             public void onFailure(Call<List<Doctor_Appoinment_List>> call, Throwable t) {
                 progressBar.setVisibility(View.INVISIBLE);
