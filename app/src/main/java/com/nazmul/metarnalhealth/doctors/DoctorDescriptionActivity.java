@@ -37,6 +37,7 @@ import com.nazmul.metarnalhealth.SignupActivity;
 import com.nazmul.metarnalhealth.mothers.MotherHomeActivity;
 import com.nazmul.metarnalhealth.remote.ApiInterface;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -95,23 +96,55 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
         TV_date.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //initialize date picker dialog
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        DoctorDescriptionActivity.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth
-                        ,setListener,year,month,day);
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                        DoctorDescriptionActivity.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        // Store date
+                        String dDate =  dayOfMonth + "/" + month + "/" + year;
+                        //set date on text vide
+                        TV_date.setText(dDate);
+
+
+                    }
+                },year,month,day
+                );
+                // disable past date
+
+                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis()-1000);
+                datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis()+(1000*60*60*24*6));
+//                datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis()+1000);
+                //show date picker dialog
                 datePickerDialog.show();
-
             }
+            
         });
+//        final String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+////          TV_date.setText(currentDate);
 
-        setListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int day) {
-                month = month+1;
-                String date = day+"/"+month+"/"+year;
-                TV_date.setText(date);
-            }
-        };
+        // test another date format
+
+//        TV_date.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                DatePickerDialog datePickerDialog = new DatePickerDialog(
+//                        DoctorDescriptionActivity.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth
+//                        ,setListener,year,month,day);
+//                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//                datePickerDialog.show();
+//
+//            }
+//        });
+//
+//        setListener = new DatePickerDialog.OnDateSetListener() {
+//            @Override
+//            public void onDateSet(DatePicker view, int year, int month, int day) {
+//                month = month+1;
+//                String date = day+"/"+month+"/"+year;
+//                TV_date.setText(date);
+//            }
+//        };
 
         id=getIntent().getExtras().getString("id");
         name=getIntent().getExtras().getString("name");
@@ -182,7 +215,12 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 String chamber_type = appoinment_chamber_type.getText().toString();
 
 
-                if (appoinment_date.isEmpty()){
+//                if (appoinment_date != currentDate ){
+//                    TV_date.setError("Date Must be equal to curent date");
+//                    TV_date.requestFocus();
+//
+//                }
+               if (appoinment_date.isEmpty()){
                     TV_date.setError("Date can't be empty");
                     TV_date.requestFocus();
                 }
