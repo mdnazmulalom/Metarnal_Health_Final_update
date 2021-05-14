@@ -8,11 +8,15 @@ public class Constant {
 //       // for retrofit
 //        public static final String HOST_URL="https://android.nkrit.com/";
 
-    public static final String MAIN_URL="https://demo.digitalmarketingctg.xyz/MetarnalHealth/android";
+//    public static final String MAIN_URL="https://demo.digitalmarketingctg.xyz/MetarnalHealth/android";
+//
+//    // for retrofit
+//    public static final String HOST_URL="https://demo.digitalmarketingctg.xyz/";
+
+    public static final String MAIN_URL="https://demo.nazmulalom.com/MetarnalHealth/android";
 
     // for retrofit
-    public static final String HOST_URL="https://demo.digitalmarketingctg.xyz/";
-
+    public static final String HOST_URL="https://demo.nazmulalom.com/";
 
 
     public static final String SIGNUP_URL = MAIN_URL+"/signup.php";

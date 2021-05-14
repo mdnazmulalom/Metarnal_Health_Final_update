@@ -102,8 +102,12 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                         // Store date
+                        if (month >= 0){
+                            month = month+1;
+                        }
                         String dDate =  dayOfMonth + "/" + month + "/" + year;
                         //set date on text vide
+                        Log.d("Date",dDate);
                         TV_date.setText(dDate);
 
 
@@ -112,7 +116,7 @@ public class DoctorDescriptionActivity extends AppCompatActivity {
                 );
                 // disable past date
 
-                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis()-1000);
+                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
                 datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis()+(1000*60*60*24*6));
 //                datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis()+1000);
                 //show date picker dialog
