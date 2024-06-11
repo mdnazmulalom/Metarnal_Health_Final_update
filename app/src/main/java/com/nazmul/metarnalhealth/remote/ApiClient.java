@@ -7,7 +7,7 @@ import com.nazmul.metarnalhealth.Constant;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class ApiClient {
+public class  ApiClient {
 
     public static final String BASE_URL = Constant.HOST_URL;
     public static Retrofit retrofit = null;

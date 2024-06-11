@@ -89,7 +89,6 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-
     //For dropdown AccountType....
     etxtAccountType.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -203,12 +202,10 @@ public class SignupActivity extends AppCompatActivity {
                 gender=etxtGender.getText().toString().trim();
                 password=etxtPassword.getText().toString().trim();
 
-
                 if (name.isEmpty()){
                     etxtName.setError("Please Enter name");
                     requestfocus(etxtName);
                 }
-
                 else if (cell.length()!=11 || cell.contains(" ") || cell.charAt(0)!='0' || cell.charAt(1)!='1')
                 {
                     etxtCell.setError("Please enter correct cell");
