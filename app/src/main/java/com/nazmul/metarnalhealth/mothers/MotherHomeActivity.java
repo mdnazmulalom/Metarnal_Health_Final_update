@@ -48,10 +48,6 @@ public class MotherHomeActivity extends AppCompatActivity {
         card_doctor_appoinment=findViewById(R.id.card_doctor_appoinment);
         card_hospital_info=findViewById(R.id.hospitalinfo);
 
-
-
-
-
         getSupportActionBar().setHomeButtonEnabled(false); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);//for back button
         getSupportActionBar().setTitle("Mother Panel");
@@ -104,9 +100,7 @@ public class MotherHomeActivity extends AppCompatActivity {
                 finishAffinity();
             }
         });
-
-
-
+        
 
 
     }

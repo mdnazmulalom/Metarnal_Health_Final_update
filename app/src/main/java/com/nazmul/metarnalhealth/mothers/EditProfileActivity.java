@@ -51,7 +51,7 @@ public class EditProfileActivity extends AppCompatActivity {
         txtLocation= findViewById(R.id.location);
         txtGender = findViewById(R.id.gender);
         etxt_Pass= findViewById(R.id.password);
-        txtUpdate = findViewById(R.id.mother_update);
+        txtUpdate = findViewById(R.id.signup);
 
 //        etxt_Cell.setOnClickListener(new View.OnClickListener() {
 //            @Override

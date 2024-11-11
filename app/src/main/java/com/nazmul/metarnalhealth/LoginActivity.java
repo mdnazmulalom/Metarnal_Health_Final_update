@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
 //        actionBar.hide();
 
         signin = findViewById(R.id.signin);
-        signup = findViewById(R.id.mother_update);
+        signup = findViewById(R.id.signup);
         etxtCell=findViewById(R.id.etxt_cell);
         etxtPassword=findViewById(R.id.password);
         etxtAccountType=findViewById(R.id.ac_type);

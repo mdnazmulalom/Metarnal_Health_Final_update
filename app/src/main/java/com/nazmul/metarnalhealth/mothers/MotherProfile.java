@@ -50,8 +50,7 @@ public class MotherProfile extends AppCompatActivity {
         etxtGender=findViewById(R.id.gender);
 
         txtUpdate_profile=findViewById(R.id.doctor_update_profile);
-
-
+        
 
         txtUpdate_profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,7 +125,6 @@ public class MotherProfile extends AppCompatActivity {
             JSONObject jsonObject=new JSONObject(response);
             JSONArray result=jsonObject.getJSONArray(Constant.JSON_ARRAY);
             JSONObject ProfileData = result.getJSONObject(0);
-
 
 
             name = ProfileData.getString(Constant.KEY_NAME);

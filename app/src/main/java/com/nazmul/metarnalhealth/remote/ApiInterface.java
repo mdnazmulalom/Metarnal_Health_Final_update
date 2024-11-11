@@ -65,11 +65,6 @@ public interface ApiInterface {
     );
 
 
-
-
-
-
-
 //
 //    @POST("MetarnalHealth/android/readdoctors.php")
 //    Call<List<Doctors>> getDoctors(String type, String key);
