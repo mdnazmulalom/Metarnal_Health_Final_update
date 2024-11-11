@@ -250,7 +250,7 @@ public class SignupActivity extends AppCompatActivity {
                             loading.dismiss();
                             Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
 //                            Toast.makeText(SignupActivity.this, "Sign up Sucessfull", Toast.LENGTH_SHORT).show();
-                            Toasty.warning(SignupActivity.this,"SignUp success",Toasty.LENGTH_SHORT).show();
+                            Toasty.success(SignupActivity.this,"SignUp success",Toasty.LENGTH_SHORT).show();
                             startActivity(intent);
 
                         } else if (response.equals("exists")) {
